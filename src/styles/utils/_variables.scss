@@ -1,0 +1,73 @@
+/*  -- Font -- */
+@import url("https://fonts.googleapis.com/css?family=Roboto:400, 400italic, 600, 600italic, 700, 700italic");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500&family=Lora:wght@400;500;600&family=Montserrat:wght@200;300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,500;0,700;0,800;0,900;1,500;1,600;1,900&display=swap");
+
+$primary-font: "Roboto", sans-serif;
+$secondary-font: "Josefin", sans-serif;
+
+/* Colors texte */
+$title-color: black;
+
+/*Font-size */
+$big-font-size: 2rem;
+$h1-font-size: 1.5rem;
+$h2-font-size: 1.25rem;
+$h3-font-size: 1.125rem;
+$normal-font-size: 0.938rem;
+$small-font-size: 0.813ezm;
+$smaller-font-size: 0.75rem;
+
+/*Font-Weight */
+$light: 300;
+$normal: 400;
+$semibold: 500;
+$bold: 700;
+
+/*Margenes Bottom*/
+$mb-0-25: 0.25rem;
+$mb-0-5: 0.5rem;
+$mb-0-75: 0.75rem;
+$mb-1: 1rem;
+$mb-1-5: 1.5rem;
+$mb-2: 2rem;
+$mb-2-5: 2.5rem;
+$mb-3: 3rem;
+
+/* z index */
+$z-tooltip: 10;
+$z-fixed: 100;
+$z-modal: 1000;
+
+/*==============Colors===============*/
+$primary-color: #312c26;
+$secondary-color: #c6a98b;
+$tertiary-color: #efe0cb;
+
+$title-color: #c6a98b;
+
+$primary-bg: #312c26;
+$primary-font: #d9d9d9;
+$background-collapse: #efe0cb;
+
+/*breakpoints*/
+$breakpoints: (
+  desktop: 1200px,
+  tablet: 960px,
+  // Previously 640px
+  //   "phone-down": 500px,
+  //   "tablet-up": 768px,
+  //   "tablet-down": 900px,
+  //   "desktop-up": 1024px,
+  //   "desktop-down": 1280px,
+  //   "widescreen-up": 1440px,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+);
+
+/*breakpoints font-sizes*/
+
+$p-fs-normal: 1rem;
+$p-fs-small: 0.875rem;
+$p-fs-smaller: 0.813rem;
+$p-fs-big: 3rem;
+$h1-font-sizes: 2.25rem;
+$h2-font-sizes: 1.5rem;
+$h3-font-sizes: 1.25rem;

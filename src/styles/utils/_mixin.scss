@@ -1,0 +1,26 @@
+/*===========Breakpoints==========*/
+
+@mixin desktop {
+  @media screen and (min-width: map-get($breakpoints, desktop)) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media screen and (max-width: 960px) {
+    @content;
+  }
+}
+
+/* ===========LAYOUT==========*/
+
+@mixin container {
+  max-width: 768px;
+  margin-left: $mb-1-5;
+  margin-right: $mb-1-5;
+}
+
+@mixin grid {
+  display: grid;
+  gap: 1.5rem;
+}
