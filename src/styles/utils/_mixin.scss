@@ -15,6 +15,12 @@
 /* ===========LAYOUT==========*/
 
 @mixin container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+  max-width: 1500px;
   max-width: 768px;
   margin-left: $mb-1-5;
   margin-right: $mb-1-5;
@@ -23,4 +29,124 @@
 @mixin grid {
   display: grid;
   gap: 1.5rem;
+}
+
+@mixin section {
+  padding: 2rem 0 4rem;
+
+  &__title {
+    font-size: $h1-font-size;
+  }
+
+  &__subtitle {
+    display: block;
+    font-size: $small-font-size;
+    margin-bottom: $mb-3;
+  }
+
+  & > * {
+    text-align: center;
+  }
+}
+
+/*=============== Cadres ===============*/
+
+@mixin img {
+  width: 270px;
+  height: 332.58px;
+  border: 5px solid $secondary-color;
+  position: relative;
+  display: inline-block;
+
+  &::before,
+  &::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@mixin cadre {
+  width: 170px;
+  height: 100%;
+  color: $tertiary-color;
+  background: none;
+
+  & img {
+    width: 100%;
+    height: 100%;
+  }
+
+  &::after {
+    content: "";
+    border: 4px solid #c6a98b;
+    background: #d9d9d9;
+    opacity: 0.4;
+    transform: rotate(-8deg);
+    z-index: -1;
+  }
+}
+
+/*================ Button  =============*/
+
+@mixin btn {
+  pointer-events: auto;
+  cursor: pointer;
+  border: none;
+  padding: 1rem 2rem;
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  position: relative;
+  display: inline-block;
+
+  &::before,
+  &::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@mixin button {
+  width: 155px;
+  height: 50px;
+  color: $tertiary-color;
+  background: none;
+
+  &::before {
+    content: "";
+    background-color: $secondary-color;
+    transition: clip-path 0.5s cubic-bezier(0.585, 2.5, 0.645, 0.55);
+  }
+
+  &:hover::before {
+    background: #5d5555;
+  }
+
+  &::after {
+    content: "";
+    border: 3px solid $tertiary-color;
+    transform: rotate(10deg);
+    z-index: -1;
+    transition: transform 0.5s cubic-bezier(0.585, 2.5, 0.645, 0.55);
+  }
+
+  &:hover::after {
+    transform: translate3d(0, -3px, 0);
+    height: 110%;
+    width: 104%;
+    top: 0;
+    left: -3px;
+  }
+
+  & span {
+    display: block;
+    transition: transform 0.3s ease;
+    mix-blend-mode: difference;
+  }
 }
