@@ -36,41 +36,55 @@
     @include img;
     @include cadre;
   }
-  // &__cadre {
-  //   width: 290px;
-  //   border: 5px solid $secondary-color;
-  //   transform: rotate(-8deg);
-  //   background: #d9d9d9;
-  //   opacity: 0.4;
-
-  //   &__photo {
-  //     width: 270px;
-  //     height: 332.58px;
-  //     border: 5px solid $secondary-color;
-  //     transform: rotate(6deg);
-
-  //     &__img {
-  //       width: 100%;
-  //       height: 100%;
-  //       overflow: hidden;
-  //     }
-  //   }
-  // }
 
   &__data {
     grid-column: 1/3;
-    &__title {
-      font-size: $h1-font-size;
-      color: $tertiary-color;
+    padding: 3rem;
+
+    &__presentation {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+      &__title {
+        font-size: $h1-font-size;
+        color: $secondary-color;
+      }
+
+      &__stars {
+        font-size: large;
+        color: #ffc600c2;
+        position: relative;
+        padding-right: 35px;
+
+        &:after,
+        :before {
+          content: "✭";
+          white-space: pre;
+          top: -20px;
+          position: absolute;
+        }
+
+        &:before {
+          margin-right: 2px;
+        }
+
+        &:after {
+          margin-left: 2px;
+        }
+      }
     }
+
     &__subtitle {
+      border-left: 1px solid $tertiary-color;
       font-size: $h3-font-size;
-      color: $tertiary-color;
+      color: $secondary-color;
       font-weight: $semibold;
       margin-bottom: $mb-0-75;
     }
     &__description {
       margin-bottom: $mb-2;
+      color: $secondary-color;
     }
 
     &__button {
@@ -80,15 +94,21 @@
   }
 
   &__scroll {
-    // display: none;
+    display: none;
 
     &__button {
       color: $tertiary-color;
       transition: 0.3s;
 
-      &:hover {
-        transform: translateY(0.25rem);
+      &--flex {
+        display: inline-flex;
+        align-items: center;
+
+        &:hover {
+          transform: translateY(0.25rem);
+        }
       }
+
       &--mouse {
         font-size: 2rem;
       }

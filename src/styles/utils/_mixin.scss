@@ -16,11 +16,8 @@
 
 @mixin container {
   display: flex;
-  justify-content: center;
-  align-items: center;
   width: 100%;
-  height: 80px;
-  max-width: 1500px;
+  height: 100%;
   max-width: 768px;
   margin-left: $mb-1-5;
   margin-right: $mb-1-5;
@@ -42,10 +39,6 @@
     display: block;
     font-size: $small-font-size;
     margin-bottom: $mb-3;
-  }
-
-  & > * {
-    text-align: center;
   }
 }
 
@@ -69,8 +62,6 @@
 }
 
 @mixin cadre {
-  width: 170px;
-  height: 100%;
   color: $tertiary-color;
   background: none;
 
