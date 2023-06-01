@@ -61,7 +61,6 @@
       height: 62%;
       display: flex;
       align-items: center;
-      //   position: absolute;
     }
 
     &__body {
@@ -71,14 +70,22 @@
       flex-direction: column;
 
       &__title {
+        margin-bottom: 30px;
         font-size: $p-fs-small;
         color: $tertiary-color;
-        line-height: 24px;
       }
 
       &__text {
         font-size: $p-fs-smaller;
         color: $secondary-color;
+      }
+
+      &__logos {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        gap: 1rem;
       }
     }
   }

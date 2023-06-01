@@ -1,10 +1,9 @@
-// import { UilBracketsCurly } from "@iconscout/react-unicons";
-import { skills } from "../../data/data.js";
-
-const title = "Compétences";
+import { dataSkills } from "@/data/data.js";
 
 const Skills = () => {
-  const card = skills;
+  const title = "Compétences";
+  // cards file
+  const card = dataSkills;
 
   return (
     <section className="skills" id="skills">
@@ -23,7 +22,15 @@ const Skills = () => {
               <h3 className="skills__card__body__title">{item.title}</h3>
               <p className="skills__card__body__text">{item.description}</p>
               <div className="skills__card__body__logos">
-                <img src={card.logos} alt="Sass" />
+                {item.logos.map((logo, index) => (
+                  <img
+                    src={logo.url}
+                    key={index}
+                    alt=""
+                    height={20}
+                    width={20}
+                  />
+                ))}
               </div>
             </div>
           </div>
