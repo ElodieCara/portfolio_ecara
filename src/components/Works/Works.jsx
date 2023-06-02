@@ -12,7 +12,7 @@ const Works = () => {
       <div className="works__content">
         {/* =============Works--Formation================= */}
         <article
-          className="works__projects--formation"
+          className="works__content__projects--formation"
           id="
         formation"
         >
@@ -26,18 +26,21 @@ const Works = () => {
                   //   width={280}
                   //   height={280}
                 />
-              </div>
-              <div className="works__card__body">
-                <h3 className="works__card__body__title">{item.title}</h3>
-                <p className="works__card__body__text">{item.description}</p>
-                <button>More</button>
+                <div className="works__card__body">
+                  <h3 className="works__card__body__title">{item.title}</h3>
+                  <p className="works__card__body__text">{item.description}</p>
+                  <button>More</button>
+                </div>
               </div>
             </div>
           ))}
         </article>
 
         {/* =============Works--Personnels================= */}
-        <article className="works__projects--personnels" id="personnels">
+        <article
+          className="works__content__projects--personnels"
+          id="personnels"
+        >
           <div className="projects__card">
             <div className="works__card__img">
               <img src="" alt="" />

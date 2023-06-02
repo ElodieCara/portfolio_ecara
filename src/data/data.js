@@ -14,7 +14,7 @@ export const dataSkills = [
     id: 1,
     image: Brackets,
     title: "Frontend",
-    description: "",
+    description: "Lorem ipsum dolor sit amet, consectetur adipisci elit.",
     logos: [
       { url: "images/logos/css-3.png" },
       { url: "images/logos/html-5.png" },
@@ -28,7 +28,7 @@ export const dataSkills = [
     id: 2,
     image: Back,
     title: "Backend",
-    description: "",
+    description: "Lorem ipsum dolor sit amet, consectetur adipisci elit.",
     logos: [
       { url: "images/logos/express.png" },
       { url: "images/logos/mongodb-icon.png" },
@@ -40,7 +40,7 @@ export const dataSkills = [
     id: 3,
     image: Design,
     title: "Design & Others",
-    description: "",
+    description: "Lorem ipsum dolor sit amet, consectetur adipisci elit.",
     logos: [
       { url: "images/logos/github.svg" },
       { url: "images/logos/figma.png" },
@@ -61,43 +61,49 @@ export const dataWorks = [
   {
     id: 10,
     image: Booki,
-    title: "",
-    description: "",
-    date: "",
+    title: "Booki",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua.",
+    date: "01/01/22",
   },
   {
     id: 11,
     image: Ohmyfood,
-    title: "",
-    description: "",
-    date: "",
+    title: "Ohmyfood",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua.",
+    date: "01/01/22",
   },
   {
     id: 12,
     image: Panthere,
-    title: "",
-    description: "",
-    date: "",
+    title: "La Panthere",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua.",
+    date: "01/01/22",
   },
   {
     id: 13,
     image: Piquante,
-    title: "",
-    description: "",
-    date: "",
+    title: "Piquante",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua.",
+    date: "01/01/22",
   },
   {
     id: 14,
     image: Kanap,
-    title: "",
-    description: "",
-    date: "",
+    title: "Kanap",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua.",
+    date: "01/01/22",
   },
   {
     id: 15,
     image: Kasa,
-    title: "",
-    description: "",
-    date: "",
+    title: "Kasa",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua.",
+    date: "01/01/22",
   },
 ];
