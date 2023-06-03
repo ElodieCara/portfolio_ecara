@@ -6,21 +6,19 @@
   }
 
   &__content {
-    display: grid;
-    // grid-template-columns: 0.5fr 3fr;
+    display: flex;
+    flex-direction: column;
     padding-top: 3.5rem;
     align-items: center;
   }
 
   &__social {
-    display: grid;
-    grid-template-columns: max-content;
-    row-gap: 1rem;
-    transition-duration: 300ms;
-
-    // &:hover {
-    //   margin-left: -10px;
-    // }
+    display: none;
+    // include desktop !!!!
+    // display: grid;
+    // grid-template-columns: max-content;
+    // row-gap: 1rem;
+    // transition-duration: 300ms;
 
     &--icon {
       font-size: 1.25rem;
