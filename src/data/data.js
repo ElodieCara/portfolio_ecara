@@ -107,3 +107,14 @@ export const dataWorks = [
     date: "01/01/22",
   },
 ];
+
+export const dataDesign = [
+  {
+    id: 20,
+    image: Booki,
+    title: "Portfolio",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua.",
+    date: "01/01/22",
+  },
+];
