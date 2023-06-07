@@ -33,6 +33,24 @@
   &__photo {
     @include img;
     @include cadre;
+
+    &__img {
+      position: relative;
+      // filter: contrast(90%) brightness(110%) saturate(150%) hue-rotate(-10deg);
+    }
+
+    // &::before {
+    //   content: "";
+    //   display: block;
+    //   height: 100%;
+    //   width: 100%;
+    //   top: 0;
+    //   left: 0;
+    //   position: absolute;
+    //   pointer-events: none;
+    //   mix-blend-mode: overlay;
+    //   background: rgba(127, 187, 227, 0.2);
+    // }
   }
 
   &__data {

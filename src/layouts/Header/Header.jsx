@@ -6,6 +6,9 @@ import { UilMouseAlt, UilArrowDown } from "@iconscout/react-unicons";
 // import { BsFillPersonLinesFill } from "react-icons/bs";
 
 const Header = () => {
+  const approachText =
+    "Enthousiaste et passionnée par le développement web, je viens tout juste de terminer ma formation de Développeuse Intégrateur Web chez OpenClassrooms. Je suis actuellement à la recherche d'un poste stimulant où je pourrai mettre en pratique mes compétences et continuer d'apprendre au sein d'une équipe dynamique.";
+
   return (
     <section className="home" id="home">
       <div className="home__container">
@@ -53,15 +56,7 @@ const Header = () => {
               </span>
             </div>
             <h3 className="home__data__subtitle">Développeur Web Junior</h3>
-            <p className="home__data__description">
-              Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod
-              tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim
-              veniam, quis nostrum exercitationem ullam corporis suscipit
-              laboriosam, nisi ut aliquid ex ea commodi consequatur. Quis aute
-              iure reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint obcaecat cupiditat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
+            <p className="home__data__description">{approachText}</p>
             <a href="#contact" className="home__data__button">
               <span>Contact Me</span>
             </a>

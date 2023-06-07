@@ -55,12 +55,9 @@
 
   &__content {
     max-width: 1024px;
-    // display: flex;
-    // flex-direction: column;
-    // align-content: space-between;
-    // justify-content: center;
-    // align-items: center;
-    // padding-top: 3.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 23em;
   }
 }
 
@@ -128,6 +125,13 @@
       object-fit: cover;
       position: absolute;
       filter: grayscale(50%);
+      transition: transform 0.1s;
+
+      &:hover img {
+        -ms-transform: scale(1.5); /* IE 9 */
+        -webkit-transform: scale(1.5); /* Safari 3-8 */
+        transform: scale(1.5);
+      }
     }
   }
 
@@ -194,13 +198,81 @@
 .projects__card {
   width: 300px;
   height: 300px;
-  border: 4px solid $secondary-color;
+  // border: 4px solid $secondary-color;
   position: relative;
   margin-bottom: 50px;
+
+  &__img {
+    // background: linear-gradient(to left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+    // width: 300px;
+    // height: 300px;
+    position: relative;
+    display: block;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      position: relative;
+      filter: contrast(120%) saturate(125%);
+      transform: translate(0);
+      transition: transform 2s;
+      // position: absolute;
+      // filter: grayscale(50%);
+      // transition: all 0.2s;
+
+      &:hover {
+        transform: scale(1.5);
+        position: relative;
+        filter: contrast(150%) saturate(110%);
+
+        &::hover::before {
+          content: "";
+          display: block;
+          height: 100%;
+          width: 100%;
+          top: 0;
+          left: 0;
+          position: absolute;
+          pointer-events: none;
+          mix-blend-mode: multiply;
+          background: -webkit-radial-gradient(
+            50% 50%,
+            circle closest-corner,
+            rgba(0, 0, 0, 0) 70,
+            rgba(34, 34, 34, 1)
+          );
+          background: radial-gradient(
+            50% 50%,
+            circle closest-corner,
+            rgba(0, 0, 0, 0) 70,
+            rgba(34, 34, 34, 1)
+          );
+        }
+      }
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+        mix-blend-mode: overlay;
+        background: rgba(127, 187, 227, 0.2);
+      }
+    }
+  }
 }
 
 //================ Slide React-slide ============//
 
 .slick-slick {
   width: 400px !important;
+}
+
+.slick-dots li.slick-active button:before {
+  color: $secondary-color !important;
 }

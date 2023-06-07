@@ -44,13 +44,11 @@ const PersonnelsSection = () => {
     <Slider {...settings}>
       {dataDesign.map((project, id) => (
         <div className="projects__card" key={id}>
-          <div className="works__card__img">
+          <div className="projects__card__img">
             <img src={project.image} alt="" />
           </div>
-          <div className="works__card__body">
-            <h3 className="works__card__body__title">{project.title}</h3>
-            <p className="works__card__body__text">{project.description}</p>
-            <button>More</button>
+          <div className="projects__card__body">
+            <h3 className="projects__card__body__title">{project.title}</h3>
           </div>
         </div>
       ))}

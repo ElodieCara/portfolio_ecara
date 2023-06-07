@@ -2,10 +2,12 @@
 @import "./base/typo";
 @import "./base/settings";
 @import "./utils/mixin";
+@import "../components/Card/card";
+@import "../components/FlipCard/flipcard";
 @import "../components/NavBar/navbar";
-@import "../components/Header/header";
-@import "../components/Skills/skills";
-@import "../components/Works/works";
-@import "../components/Contact/contact";
 @import "../components/Footer/footer";
+@import "../layouts/Header/header";
+@import "../layouts/Skills/skills";
+@import "../layouts/Works/works";
+@import "../layouts/Contact/contact";
 @import "../pages/home";

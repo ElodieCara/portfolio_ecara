@@ -1,9 +1,9 @@
-import Contact from "../components/Contact/Contact";
+import Contact from "../layouts/Contact/Contact";
 import Footer from "../components/Footer/Footer";
-import Header from "../components/Header/Header";
 import Navbar from "../components/NavBar/Navbar";
-import Skills from "../components/Skills/Skills";
-import Works from "../components/Works/Works";
+import Header from "../layouts/Header/Header";
+import Skills from "../layouts/Skills/Skills";
+import Works from "../layouts/Works/Works";
 
 export default function Home() {
   return (

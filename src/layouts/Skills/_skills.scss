@@ -1,0 +1,28 @@
+.skills {
+  @include section;
+
+  &__container {
+    @include container;
+    @include grid;
+
+    &__title {
+      padding: 1rem 3rem;
+      border-bottom: 2px solid $secondary-color;
+      border-top: 2px solid $secondary-color;
+
+      & h1 {
+        color: $secondary-color;
+        text-align: left;
+      }
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3.5rem;
+  }
+}
