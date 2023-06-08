@@ -1,60 +1,5 @@
-// import { useRef } from "react";
-import Slider from "react-slick";
 import { useState } from "react";
-import { dataWorks } from "@/data/data.js";
-import { dataDesign } from "@/data/data.js";
-
-const FormationSection = () => {
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-  };
-  return (
-    <Slider {...settings}>
-      {dataWorks.map((item, index) => (
-        <div className="works__card" key={index}>
-          <div className="works__card__date">{item.date}</div>
-          <div className="works__card__img">
-            <img src={item.image} alt={item.title} />
-            <div className="works__card__body">
-              <h3 className="works__card__body__title">{item.title}</h3>
-              <p className="works__card__body__text">{item.description}</p>
-              <button>More</button>
-            </div>
-          </div>
-        </div>
-      ))}
-    </Slider>
-  );
-};
-
-const PersonnelsSection = () => {
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-  };
-
-  return (
-    <Slider {...settings}>
-      {dataDesign.map((project, id) => (
-        <div className="projects__card" key={id}>
-          <div className="projects__card__img">
-            <img src={project.image} alt="" />
-          </div>
-          <div className="projects__card__body">
-            <h3 className="projects__card__body__title">{project.title}</h3>
-          </div>
-        </div>
-      ))}
-    </Slider>
-  );
-};
+import Slideshow from "@/components/Slideshow/Slideshow";
 
 const Works = () => {
   const title = "Portfolio";
@@ -104,12 +49,10 @@ const Works = () => {
       </div>
       {/* Contenu des sections en fonction de la section active */}
       <div className="works__content">
-        {activeSection === "formation" && <FormationSection />}{" "}
-        {/* Affiche la section "Formation" si c'est la section active */}
-        {activeSection === "personnels" && <PersonnelsSection />}{" "}
-        {/* Affiche la section "Formation" si c'est la section active */}
+        <Slideshow activeSection={activeSection} />
       </div>
     </section>
   );
 };
+
 export default Works;

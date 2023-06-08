@@ -1,0 +1,40 @@
+.icon {
+  position: absolute;
+  top: -45px;
+  left: -71px;
+
+  &__stars {
+    width: 40px;
+    margin: 30px;
+    &__path {
+      stroke-dasharray: 1560;
+      stroke-dashoffset: 0;
+      animation: animate-stars 2s linear forwards;
+    }
+  }
+
+  path {
+    fill: transparent;
+    stroke: 10;
+    stroke: $tertiary-color;
+  }
+}
+
+// }
+
+@keyframes animate-stars {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  40% {
+    stroke-dashoffset: 1560;
+  }
+  80% {
+    stroke-dashoffset: 3120;
+    fill: transparent;
+  }
+  100% {
+    stroke-dashoffset: 3120;
+    fill: $tertiary-color;
+  }
+}

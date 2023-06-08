@@ -1,7 +1,8 @@
-import { FaGithub, FaLinkedin, FaStar } from "react-icons/fa";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import Photo from "../../assets/Photo.jpg";
 import { UilMouseAlt, UilArrowDown } from "@iconscout/react-unicons";
+import Icon from "../../components/Icon/Icon";
 
 // import { BsFillPersonLinesFill } from "react-icons/bs";
 
@@ -52,7 +53,8 @@ const Header = () => {
                 Elodie Caradeuc
               </h1>
               <span className="home__data__presentation__stars">
-                <FaStar className="home__data_presentation__stars--top" />
+                {/* <FaStar className="home__data_presentation__stars--top" /> */}
+                <Icon />
               </span>
             </div>
             <h3 className="home__data__subtitle">Développeur Web Junior</h3>
