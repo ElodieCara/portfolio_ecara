@@ -6,9 +6,9 @@
     @include grid;
 
     &__title {
-      padding: 1rem 3rem;
-      border-bottom: 2px solid $secondary-color;
-      border-top: 2px solid $secondary-color;
+      margin: 1rem 3rem;
+      // border-bottom: 2px solid $secondary-color;
+      // border-top: 2px solid $secondary-color;
 
       & h1 {
         color: $secondary-color;

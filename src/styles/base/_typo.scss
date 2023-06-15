@@ -7,6 +7,14 @@ $primary-font: "Roboto", sans-serif;
 $secondary-font: "Josefin", sans-serif;
 $tertiary-font: "Inspiration", sans-serif;
 
+/* Background Color */
+$fond-color: linear-gradient(
+  90deg,
+  $tertiary-color 0%,
+  $secondary-color 50%,
+  $primary-color 100%
+);
+
 /* Colors texte */
 $title-color: black;
 

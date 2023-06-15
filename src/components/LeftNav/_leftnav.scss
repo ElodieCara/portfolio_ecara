@@ -1,0 +1,38 @@
+.social-menu {
+  display: none;
+}
+
+@include tablet {
+  .social-menu {
+    display: flex;
+    flex-direction: column;
+    top: 35%;
+    left: 0;
+    position: fixed;
+    & ul {
+      list-style-type: none;
+      & li {
+        width: 160px;
+        height: 60px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: -100px;
+        transition: margin-left 300ms;
+
+        &:hover {
+          margin-left: -10px;
+        }
+
+        & a {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          width: 100%;
+          color: white;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}

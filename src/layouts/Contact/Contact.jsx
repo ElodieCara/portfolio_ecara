@@ -22,6 +22,7 @@ const ContactForm = () => {
       <div className="contact__container">
         <div className="contact__container__title">
           <h1>{title}</h1>
+          <hr className="border-title" />
         </div>
       </div>
       <div className="contact__title">

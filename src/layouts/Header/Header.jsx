@@ -1,8 +1,6 @@
-import { FaGithub, FaLinkedin } from "react-icons/fa";
-import { HiOutlineMail } from "react-icons/hi";
 import Photo from "../../assets/Photo.jpg";
-import { UilMouseAlt, UilArrowDown } from "@iconscout/react-unicons";
 import Icon from "../../components/Icon/Icon";
+import Scroll from "../../components/ScrollBtn/ScrollBtn";
 
 // import { BsFillPersonLinesFill } from "react-icons/bs";
 
@@ -14,35 +12,6 @@ const Header = () => {
     <section className="home" id="home">
       <div className="home__container">
         <div className="home__content">
-          <div className="home__social">
-            <a
-              href="https://www.linkedin.com/in/e-cara"
-              target="_blank"
-              rel="noreferrer"
-              className="home__social--icon"
-            >
-              <FaLinkedin />
-            </a>
-
-            <a
-              href="https://github.com/ElodieCara"
-              target="_blank"
-              rel="noreferrer"
-              className="home__social--icon"
-            >
-              <FaGithub />
-            </a>
-
-            <a
-              href="mailto:caradeuc.elodie@gmail.com"
-              target="_blank"
-              rel="noreferrer"
-              className="home__social--icon"
-            >
-              <HiOutlineMail />
-            </a>
-          </div>
-
           <div className="home__photo">
             <img className="home__photo__img" src={Photo} alt="Photo" />
           </div>
@@ -63,14 +32,7 @@ const Header = () => {
               <span>Contact Me</span>
             </a>
           </div>
-        </div>
-
-        <div className="home__scroll">
-          <a href="#about" className="home__scroll__button--flex">
-            <UilMouseAlt className="home__scroll__button--mouse" />
-            <span className="home__scroll__button--name">Scroll down</span>
-            <UilArrowDown className="home__scroll__button--arrow" />
-          </a>
+          <Scroll />
         </div>
       </div>
     </section>

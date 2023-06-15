@@ -20,6 +20,7 @@
 
   &.flipped {
     transform: rotateY(180deg);
+    background-color: $primary-color;
   }
 
   &::hover {
@@ -90,6 +91,7 @@
 
   &-back {
     transform: rotateY(180deg);
+
     // height: 100%;
 
     &::after {
@@ -100,11 +102,17 @@
 
     &__text {
       position: fixed;
-      top: -92px;
+      top: -118px;
       color: $secondary-color;
-      text-align: justify;
+      padding: 1rem;
       overflow: auto;
-      max-height: 100%;
+      // max-height: 100%;
+      background-color: $primary-color;
+      font-size: 12px;
+      width: 120%;
+      height: 150%;
+      left: -23px;
+
       /* === scrollbar === */
 
       scrollbar-width: thin;

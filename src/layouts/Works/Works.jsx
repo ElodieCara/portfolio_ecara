@@ -17,6 +17,7 @@ const Works = () => {
       <div className="works__container">
         <div className="works__container__title">
           <h1>{title}</h1>
+          <hr className="border-title" />
         </div>
         <div className="works__container__links">
           {/* Bouton pour la section "Formation" */}

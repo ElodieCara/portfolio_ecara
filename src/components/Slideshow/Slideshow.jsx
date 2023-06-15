@@ -39,6 +39,34 @@ const Slideshow = ({ activeSection }) => {
             </div>
             <div className="projects__card__body">
               <h3 className="projects__card__body__title">{project.title}</h3>
+              <div className="projects__card__body__techno">
+                {project.techno.map((techno, id) => (
+                  <img
+                    src={techno.url}
+                    key={id}
+                    alt=""
+                    height={20}
+                    width={20}
+                  />
+                ))}
+              </div>
+              <div className="projects__card__body__link">
+                {project.link.map((link, id) => (
+                  <a
+                    href={link.url}
+                    key={id}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img
+                      src={link.icon}
+                      alt={link.name}
+                      height={20}
+                      width={20}
+                    />
+                  </a>
+                ))}
+              </div>
             </div>
           </div>
         ))}

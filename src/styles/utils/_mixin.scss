@@ -20,7 +20,7 @@
   height: 100%;
   // max-width: 768px;
   // margin-left: $mb-1-5;
-  margin-right: $mb-1-5;
+  // margin-right: $mb-1-5;
 }
 
 @mixin grid {
@@ -29,7 +29,7 @@
 }
 
 @mixin section {
-  padding: 2rem 0 4rem;
+  padding: 3rem 0 0rem;
 
   &__title {
     font-size: $h1-font-size;
@@ -45,8 +45,8 @@
 /*=============== Cadres ===============*/
 
 @mixin img {
-  width: 270px;
-  height: 332.58px;
+  width: 50%;
+  height: 50%;
   border: 5px solid $secondary-color;
   position: relative;
   display: inline-block;

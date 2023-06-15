@@ -8,6 +8,7 @@ const Skills = () => {
       <div className="skills__container">
         <div className="skills__container__title">
           <h1>{title}</h1>
+          <hr className="border-title" />
         </div>
       </div>
       <div className="skills__content">

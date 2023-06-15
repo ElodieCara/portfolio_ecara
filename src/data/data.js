@@ -8,7 +8,7 @@ import Piquante from "@/assets/works/piquante.jpg";
 import Kanap from "@/assets/works/kanap.png";
 import Kasa from "@/assets/works/kasa.jpg";
 import Panthere from "@/assets/works/panthere.jpg";
-import ChezCharlie from "@/assets/works/ChezCharlie.jpeg";
+import ChezCharlie from "@/assets/works/ChezCharlie.png";
 import Portfolio from "@/assets/works/portfolio.png";
 
 export const dataSkills = [
@@ -17,7 +17,7 @@ export const dataSkills = [
     image: Brackets,
     title: "Frontend",
     description:
-      "J'ai commencé mon parcours en autodidacte en apprenant les bases du HTML et du CSS, ce qui m'a donné un aperçu du potentiel créatif et technique du développement web. Convaincue de ma passion pour ce domaine, j'ai décidé de consolider mes connaissances en suivant une formation à distance, me permettant d'acquérir une expertise approfondie dans les langages de programmation et les frameworks modernes",
+      "J'ai commencé en autodidacte, puis j'ai ensuite suivi une formation à distance pour approfondir mes connaissances en développement web et acquérir une expertise complète dans les langages de programmation et les frameworks modernes.",
     logos: [
       { url: "images/logos/css-3.png" },
       { url: "images/logos/html-5.png" },
@@ -32,7 +32,7 @@ export const dataSkills = [
     image: Back,
     title: "Backend",
     description:
-      "Avec une solide base en HTML, CSS et JavaScript, ainsi qu'une familiarité avec des outils tels que React, j'ai développé des projets personnels et collaboratifs qui ont renforcé mes compétences et ma compréhension des bonnes pratiques de développement. Je suis également ouverte à apprendre de nouveaux langages et technologies pour rester à jour dans un domaine en constante évolution.",
+      "Avec une base solide en HTML, CSS et JavaScript, j'ai développé des projets personnels, renforçant mes compétences et ma compréhension des bonnes pratiques de développement, et je suis toujours ouverte à apprendre de nouvelles technologies pour rester à jour.",
     logos: [
       { url: "images/logos/express.png" },
       { url: "images/logos/mongodb-icon.png" },
@@ -45,7 +45,7 @@ export const dataSkills = [
     image: Design,
     title: "Design & Others",
     description:
-      "Mon objectif est de contribuer à la création de solutions numériques performantes, esthétiques et conviviales qui répondent aux besoins des utilisateurs. Je suis une personne autonome, créative et persévérante, prête à relever de nouveaux défis et à m'investir pleinement dans des projets passionnants.",
+      "Mon objectif est de créer des solutions numériques performantes, esthétiques et conviviales qui répondent aux besoins des utilisateurs, en apportant autonomie, créativité et persévérance dans des projets passionnants.",
     logos: [
       { url: "images/logos/github.svg" },
       { url: "images/logos/figma.png" },
@@ -58,7 +58,7 @@ export const dataSkills = [
     image: Brain,
     title: "Psychologie",
     description:
-      "Au cours de ma réorientation professionnelle, j'ai découvert le monde du développement et j'ai été immédiatement captivée par les aspects liés à la psychologie cognitive et à l'ergonomie de conception. Je suis particulièrement intéressée par des domaines tels que la pédagogie, l'expérience utilisateur et les interactions homme-machine. Ces sujets me motivent à créer des interfaces conviviales et intuitives qui facilitent l'expérience des utilisateurs.",
+      "Au cours de ma réorientation professionnelle, j'ai été captivée par les aspects de psychologie cognitive et d'ergonomie de conception dans le développement, et je suis motivée à créer des interfaces conviviales et intuitives qui facilitent l'expérience des utilisateurs, notamment dans les domaines de la pédagogie, de l'expérience utilisateur et des interactions homme-machine.",
     logos: [{ url: "images/logos/brain.png" }],
   },
 ];
@@ -122,6 +122,24 @@ export const dataDesign = [
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua.",
     date: "01/01/22",
+    techno: [
+      { url: "images/logos/react.png" },
+
+      { url: "images/logos/sass.png" },
+    ],
+    link: [
+      { icon: "images/logos/link.svg", url: "", name: "Lien Chez Charlie" },
+      {
+        icon: "images/logos/github.svg",
+        url: "https://github.com/ElodieCara/chez-charlie",
+        name: "Code Chez Charlie",
+      },
+      {
+        icon: "images/logos/figma.png",
+        url: "https://www.figma.com/proto/e8oFLY0WbN62cjh2UBH0gr/Chez-Charlie?type=design&scaling=scale-down&page-id=0%3A1&node-id=1-4",
+        name: "Prototype Chez Charlie",
+      },
+    ],
   },
   {
     id: 21,
@@ -130,5 +148,27 @@ export const dataDesign = [
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua.",
     date: "01/01/22",
+    techno: [
+      { url: "images/logos/react.png" },
+      { url: "images/logos/vite.svg" },
+      { url: "images/logos/sass.png" },
+    ],
+    link: [
+      {
+        icon: "images/logos/link.svg",
+        url: "",
+        name: "Lien vers le portfolio",
+      },
+      {
+        icon: "images/logos/github.svg",
+        url: "https://github.com/ElodieCara/portfolio_ecara",
+        name: "Code du portfolio",
+      },
+      {
+        icon: "images/logos/figma.png",
+        url: "https://www.figma.com/proto/zpOh34P302zPQ9Ao4AyLRp/MYPORTFOLIO?type=design&node-id=20-2&scaling=min-zoom&page-id=0%3A1",
+        name: "Prototype du portfolio",
+      },
+    ],
   },
 ];
