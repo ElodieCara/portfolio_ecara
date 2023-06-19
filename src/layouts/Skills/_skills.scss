@@ -1,5 +1,6 @@
 .skills {
   @include section;
+  // @include shadow;
 
   &__container {
     @include container;

@@ -50,7 +50,9 @@ const Slideshow = ({ activeSection }) => {
                   />
                 ))}
               </div>
+
               <div className="projects__card__body__link">
+                <h3>Liens</h3>
                 {project.link.map((link, id) => (
                   <a
                     href={link.url}

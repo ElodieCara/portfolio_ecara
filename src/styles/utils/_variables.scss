@@ -5,6 +5,12 @@
 $primary-font: "Roboto", sans-serif;
 $secondary-font: "Josefin", sans-serif;
 
+/* Background */
+
+$background-gallery: url("@/assets/TreeBackCont.jpg");
+$background-card: url("@/assets/TreeBackCont.jpg");
+$background-contact: url("@/assets/CadreCont.jpg");
+
 /* Colors texte */
 $title-color: black;
 
@@ -42,7 +48,7 @@ $z-fixed: 100;
 $z-modal: 1000;
 
 /*==============Colors===============*/
-$primary-color: #312c26;
+$primary-color: #1a1614;
 $secondary-color: #c6a98b;
 $tertiary-color: #efe0cb;
 
@@ -51,6 +57,13 @@ $title-color: #c6a98b;
 $primary-bg: #312c26;
 $primary-font: #d9d9d9;
 $background-collapse: #efe0cb;
+
+$background-cadre: linear-gradient(
+  90deg,
+  #1a1614 0%,
+  #c6a98b 50%,
+  #efe0cb 100%
+);
 
 /*breakpoints*/
 $breakpoints: (

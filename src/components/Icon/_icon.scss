@@ -2,31 +2,52 @@
   position: absolute;
   top: -45px;
   left: -71px;
+  will-change: transform;
+  transform: translateX(0.1px) translateY(5px);
 
   &__stars {
     width: 40px;
     margin: 30px;
+    // opacity: 1;
+    position: relative;
+
     &__path {
       stroke-dasharray: 1560;
       stroke-dashoffset: 0;
       animation: animate-stars 2s linear forwards;
+      filter: drop-shadow(0 0 30px rgba(255, 255, 255, 0.7));
     }
   }
 
   path {
     fill: transparent;
     stroke: 10;
-    stroke: $stars-color;
+    stroke: url(#gradient-horizontal);
   }
 }
 
-// }
+/* Gradient-svg */
+
+#gradient-horizontal {
+  $color-stop-1: #a770ef;
+  $color-stop-2: #cf8bf3;
+  $color-stop-3: #fdb99b;
+}
+
+#gradient-vertical {
+  $color-stop-1: #00c3ff;
+  $color-stop-2: #77e190;
+  $color-stop-3: #ffff1c;
+}
+
+/* Animation */
 
 @keyframes animate-stars {
   0% {
     stroke-dashoffset: 0;
   }
   40% {
+    fill: transparent;
     stroke-dashoffset: 1560;
   }
   80% {
@@ -35,6 +56,6 @@
   }
   100% {
     stroke-dashoffset: 3120;
-    fill: $stars-color;
+    fill: url(#gradient-vertical);
   }
 }

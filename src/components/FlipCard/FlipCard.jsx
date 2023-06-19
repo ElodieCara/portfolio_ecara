@@ -12,7 +12,7 @@ function FlipCard() {
 
   const card = dataSkills;
   return (
-    <>
+    <div className="flip-card-container">
       {card.map((item, index) => (
         <div
           className={`card ${flippedCards[index] ? "flipped" : ""}`}
@@ -39,11 +39,13 @@ function FlipCard() {
             </div>
           </div>
           <div className="card-back">
-            <p className="card-back__text">{item.description}</p>
+            <div className="card-back__text">
+              <p>{item.description}</p>
+            </div>
           </div>
         </div>
       ))}
-    </>
+    </div>
   );
 }
 

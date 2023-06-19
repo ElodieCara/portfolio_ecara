@@ -1,5 +1,5 @@
 import React from "react";
-import Logo from "@/assets/&.png";
+import Logo from "@/assets/Logo1.png";
 import Arrow from "@/assets/Arrow 5.png";
 
 const ContactForm = () => {
@@ -25,7 +25,7 @@ const ContactForm = () => {
           <hr className="border-title" />
         </div>
       </div>
-      <div className="contact__title">
+      <div className="contact__title ">
         <h3>Contactez-moi !</h3>
       </div>
       <div className="contact__content">
@@ -71,8 +71,11 @@ const ContactForm = () => {
         </form>
       </div>
       <div className="contact__button">
-        <a href="https://elodiecara.github.io/CV/">
-          <button className="contact__button__dl">Télécharger mon CV</button>
+        <a
+          href="https://elodiecara.github.io/CV/"
+          className="contact__button__dl"
+        >
+          <span>Télécharger mon CV</span>
         </a>
       </div>
     </section>

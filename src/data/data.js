@@ -17,7 +17,7 @@ export const dataSkills = [
     image: Brackets,
     title: "Frontend",
     description:
-      "J'ai commencé en autodidacte, puis j'ai ensuite suivi une formation à distance pour approfondir mes connaissances en développement web et acquérir une expertise complète dans les langages de programmation et les frameworks modernes.",
+      "J'ai commencé en autodidacte, puis j'ai ensuite suivi une formation à distance pour renforcer mes compétences.",
     logos: [
       { url: "images/logos/css-3.png" },
       { url: "images/logos/html-5.png" },
@@ -58,7 +58,7 @@ export const dataSkills = [
     image: Brain,
     title: "Psychologie",
     description:
-      "Au cours de ma réorientation professionnelle, j'ai été captivée par les aspects de psychologie cognitive et d'ergonomie de conception dans le développement, et je suis motivée à créer des interfaces conviviales et intuitives qui facilitent l'expérience des utilisateurs, notamment dans les domaines de la pédagogie, de l'expérience utilisateur et des interactions homme-machine.",
+      "Passionné par la psychologie cognitive et l'ergonomie de conception, motivé à créer des interfaces conviviales et intuitives pour améliorer l'expérience utilisateur, notamment dans les domaines de la pédagogie et des interactions homme-machine.",
     logos: [{ url: "images/logos/brain.png" }],
   },
 ];
@@ -123,9 +123,9 @@ export const dataDesign = [
       "Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua.",
     date: "01/01/22",
     techno: [
-      { url: "images/logos/react.png" },
+      { url: "images/logos/react.png", alt: "React" },
 
-      { url: "images/logos/sass.png" },
+      { url: "images/logos/sass.png", alt: "Sass" },
     ],
     link: [
       { icon: "images/logos/link.svg", url: "", name: "Lien Chez Charlie" },
@@ -149,9 +149,9 @@ export const dataDesign = [
       "Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua.",
     date: "01/01/22",
     techno: [
-      { url: "images/logos/react.png" },
-      { url: "images/logos/vite.svg" },
-      { url: "images/logos/sass.png" },
+      { url: "images/logos/react.png", alt: "React" },
+      { url: "images/logos/vite.svg", alt: "Vite" },
+      { url: "images/logos/sass.png", alt: "Sass" },
     ],
     link: [
       {

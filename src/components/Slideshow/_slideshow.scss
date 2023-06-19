@@ -21,6 +21,7 @@
   position: relative;
   margin: 30px !important;
   margin-left: 70px !important;
+  @include shadow;
 
   &::after {
     content: "";
@@ -154,7 +155,8 @@
   width: 300px !important;
   height: 200px;
   margin-left: 30px !important;
-  padding: 20px !important;
+  @include shadow;
+  // padding: 20px !important;
 
   &::before {
     content: "";
@@ -164,14 +166,16 @@
     left: 0;
     width: 100%;
     height: 300px;
-    background: $fond-color;
+    // border: 1px solid #393939;
+    // box-shadow: 0 0 12px rgba(0, 0, 0, 0.4);
+    // background-color: $secondary-color;
   }
 
   &__img {
     width: 100%;
     height: 100%;
-    border: 1px solid rgba(255, 255, 255, 0.4);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    border: 1px solid #393939;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.4);
     display: block;
     overflow: hidden;
 
@@ -215,10 +219,13 @@
   }
 
   &__body {
+    position: relative;
+    top: -45px;
+    right: 12px;
     margin-top: 10px;
 
     &__title {
-      color: $primary-color;
+      display: none;
     }
 
     &__techno {
@@ -226,13 +233,38 @@
       align-items: center;
       justify-content: flex-end;
       gap: 0.3rem;
+
+      & img {
+        padding: 0.1rem;
+        background: black;
+      }
     }
 
     &__link {
-      display: flex;
-      align-items: center;
-      justify-content: flex-start;
-      gap: 0.3rem;
+      display: none;
+
+      @include tablet {
+        &__link {
+          display: flex;
+          flex-wrap: wrap;
+          align-items: baseline;
+          justify-content: flex-end;
+          gap: 0.3rem;
+
+          & h3 {
+            position: relative;
+            font-size: 12px;
+            top: -5px;
+            left: -10px;
+          }
+
+          & img {
+            width: 20px;
+            border-radius: 50%;
+            background: $primary-color;
+          }
+        }
+      }
     }
   }
 }
