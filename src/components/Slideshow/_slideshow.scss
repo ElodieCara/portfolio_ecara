@@ -1,15 +1,19 @@
 //================ Slide React-slide ============//
 
-.slick-slick {
-  // width: 100px !important;
-}
+// .slick-slick {
+//   // width: 100px !important;
+// }
 
-.slick-list {
-  // margin-left: 50px;
+// .slick-list {
+//   // margin-left: 50px;
+// }
+
+.slick-dots li button::before {
+  color: $secondary-color !important ;
 }
 
 .slick-dots li.slick-active button:before {
-  color: $secondary-color !important;
+  color: $tertiary-color !important;
 }
 
 /*============== Projets Formation ===============*/

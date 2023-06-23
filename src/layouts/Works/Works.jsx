@@ -1,8 +1,15 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Slideshow from "@/components/Slideshow/Slideshow";
+import { dataWorks } from "../../data/data";
 
-const Works = () => {
+function Works() {
   const title = "Portfolio";
+
+  const [works, setWorks] = useState([]);
+
+  useEffect(() => {
+    setWorks(dataWorks);
+  }, []);
 
   // État pour suivre la section active
   const [activeSection, setActiveSection] = useState("formation");
@@ -50,10 +57,14 @@ const Works = () => {
       </div>
       {/* Contenu des sections en fonction de la section active */}
       <div className="works__content">
-        <Slideshow activeSection={activeSection} />
+        <Slideshow
+          workId={works.map((work) => work.id)}
+          dataWorks={works}
+          activeSection={activeSection}
+        />
       </div>
     </section>
   );
-};
+}
 
 export default Works;

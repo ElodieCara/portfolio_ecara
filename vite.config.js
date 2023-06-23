@@ -10,4 +10,10 @@ export default defineConfig({
       "@": path.resolve(__dirname, "./src"),
     },
   },
+  server: {
+    // Configuration des en-têtes de cache
+    headers: {
+      "Cache-Control": "max-age=31536000", // Exemple: Mise en cache pendant un an (en secondes)
+    },
+  },
 });

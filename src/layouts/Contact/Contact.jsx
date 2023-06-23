@@ -1,10 +1,11 @@
-import React from "react";
+import { useState } from "react";
 import Logo from "@/assets/Logo1.png";
 import Arrow from "@/assets/Arrow 5.png";
+import { Facebook, Linkedin } from "../../components/Icon/Icon";
 
 const ContactForm = () => {
   const title = "Contact";
-  const [formStatus, setFormStatus] = React.useState("Send");
+  const [formStatus, setFormStatus] = useState("Send");
 
   const onSubmit = (e) => {
     e.preventDefault();
@@ -17,6 +18,8 @@ const ContactForm = () => {
     };
     console.log(conFom);
   };
+
+  // useEffect(() => {});
   return (
     <section className="contact" id="contact">
       <div className="contact__container">
@@ -26,7 +29,30 @@ const ContactForm = () => {
         </div>
       </div>
       <div className="contact__title ">
-        <h3>Contactez-moi !</h3>
+        <p>Laissez moi un message !</p>
+      </div>
+      <div className="contact__infos-contact">
+        <hr className="border-title" />
+        <li>
+          Email
+          <a href="">contact.ecara@gmail.com</a>
+        </li>
+        <hr className="border-title" />
+        <li>
+          Adresse<p>Gisors, France</p>
+        </li>
+        <hr className="border-title" />
+        <li>
+          Social media
+          <span>
+            <a href="">
+              <Facebook />
+            </a>
+            <a href="">
+              <Linkedin />
+            </a>
+          </span>
+        </li>
       </div>
       <div className="contact__content">
         <form
@@ -36,7 +62,7 @@ const ContactForm = () => {
           action="https://getform.io/f/a923b466-7e11-4a57-be86-367f9d312768"
         >
           <div className="contact__content__form--icon">
-            <img src={Logo} width={30} alt="" />
+            <img src={Logo} width={55} alt="Logo" />
           </div>
           <div className="contact__content__form--control">
             <input
@@ -45,6 +71,7 @@ const ContactForm = () => {
               placeholder="Name"
               id="name"
               required
+              autoComplete="off"
             />
           </div>
           <div className="contact__content__form--control">
@@ -54,6 +81,7 @@ const ContactForm = () => {
               placeholder="Email"
               id="email"
               required
+              autoComplete="off"
             />
           </div>
           <div className="contact__content__form--control">

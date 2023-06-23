@@ -1,6 +1,6 @@
 import { useEffect, useRef } from "react";
 import Photo from "../../assets/Photo1.png";
-import Icon from "../../components/Icon/Icon";
+import { Stars } from "../../components/Icon/Icon";
 import Scroll from "../../components/ScrollBtn/ScrollBtn";
 
 const Header = () => {
@@ -66,7 +66,7 @@ const Header = () => {
                 Elodie Caradeuc
               </h1>
               <span className="home__data__presentation__stars">
-                <Icon />
+                <Stars />
               </span>
             </div>
             <h3 className="home__data__subtitle">Développeur Web Junior</h3>

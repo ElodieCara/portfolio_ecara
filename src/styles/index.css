@@ -105,7 +105,58 @@ img {
   stroke: url(#gradient-horizontal);
 }
 
+/*=== Icon Facebook ===*/
+.icon-FB {
+  display: inline-block;
+  height: 80%;
+  max-height: 100%;
+  width: auto;
+  fill: none;
+  stroke: #fff;
+  stroke-width: 35;
+  stroke-miterlimit: 5;
+}
+.icon-FB linearGradient {
+  transform: rotate(135deg);
+}
+.icon-FB path {
+  stroke-dasharray: 3000;
+}
+
+svg:hover .icon-FB__path {
+  animation: animation-FB 0.9s cubic-bezier(0.47, 0, 0.745, 0.715) forwards, gradient-FB 0.8s 1s forwards;
+}
+
+/*=== Icon Linkedin ===*/
+.icon-In {
+  display: inline-block;
+  width: auto;
+  fill: none;
+  stroke: #fff;
+  stroke-width: 15;
+  stroke-miterlimit: 5;
+}
+.icon-In linearGradient {
+  transform: rotate(135deg);
+}
+.icon-In path {
+  stroke-dasharray: 3000;
+}
+
+svg:hover path {
+  animation: animation-FB 0.9s cubic-bezier(0.47, 0, 0.745, 0.715) forwards, gradient-FB 0.8s 1s forwards;
+}
+
 /* Gradient-svg */
+@keyframes gradient-FB {
+  10% {
+    fill: none;
+  }
+  100% {
+    fill: url(#gradient-vertical);
+    stroke-width: 0;
+  }
+}
 /* Animation */
 @keyframes animate-stars {
   0% {
@@ -122,6 +173,14 @@ img {
   100% {
     stroke-dashoffset: 3120;
     fill: url(#gradient-vertical);
+  }
+}
+@keyframes animation-FB {
+  from {
+    stroke-dashoffset: 3000;
+  }
+  to {
+    stroke-dashoffset: 0;
   }
 }
 .scroll {
@@ -275,8 +334,12 @@ img {
   background-color: #c6a98b; /* Couleur de la piste de la scrollbar */
 }
 
-.slick-dots li.slick-active button:before {
+.slick-dots li button::before {
   color: #c6a98b !important;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #efe0cb !important;
 }
 
 /*============== Projets Formation ===============*/
@@ -736,6 +799,7 @@ img {
   display: grid;
   gap: 1.5rem;
   position: relative;
+  z-index: 0;
 }
 .home__content {
   display: flex;
@@ -801,7 +865,7 @@ img {
 }
 .home__data__subtitle {
   position: relative;
-  font-size: 1.125rem;
+  font-size: 16px;
   color: #c6a98b;
   font-weight: 500;
   margin-bottom: 0.75rem;
@@ -810,7 +874,7 @@ img {
 .home__data__subtitle::before {
   width: 1px;
   height: 100%;
-  background: #c6a98b;
+  background: linear-gradient(360deg, #3e3936 0%, #c6a98b 50%, #efe0cb 100%);
   content: "";
   left: 10px;
   top: 0px;
@@ -822,6 +886,7 @@ img {
   color: #c6a98b;
   text-align: justify;
   text-align-last: justify;
+  font-size: 12px;
 }
 .home__data__button {
   width: 155px;
@@ -998,32 +1063,61 @@ img {
   text-align: left;
 }
 .contact__title {
-  display: flex;
+  display: grid;
+  gap: 1.5rem;
   justify-content: center;
-  padding-top: 55px;
+  padding-top: 15px;
 }
 .contact__title h3 {
+  text-align: center;
   color: #c6a98b;
   font-size: 20px;
   font-weight: 400;
   height: 35px;
   border-bottom: 2px solid #c6a98b;
 }
+.contact__title p {
+  font-size: 18px;
+}
+.contact__infos-contact {
+  font-size: 14px;
+  padding-left: 55px;
+  padding-right: 55px;
+  margin: 25px;
+}
+.contact__infos-contact li {
+  display: grid;
+}
+.contact__infos-contact li span {
+  display: inline;
+}
+.contact__infos-contact li span a {
+  margin-right: 15px;
+  padding: 0.2rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 5%;
+}
 .contact__content {
+  position: relative;
+  min-width: 280px;
+  min-height: 365px;
+  margin: 25px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 5rem;
   filter: drop-shadow(2px 4px 6px black);
 }
 .contact__content__form {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
+  display: grid;
+  gap: 1.5rem;
+  justify-content: center;
+  padding: 5px;
+  margin-top: 25px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid #c6a98b;
+  box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
   position: relative;
-  border: 5px solid #c6a98b;
   background-color: rgba(255, 255, 255, 0.412);
   min-width: 280px;
   min-height: 365px;
@@ -1033,42 +1127,46 @@ img {
   position: absolute;
   min-width: 280px;
   min-height: 375px;
-  background: url("@/assets/CadreCont.jpg") center/cover no-repeat;
-  border: 5px solid #c6a98b;
-  bottom: 20px;
-  left: 30px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid #c6a98b;
+  box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+  bottom: 5px;
+  left: 15px;
   z-index: -10;
-  filter: grayscale(100%);
 }
 .contact__content__form--icon {
+  display: flex;
+  justify-content: center;
   font-family: "Inspiration", sans-serif;
   color: #1a1614;
   position: relative;
 }
 .contact__content__form--icon:before {
-  width: 85px;
+  width: 30%;
   height: 1px;
-  background: #1a1614;
+  border: 0;
+  background: linear-gradient(90deg, #3e3936 0%, #c6a98b 50%, #efe0cb 100%);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   content: "";
-  left: 40px;
-  top: 15px;
+  left: 12px;
+  top: 30px;
   position: absolute;
 }
 .contact__content__form--icon:after {
-  width: 85px;
+  width: 30%;
   height: 1px;
-  background: #1a1614;
+  background: linear-gradient(90deg, #efe0cb 0%, #c6a98b 50%, #3e3936 100%);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   content: "";
-  right: 40px;
-  top: 15px;
+  right: 12px;
+  top: 30px;
   position: absolute;
 }
 .contact__content__form input, .contact__content__form textarea {
+  border-radius: 5px;
   border: none;
   box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
-  background-color: #c6a98b;
+  background-color: #efe0cb;
   min-width: 242px;
 }
 .contact__content__form input {
@@ -1083,9 +1181,15 @@ img {
 .contact__content__form--button {
   width: 240px;
   height: 40px;
-  background: #1a1614;
+  border: none;
+  border-radius: 2px;
   color: #c6a98b;
+  background: #1a1614;
+  cursor: pointer;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.contact__content__form--button:hover {
+  background-color: #62534b;
 }
 .contact__content__form--button img {
   margin-left: 2rem;
@@ -1093,7 +1197,7 @@ img {
 .contact__button {
   display: flex;
   justify-content: center;
-  margin-bottom: 25px;
+  margin: 55px;
   filter: drop-shadow(2px 4px 6px black);
 }
 .contact__button__dl {
@@ -1110,6 +1214,7 @@ img {
   font-size: inherit;
   position: relative;
   display: inline-block;
+  text-align: center;
 }
 .contact__button__dl::before {
   content: "";

@@ -21,7 +21,7 @@
     @include container;
     @include grid;
     position: relative;
-    // mix-blend-mode: luminosity;
+    z-index: 0;
   }
 
   &__content {
@@ -107,7 +107,7 @@
 
     &__subtitle {
       position: relative;
-      font-size: $h3-font-size;
+      font-size: 16px;
       color: $secondary-color;
       font-weight: $semibold;
       margin-bottom: $mb-0-75;
@@ -116,7 +116,12 @@
       &::before {
         width: 1px;
         height: 100%;
-        background: $secondary-color;
+        background: linear-gradient(
+          360deg,
+          #3e3936 0%,
+          #c6a98b 50%,
+          #efe0cb 100%
+        );
         content: "";
         left: 10px;
         top: 0px;
@@ -130,6 +135,7 @@
       color: $secondary-color;
       text-align: justify;
       text-align-last: justify;
+      font-size: 12px;
     }
 
     &__button {

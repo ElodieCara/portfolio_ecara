@@ -19,12 +19,12 @@ export const dataSkills = [
     description:
       "J'ai commencé en autodidacte, puis j'ai ensuite suivi une formation à distance pour renforcer mes compétences.",
     logos: [
-      { url: "images/logos/css-3.png" },
-      { url: "images/logos/html-5.png" },
-      { url: "images/logos/sass.png" },
-      { url: "images/logos/js.png" },
-      { url: "images/logos/react.png" },
-      { url: "images/logos/vite.svg" },
+      { url: "../images/logos/css-3.png" },
+      { url: "../images/logos/html-5.png" },
+      { url: "../images/logos/sass.png" },
+      { url: "../images/logos/js.png" },
+      { url: "../images/logos/react.png" },
+      { url: "../images/logos/vite.svg" },
     ],
   },
   {
@@ -34,10 +34,10 @@ export const dataSkills = [
     description:
       "Avec une base solide en HTML, CSS et JavaScript, j'ai développé des projets personnels, renforçant mes compétences et ma compréhension des bonnes pratiques de développement, et je suis toujours ouverte à apprendre de nouvelles technologies pour rester à jour.",
     logos: [
-      { url: "images/logos/express.png" },
-      { url: "images/logos/mongodb-icon.png" },
-      { url: "images/logos/node-js.png" },
-      { url: "images/logos/nodemon.svg" },
+      { url: "../../images/logos/express.png" },
+      { url: "../../images/logos/mongodb-icon.png" },
+      { url: "../../images/logos/node-js.png" },
+      { url: "../../images/logos/nodemon.svg" },
     ],
   },
   {
@@ -47,10 +47,10 @@ export const dataSkills = [
     description:
       "Mon objectif est de créer des solutions numériques performantes, esthétiques et conviviales qui répondent aux besoins des utilisateurs, en apportant autonomie, créativité et persévérance dans des projets passionnants.",
     logos: [
-      { url: "images/logos/github.svg" },
-      { url: "images/logos/figma.png" },
-      { url: "images/logos/seo.svg" },
-      { url: "images/logos/postman-icon.svg" },
+      { url: "../images/logos/github.svg" },
+      { url: "../images/logos/figma.png" },
+      { url: "../images/logos/seo.svg" },
+      { url: "../images/logos/postman-icon.svg" },
     ],
   },
   {
@@ -59,7 +59,7 @@ export const dataSkills = [
     title: "Psychologie",
     description:
       "Passionné par la psychologie cognitive et l'ergonomie de conception, motivé à créer des interfaces conviviales et intuitives pour améliorer l'expérience utilisateur, notamment dans les domaines de la pédagogie et des interactions homme-machine.",
-    logos: [{ url: "images/logos/brain.png" }],
+    logos: [{ url: "../images/logos/brain.png" }],
   },
 ];
 
@@ -123,19 +123,19 @@ export const dataDesign = [
       "Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua.",
     date: "01/01/22",
     techno: [
-      { url: "images/logos/react.png", alt: "React" },
+      { url: "../images/logos/react.png", alt: "React" },
 
-      { url: "images/logos/sass.png", alt: "Sass" },
+      { url: "../images/logos/sass.png", alt: "Sass" },
     ],
     link: [
-      { icon: "images/logos/link.svg", url: "", name: "Lien Chez Charlie" },
+      { icon: "../images/logos/link.svg", url: "", name: "Lien Chez Charlie" },
       {
-        icon: "images/logos/github.svg",
+        icon: "../images/logos/github.svg",
         url: "https://github.com/ElodieCara/chez-charlie",
         name: "Code Chez Charlie",
       },
       {
-        icon: "images/logos/figma.png",
+        icon: "../images/logos/figma.png",
         url: "https://www.figma.com/proto/e8oFLY0WbN62cjh2UBH0gr/Chez-Charlie?type=design&scaling=scale-down&page-id=0%3A1&node-id=1-4",
         name: "Prototype Chez Charlie",
       },
@@ -149,23 +149,23 @@ export const dataDesign = [
       "Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua.",
     date: "01/01/22",
     techno: [
-      { url: "images/logos/react.png", alt: "React" },
-      { url: "images/logos/vite.svg", alt: "Vite" },
-      { url: "images/logos/sass.png", alt: "Sass" },
+      { url: "../images/logos/react.png", alt: "React" },
+      { url: "../images/logos/vite.svg", alt: "Vite" },
+      { url: "../images/logos/sass.png", alt: "Sass" },
     ],
     link: [
       {
-        icon: "images/logos/link.svg",
+        icon: "../images/logos/link.svg",
         url: "",
         name: "Lien vers le portfolio",
       },
       {
-        icon: "images/logos/github.svg",
+        icon: "../images/logos/github.svg",
         url: "https://github.com/ElodieCara/portfolio_ecara",
         name: "Code du portfolio",
       },
       {
-        icon: "images/logos/figma.png",
+        icon: "../images/logos/figma.png",
         url: "https://www.figma.com/proto/zpOh34P302zPQ9Ao4AyLRp/MYPORTFOLIO?type=design&node-id=20-2&scaling=min-zoom&page-id=0%3A1",
         name: "Prototype du portfolio",
       },

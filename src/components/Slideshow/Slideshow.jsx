@@ -1,8 +1,9 @@
 import Slider from "react-slick";
-import { dataWorks, dataDesign } from "@/data/data.js";
+import { dataDesign } from "@/data/data.js";
 import PropTypes from "prop-types";
+import { Link } from "react-router-dom";
 
-const Slideshow = ({ activeSection }) => {
+const Slideshow = ({ workId, dataWorks, activeSection }) => {
   const settings = {
     dots: true,
     infinite: true,
@@ -22,7 +23,7 @@ const Slideshow = ({ activeSection }) => {
               <div className="works__card__body">
                 <h3 className="works__card__body__title">{item.title}</h3>
                 <p className="works__card__body__text">{item.description}</p>
-                <button>More</button>
+                <Link to={`/works/${workId[index]}`}>More</Link>
               </div>
             </div>
           </div>
@@ -80,6 +81,8 @@ const Slideshow = ({ activeSection }) => {
 };
 
 Slideshow.propTypes = {
+  workId: PropTypes.arrayOf(PropTypes.number).isRequired,
+  dataWorks: PropTypes.array.isRequired,
   activeSection: PropTypes.string.isRequired,
 };
 
