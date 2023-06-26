@@ -7,9 +7,6 @@
     position: absolute;
     inset: 0;
     z-index: -1000;
-    // opacity: 0.25;
-    // mix-blend-mode: luminosity;
-    // filter: grayscale(1);
     overflow: hidden;
     background-image: linear-gradient(to top, #1a1614, rgba(255, 255, 255, 0)),
       $background-gallery;

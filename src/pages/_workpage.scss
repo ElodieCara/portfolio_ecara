@@ -1,0 +1,69 @@
+.work-page {
+  width: 100%;
+  background-image: linear-gradient(to top, #1a1614, rgba(255, 255, 255, 0)),
+    $background-workPage;
+
+  //   background-size: cover;
+  //   background-position: center;
+  height: 470px;
+
+  &__block {
+    height: 300px;
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+    padding-top: 3.5rem;
+    align-items: flex-start;
+    @include content;
+    z-index: 100;
+    background-color: rgba(30, 26, 23, 0.59);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    & h1 {
+      font-size: 45px;
+      color: $primary-color;
+      margin-bottom: 35px;
+    }
+
+    & p {
+      width: 50%;
+      font-size: 16px;
+    }
+  }
+
+  &__link {
+    @include content;
+    padding-top: 4rem;
+
+    & ul {
+      height: 50px;
+      display: flex;
+      justify-content: space-around;
+      border-bottom: 1px solid $secondary-color;
+
+      & li {
+        height: 100%;
+        flex: 50%;
+        text-align: center;
+
+        &:hover {
+          content: "";
+          display: block;
+          border-bottom: 2px solid $tertiary-color;
+
+          & a {
+            color: $tertiary-color;
+          }
+        }
+      }
+    }
+  }
+
+  &__description {
+    @include content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5rem;
+  }
+}
