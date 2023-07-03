@@ -4,6 +4,7 @@ import Navbar from "../components/NavBar/Navbar";
 import Header from "../layouts/Header/Header";
 import Skills from "../layouts/Skills/Skills";
 import Works from "../layouts/Works/Works";
+import ScrollToTopButton from "../components/ScrollBack/ScrollBack";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
         <Skills />
         <Works />
         <Contact />
+        <ScrollToTopButton />
       </main>
       <footer>
         <Footer />

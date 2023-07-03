@@ -4,16 +4,22 @@ import Design from "@/assets/skills/conception-graphique.png";
 import Brain from "@/assets/skills/cerveau.png";
 import Booki from "@/assets/works/booki.jpg";
 import BookiSite from "@/assets/works/BookiSite.png";
+import BookiLogo from "@/assets/works/logos/Booki.png";
 import Ohmyfood from "@/assets/works/ohmyfood.jpg";
 import OhmyfoodSite from "@/assets/works/OhmyfoodSite.png";
+import OhmyfoodLogo from "@/assets/works/logos/ohmyfood.png";
 import Piquante from "@/assets/works/Piquante.jpg";
 import PiquanteSite from "@/assets/works/PiquanteSite.png";
+import PiquanteLogo from "@/assets/works/logos/piiquante.png";
 import Kanap from "@/assets/works/kanap.png";
 import KanapSite from "@/assets/works/KanapSite.png";
+import KanapLogo from "@/assets/works/logos/Kanap.svg";
 import Kasa from "@/assets/works/kasa.jpg";
 import KasaSite from "@/assets/works/KasaSite.png";
+import KasaLogo from "@/assets/works/logos/Kasa.png";
 import Panthere from "@/assets/works/panthere.jpg";
 import PanthereSite from "@/assets/works/PanthereSite.png";
+import PanthereLogo from "@/assets/works/logos/panthere.png";
 import ChezCharlie from "@/assets/works/ChezCharlie.png";
 import Portfolio from "@/assets/works/portfolio.png";
 
@@ -74,9 +80,11 @@ export const dataWorks = [
     id: 10,
     image: Booki,
     title: "Booki",
+    logo: BookiLogo,
     description:
       "Le premier projet consiste à intégrer une page web en HTML et CSS pour une plateforme de réservation de vacances.",
-    date: "01/01/22",
+    libellé: "Transformer une maquette en site web avec HTML & CSS",
+    date: "23/05/22",
     capture: BookiSite,
     techno: [
       { url: "../images/logos/html-5.png", alt: "Html" },
@@ -105,9 +113,11 @@ export const dataWorks = [
     id: 11,
     image: Ohmyfood,
     title: "Ohmyfood",
+    logo: OhmyfoodLogo,
     description:
       "L'objectif est de mettre en œuvre la version mobile d'un site de foodtech en utilisant des animations CSS. Le site est conçu de manière responsive en suivant l'approche mobile first.",
-    date: "01/01/22",
+    libellé: "Dynamiser une page web avec des animations CSS",
+    date: "10/07/22",
     capture: OhmyfoodSite,
     techno: [
       { url: "../images/logos/html-5.png", alt: "Html" },
@@ -136,9 +146,11 @@ export const dataWorks = [
     id: 12,
     image: Panthere,
     title: "La Panthere",
+    logo: PanthereLogo,
     description:
       "L'objectif est d'améliorer le classement d'un site web dans les résultats de recherche de Google en mettant en œuvre les bonnes pratiques de référencement (SEO).",
-    date: "01/01/22",
+    libellé: "Optimiser un site web existant",
+    date: "09/08/22",
     capture: PanthereSite,
     techno: [{ url: "../images/logos/seo.svg", alt: "Seo" }],
     link: [
@@ -147,7 +159,7 @@ export const dataWorks = [
         name: "Site La Panthere",
       },
     ],
-    gitub: [
+    github: [
       {
         url: "https://github.com/ElodieCara/P4-La_Panthere",
         name: "Code La Panthere",
@@ -158,9 +170,12 @@ export const dataWorks = [
     id: 13,
     image: Piquante,
     title: "Piquante",
+    logo: PiquanteLogo,
     description:
       "Il s'agit de créer le backend et l'API d'une application d'avis gastronomiques de sauces piquantes. De construire la base de données NoSQL, puis de sécuriser les données grâce aux normes de l'OWASP.",
-    date: "01/01/22",
+    libellé:
+      "Construire une API sécurisée pour une application d'avis gastronomiques",
+    date: "25/10/22",
     capture: PiquanteSite,
     techno: [
       { url: "../images/logos/express.svg", alt: "Express" },
@@ -184,17 +199,19 @@ export const dataWorks = [
     id: 14,
     image: Kanap,
     title: "Kanap",
+    logo: KanapLogo,
     description:
       "L'objectif est d'intégrer de manière dynamique les maquettes du site de Kanap avec JavaScript. J'utilise l'API pour récupérer les produits et leurs détails, et je m'occupe également de la gestion l'ajout des produits au panier.",
+    libellé: "Construire un site e-commerce en JavaScript",
     date: "03/10/22",
     capture: KanapSite,
     techno: [{ url: "../images/logos/js.png", alt: "JS" }],
-    link: [
-      {
-        url: "none",
-        name: "none",
-      },
-    ],
+    // link: [
+    //   {
+    //     url: "none",
+    //     name: "none",
+    //   },
+    // ],
     github: [
       {
         url: "https://github.com/ElodieCara/P5-Kanap",
@@ -206,8 +223,10 @@ export const dataWorks = [
     id: 15,
     image: Kasa,
     title: "Kasa",
+    logo: KasaLogo,
     description:
       "J'ai réalisé la mise en œuvre du front-end de Kasa, une application de location de logements, en utilisant React. J'ai développé différents composants pour construire l'interface utilisateur de l'application, et j'ai également configuré les routes de navigation à l'aide de React Router. ",
+    libellé: "Créer une application web de location immobilière avec React",
     date: "17/11/22",
     capture: KasaSite,
     techno: [

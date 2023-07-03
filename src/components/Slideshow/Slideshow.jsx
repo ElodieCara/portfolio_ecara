@@ -15,15 +15,20 @@ const Slideshow = ({ workId, dataWorks, activeSection }) => {
   if (activeSection === "formation") {
     return (
       <Slider {...settings}>
-        {dataWorks.map((item, index) => (
+        {dataWorks?.map((item, index) => (
           <div className="works__card" key={index}>
             <div className="works__card__date">{item.date}</div>
             <div className="works__card__img">
               <img src={item.image} alt={item.title} />
               <div className="works__card__body">
                 <h3 className="works__card__body__title">{item.title}</h3>
-                <p className="works__card__body__text">{item.description}</p>
-                <Link to={`/works/${workId[index]}`}>More</Link>
+                {/* <p className="works__card__body__text">{item.description}</p> */}
+                <Link
+                  className="works__card__body__link"
+                  to={`/works/${workId[index]}`}
+                >
+                  <span> More</span>
+                </Link>
               </div>
             </div>
           </div>
@@ -33,7 +38,7 @@ const Slideshow = ({ workId, dataWorks, activeSection }) => {
   } else if (activeSection === "personnels") {
     return (
       <Slider {...settings}>
-        {dataDesign.map((project, id) => (
+        {dataDesign?.map((project, id) => (
           <div className="projects__card" key={id}>
             <div className="projects__card__img">
               <img src={project.image} alt="" />
