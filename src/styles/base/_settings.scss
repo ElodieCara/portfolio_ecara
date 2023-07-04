@@ -21,6 +21,9 @@ body {
 #root {
   // @include shadow;
   @include bg-shadow;
+  margin: 0 auto;
+  padding: 0;
+  position: relative;
 }
 
 h1,

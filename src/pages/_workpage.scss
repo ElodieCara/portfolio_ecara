@@ -11,8 +11,13 @@
     left: 0;
     width: 100%;
     height: 100%;
-
     z-index: -1;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   &__block {
@@ -24,10 +29,8 @@
     justify-content: space-around;
     padding: 20px;
     flex-direction: column;
-    // padding-top: 3.5rem;
     align-items: flex-start;
     border-radius: 1%;
-    @include content;
     @include img;
     margin-top: 50px !important;
     margin-right: 90px !important;
@@ -35,6 +38,10 @@
     position: relative;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.6);
     background-color: rgba(255, 255, 255, 0.1);
+    @include desktop {
+      margin: 100px 200px !important;
+      padding: 0 auto !important;
+    }
 
     &::after {
       content: "";

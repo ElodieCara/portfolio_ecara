@@ -7,7 +7,7 @@
 }
 
 @mixin tablet {
-  @media screen and (max-width: 960px) {
+  @media screen and (min-width: map-get($breakpoints, tablet)) and (max-width: map-get($breakpoints, desktop)) {
     @content;
   }
 }
@@ -34,7 +34,11 @@
 }
 
 @mixin section {
-  padding: 3rem 0 0rem;
+  // padding: 3rem 0 0rem;
+  width: 1000px;
+  padding: 3.5rem;
+  margin-left: auto;
+  margin-right: auto;
 
   &__title {
     font-size: $h1-font-size;

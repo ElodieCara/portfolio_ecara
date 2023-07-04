@@ -46,32 +46,33 @@ function WorkPage() {
       ></div>
       <header>
         <Navbar />
-
-        <div className="work-page__block">
-          <div className="work-page__menu">
-            {dataWorks.map((work, index) => (
-              <button
-                key={index}
-                onClick={() => handleButtonClick(index)} // Appelle la fonction handleButtonClick avec l'index du bouton cliqué
-                className={`button ${index === active ? "active" : ""} `}
-                // style={{ color: index === active ? "green" : "" }} // Applique la classe "active" si l'ID du travail correspond à l'ID de l'URL
-              >
-                <span
-                  className={`button-number ${
-                    index === active ? "active-number" : "" // Applique la classe "active" si l'ID du travail correspond à l'ID de l'URL
-                  }`}
+        <div className="work-page__container">
+          <div className="work-page__block">
+            <div className="work-page__menu">
+              {dataWorks.map((work, index) => (
+                <button
+                  key={index}
+                  onClick={() => handleButtonClick(index)} // Appelle la fonction handleButtonClick avec l'index du bouton cliqué
+                  className={`button ${index === active ? "active" : ""} `}
+                  // style={{ color: index === active ? "green" : "" }} // Applique la classe "active" si l'ID du travail correspond à l'ID de l'URL
                 >
-                  {String(index + 1).padStart(2, "0")}
-                </span>
-              </button>
-            ))}
-          </div>
-
-          <div className="work-page__block-content">
-            <div className="work-page__block-content__image">
-              <img src={work.logo} alt={work.title} />
+                  <span
+                    className={`button-number ${
+                      index === active ? "active-number" : "" // Applique la classe "active" si l'ID du travail correspond à l'ID de l'URL
+                    }`}
+                  >
+                    {String(index + 1).padStart(2, "0")}
+                  </span>
+                </button>
+              ))}
             </div>
-            <p>{work.libellé}</p>
+
+            <div className="work-page__block-content">
+              <div className="work-page__block-content__image">
+                <img src={work.logo} alt={work.title} />
+              </div>
+              <p>{work.libellé}</p>
+            </div>
           </div>
         </div>
         <div className="work-page__link">

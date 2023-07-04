@@ -1,5 +1,8 @@
 .skills {
-  @include section;
+  @include desktop {
+    @include section;
+  }
+
   // @include shadow;
 
   &__container {

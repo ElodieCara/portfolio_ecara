@@ -1,14 +1,43 @@
+import { useEffect, useState } from "react";
 import Slider from "react-slick";
 import { dataDesign } from "@/data/data.js";
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 
 const Slideshow = ({ workId, dataWorks, activeSection }) => {
+  const [isDesktop, setIsDesktop] = useState(false);
+  const [isTablet, setIsTablet] = useState(false);
+
+  useEffect(() => {
+    const resizeHandler = () => {
+      setIsDesktop(window.innerWidth > 1024);
+      setIsTablet(window.innerWidth <= 1024 && window.innerWidth > 960); // Modifier le point de rupture pour la version tablette
+    };
+
+    if (activeSection === "formation") {
+      resizeHandler();
+      window.addEventListener("resize", resizeHandler);
+    }
+
+    // resizeHandler(); // Appel initial pour définir les valeurs initiales
+    // window.addEventListener("resize", resizeHandler); // Ajouter un écouteur d'événements pour les redimensionnements de fenêtre
+
+    return () => {
+      if (activeSection === "formation") {
+        resizeHandler();
+        window.removeEventListener("resize", resizeHandler); // Supprimer l'écouteur d'événements lors du démontage du composant
+      }
+    };
+  }, [activeSection]);
+
+  const slidesToShow =
+    isDesktop && activeSection === "formation" ? 3 : isTablet ? 2 : 1;
+
   const settings = {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 1,
+    slidesToShow: slidesToShow,
     slidesToScroll: 1,
   };
 

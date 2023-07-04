@@ -1,16 +1,23 @@
 .scroll-to-top-button {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  padding: 10px 20px;
-  background-color: #333;
-  color: #fff;
-  border: none;
-  cursor: pointer;
-  opacity: 0;
-  transition: opacity 0.3s;
+  visibility: hidden;
 }
 
-.scroll-to-top-button.visible {
-  opacity: 1;
+@include desktop {
+  .scroll-to-top-button {
+    visibility: visible;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.3s;
+
+    &.visible {
+      opacity: 1;
+    }
+  }
 }

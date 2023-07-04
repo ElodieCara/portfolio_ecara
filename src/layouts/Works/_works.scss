@@ -1,5 +1,7 @@
 .works {
-  @include section;
+  @include desktop {
+    @include section;
+  }
 
   &__container {
     @include container;
@@ -63,5 +65,11 @@
     margin-left: auto;
     margin-right: auto;
     width: 23em;
+    @include desktop {
+      width: 100%;
+    }
+    @include tablet {
+      width: 100%;
+    }
   }
 }

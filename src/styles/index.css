@@ -49,6 +49,9 @@ body {
 
 #root {
   background-color: rgba(30, 26, 23, 0.59);
+  margin: 0 auto;
+  padding: 0;
+  position: relative;
 }
 
 h1,
@@ -82,22 +85,27 @@ img {
 }
 
 .scroll-to-top-button {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  padding: 10px 20px;
-  background-color: #333;
-  color: #fff;
-  border: none;
-  cursor: pointer;
-  opacity: 0;
-  transition: opacity 0.3s;
+  visibility: hidden;
 }
 
-.scroll-to-top-button.visible {
-  opacity: 1;
+@media screen and (min-width: 1200px) {
+  .scroll-to-top-button {
+    visibility: visible;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  .scroll-to-top-button.visible {
+    opacity: 1;
+  }
 }
-
 .icon {
   position: absolute;
   top: -45px;
@@ -256,7 +264,7 @@ svg:hover path {
   display: none;
 }
 
-@media screen and (max-width: 960px) {
+@media screen and (min-width: 860px) and (max-width: 1200px) {
   .scroll {
     width: 3%;
   }
@@ -287,6 +295,15 @@ svg:hover path {
     opacity: 0;
   }
 }
+@media screen and (min-width: 1200px) {
+  .flip-card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 4rem;
+  }
+}
+
 .card {
   padding: 1.5rem;
   margin-bottom: 4rem;
@@ -403,6 +420,11 @@ svg:hover path {
   background-color: #c6a98b; /* Couleur de la piste de la scrollbar */
 }
 
+.slick-list {
+  margin-left: 50px;
+  text-align: center;
+}
+
 .slick-dots li button::before {
   color: #c6a98b !important;
 }
@@ -417,9 +439,15 @@ svg:hover path {
   height: 200px;
   border: 4px solid #c6a98b;
   position: relative;
-  margin: 30px !important;
-  margin-left: 70px !important;
+  margin-top: 30px !important;
+  gap: 2rem;
   filter: drop-shadow(2px 4px 6px black);
+}
+@media screen and (min-width: 1200px) {
+  .works__card {
+    margin: 30px !important;
+    width: 200px !important;
+  }
 }
 .works__card::after {
   content: "";
@@ -609,7 +637,7 @@ svg:hover path {
 .projects__card__body__link {
   display: none;
 }
-@media screen and (max-width: 960px) {
+@media screen and (min-width: 860px) and (max-width: 1200px) {
   .projects__card__body__link__link {
     display: flex;
     flex-wrap: wrap;
@@ -636,6 +664,7 @@ svg:hover path {
   display: flex;
   background: transparent;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background-color: rgba(30, 26, 23, 0.59);
   justify-content: center;
   align-items: center;
   font-size: 1.2rem;
@@ -647,44 +676,44 @@ svg:hover path {
   display: flex;
   width: 100%;
   height: 100%;
+  justify-content: space-around;
+  width: 1400px;
+  margin: 0 auto;
+  padding: 0 auto;
 }
 .navbar .nav__logo {
   align-items: center;
   cursor: pointer;
   text-decoration: none;
   font-size: 2rem;
-  flex-grow: 1;
-}
-.navbar .nav__logo {
-  background-color: rgba(30, 26, 23, 0.59);
 }
 .navbar .nav--menu {
   display: flex;
-  list-style: none;
-  text-align: center;
-  margin-right: 2rem;
+  flex-direction: column;
+  width: 100%;
+  border-top: 1pxsolid #fff;
+  position: absolute;
+  top: 80px;
+  left: -110%;
+  opacity: 1;
+  transition: all 0.5s ease;
 }
-@media screen and (max-width: 960px) {
+@media screen and (min-width: 1200px) {
   .navbar .nav--menu {
     display: flex;
-    flex-direction: column;
-    width: 100%;
-    border-top: 1pxsolid #fff;
-    position: absolute;
-    top: 80px;
-    left: -110%;
+    flex-direction: row;
+    width: auto;
+    position: static;
     opacity: 1;
-    transition: all 0.5s ease;
+    transition: none;
   }
 }
-@media screen and (max-width: 960px) and (max-width: 960px) {
-  .navbar .nav--menu.active {
-    background: #1a1614;
-    left: 0px;
-    opacity: 1;
-    transition: all 0.5s ease;
-    z-index: 1;
-  }
+.navbar .nav--menu.active {
+  background: #1a1614;
+  left: 0px;
+  opacity: 1;
+  transition: all 0.5s ease;
+  z-index: 1;
 }
 .navbar .nav--menu__item {
   line-height: 40px;
@@ -703,13 +732,13 @@ svg:hover path {
   background: linear-gradient(90deg, #efe0cb 0%, #c6a98b 50%, #1a1614 100%);
 }
 .navbar .nav--menu__item .active {
-  color: #efe0cb;
-  border-bottom: 3px solid #efe0cb;
+  color: #c6a98b;
+  border: none;
 }
-@media screen and (max-width: 960px) {
+@media screen and (min-width: 1200px) {
   .navbar .nav--menu__item .active {
-    color: #c6a98b;
-    border: none;
+    color: #efe0cb;
+    border-bottom: 3px solid #efe0cb;
   }
 }
 .navbar .nav--menu__item__links {
@@ -718,7 +747,7 @@ svg:hover path {
   height: 100%;
   border-bottom: 3px solid transparent;
 }
-@media screen and (max-width: 960px) {
+@media screen and (min-width: 860px) and (max-width: 1200px) {
   .navbar .nav--menu__item__links {
     padding: 0.5rem;
     width: 100%;
@@ -726,18 +755,18 @@ svg:hover path {
   }
 }
 .navbar .nav--menu__icon {
-  display: none;
-  color: #c6a98b;
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(-100%, 60%);
+  font-size: 1.8rem;
+  cursor: pointer;
 }
-@media screen and (max-width: 960px) {
+@media screen and (min-width: 1200px) {
   .navbar .nav--menu__icon {
-    display: block;
-    position: absolute;
-    top: 0;
-    right: 0;
-    transform: translate(-100%, 60%);
-    font-size: 1.8rem;
-    cursor: pointer;
+    display: none;
+    color: #c6a98b;
   }
 }
 .navbar .nav--social {
@@ -747,35 +776,36 @@ svg:hover path {
   .navbar .nav--social {
     display: flex;
     flex-direction: column;
-    top: 20%;
+    top: 30%;
     left: 0;
     position: fixed;
+    z-index: 9;
   }
   .navbar .nav--social__link {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 0.1rem;
     list-style: none;
     margin: 0;
     padding: 0;
   }
   .navbar .nav--social__link::after {
-    width: 2px;
+    width: 1px;
     height: 30%;
     background: #c6a98b;
     content: "";
     left: 100px;
-    bottom: 275px;
+    bottom: 200px;
     position: absolute;
     transition: all 0.5s;
   }
   .navbar .nav--social__link::before {
-    width: 2px;
+    width: 1px;
     height: 100%;
     background: #c6a98b;
     content: "";
     left: 100px;
-    top: 275px;
+    top: 200px;
     position: absolute;
     transition: all 0.5s;
   }
@@ -843,16 +873,25 @@ svg:hover path {
 }
 
 .home {
-  padding: 3rem 0 0rem;
   padding: 20px !important;
+  margin-left: auto;
+  margin-right: auto;
 }
-.home__title {
-  font-size: 1.5rem;
-}
-.home__subtitle {
-  display: block;
-  font-size: 0.813ezm;
-  margin-bottom: 3rem;
+@media screen and (min-width: 1200px) {
+  .home {
+    width: 1000px;
+    padding: 3.5rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .home__title {
+    font-size: 1.5rem;
+  }
+  .home__subtitle {
+    display: block;
+    font-size: 0.813ezm;
+    margin-bottom: 3rem;
+  }
 }
 .home::after {
   content: "";
@@ -883,6 +922,13 @@ svg:hover path {
   background-color: rgba(30, 26, 23, 0.59);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
+@media screen and (min-width: 1200px) {
+  .home__content {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding: 3.5rem;
+  }
+}
 .home__photo {
   color: #efe0cb;
   background: none;
@@ -897,6 +943,11 @@ svg:hover path {
   transition: transform 200ms ease-out;
   width: 175px;
   text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .home__photo {
+    height: 90%;
+  }
 }
 .home__photo img {
   max-width: none;
@@ -923,6 +974,11 @@ svg:hover path {
 }
 .home__data {
   padding: 3rem;
+}
+@media screen and (min-width: 1200px) {
+  .home__data {
+    flex-basis: 70%;
+  }
 }
 .home__data__presentation {
   display: flex;
@@ -1011,16 +1067,21 @@ svg:hover path {
   height: 100%;
 }
 
-.skills {
-  padding: 3rem 0 0rem;
-}
-.skills__title {
-  font-size: 1.5rem;
-}
-.skills__subtitle {
-  display: block;
-  font-size: 0.813ezm;
-  margin-bottom: 3rem;
+@media screen and (min-width: 1200px) {
+  .skills {
+    width: 1000px;
+    padding: 3.5rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .skills__title {
+    font-size: 1.5rem;
+  }
+  .skills__subtitle {
+    display: block;
+    font-size: 0.813ezm;
+    margin-bottom: 3rem;
+  }
 }
 .skills__container {
   display: flex;
@@ -1045,16 +1106,21 @@ svg:hover path {
   padding-top: 3.5rem;
 }
 
-.works {
-  padding: 3rem 0 0rem;
-}
-.works__title {
-  font-size: 1.5rem;
-}
-.works__subtitle {
-  display: block;
-  font-size: 0.813ezm;
-  margin-bottom: 3rem;
+@media screen and (min-width: 1200px) {
+  .works {
+    width: 1000px;
+    padding: 3.5rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .works__title {
+    font-size: 1.5rem;
+  }
+  .works__subtitle {
+    display: block;
+    font-size: 0.813ezm;
+    margin-bottom: 3rem;
+  }
 }
 .works__container {
   display: flex;
@@ -1109,17 +1175,32 @@ svg:hover path {
   margin-right: auto;
   width: 23em;
 }
+@media screen and (min-width: 1200px) {
+  .works__content {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 860px) and (max-width: 1200px) {
+  .works__content {
+    width: 100%;
+  }
+}
 
-.contact {
-  padding: 3rem 0 0rem;
-}
-.contact__title {
-  font-size: 1.5rem;
-}
-.contact__subtitle {
-  display: block;
-  font-size: 0.813ezm;
-  margin-bottom: 3rem;
+@media screen and (min-width: 1200px) {
+  .contact {
+    width: 1000px;
+    padding: 3.5rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .contact__title {
+    font-size: 1.5rem;
+  }
+  .contact__subtitle {
+    display: block;
+    font-size: 0.813ezm;
+    margin-bottom: 3rem;
+  }
 }
 .contact__container {
   display: flex;
@@ -1135,13 +1216,20 @@ svg:hover path {
   color: #c6a98b;
   text-align: left;
 }
-.contact__title {
+@media screen and (min-width: 1200px) {
+  .contact__contenu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+.contact__contenu__title {
   display: grid;
   gap: 1.5rem;
   justify-content: center;
   padding-top: 15px;
 }
-.contact__title h3 {
+.contact__contenu__title h3 {
   text-align: center;
   color: #c6a98b;
   font-size: 20px;
@@ -1149,28 +1237,36 @@ svg:hover path {
   height: 35px;
   border-bottom: 2px solid #c6a98b;
 }
-.contact__title p {
+.contact__contenu__title p {
   font-size: 18px;
 }
-.contact__infos-contact {
+.contact__contenu__infos-contact {
   font-size: 14px;
   padding-left: 55px;
   padding-right: 55px;
   margin: 25px;
 }
-.contact__infos-contact li {
+@media screen and (min-width: 1200px) {
+  .contact__contenu__infos-contact {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    margin-left: 0;
+  }
+}
+.contact__contenu__infos-contact li {
   display: grid;
 }
-.contact__infos-contact li span {
+.contact__contenu__infos-contact li span {
   display: inline;
 }
-.contact__infos-contact li span a {
+.contact__contenu__infos-contact li span a {
   margin-right: 15px;
   padding: 0.2rem;
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 5%;
 }
-.contact__content {
+.contact__contenu__content {
   position: relative;
   min-width: 280px;
   min-height: 365px;
@@ -1181,21 +1277,20 @@ svg:hover path {
   align-items: center;
   filter: drop-shadow(2px 4px 6px black);
 }
-.contact__content__form {
+.contact__contenu__content__form {
   display: grid;
   gap: 1.5rem;
   justify-content: center;
   padding: 5px;
   margin-top: 25px;
-  background: rgba(255, 255, 255, 0.1);
   border: 1px solid #c6a98b;
   box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
   position: relative;
-  background-color: rgba(255, 255, 255, 0.412);
+  background-color: rgb(54, 75, 74);
   min-width: 280px;
   min-height: 365px;
 }
-.contact__content__form::after {
+.contact__contenu__content__form::after {
   content: "";
   position: absolute;
   min-width: 280px;
@@ -1207,14 +1302,14 @@ svg:hover path {
   left: 15px;
   z-index: -10;
 }
-.contact__content__form--icon {
+.contact__contenu__content__form--icon {
   display: flex;
   justify-content: center;
   font-family: "Inspiration", sans-serif;
   color: #1a1614;
   position: relative;
 }
-.contact__content__form--icon:before {
+.contact__contenu__content__form--icon:before {
   width: 30%;
   height: 1px;
   border: 0;
@@ -1225,7 +1320,7 @@ svg:hover path {
   top: 30px;
   position: absolute;
 }
-.contact__content__form--icon:after {
+.contact__contenu__content__form--icon:after {
   width: 30%;
   height: 1px;
   background: linear-gradient(90deg, #efe0cb 0%, #c6a98b 50%, #3e3936 100%);
@@ -1235,23 +1330,23 @@ svg:hover path {
   top: 30px;
   position: absolute;
 }
-.contact__content__form input, .contact__content__form textarea {
+.contact__contenu__content__form input, .contact__contenu__content__form textarea {
   border-radius: 5px;
   border: none;
   box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
   background-color: #efe0cb;
   min-width: 242px;
 }
-.contact__content__form input {
+.contact__contenu__content__form input {
   min-height: 35px;
 }
-.contact__content__form textarea {
+.contact__contenu__content__form textarea {
   min-height: 50px;
 }
-.contact__content__form--control {
+.contact__contenu__content__form--control {
   color: #c6a98b;
 }
-.contact__content__form--button {
+.contact__contenu__content__form--button {
   width: 240px;
   height: 40px;
   border: none;
@@ -1261,10 +1356,10 @@ svg:hover path {
   cursor: pointer;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-.contact__content__form--button:hover {
+.contact__contenu__content__form--button:hover {
   background-color: #62534b;
 }
-.contact__content__form--button img {
+.contact__contenu__content__form--button img {
   margin-left: 2rem;
 }
 .contact__button {
@@ -1272,6 +1367,13 @@ svg:hover path {
   justify-content: center;
   margin: 55px;
   filter: drop-shadow(2px 4px 6px black);
+}
+@media screen and (min-width: 1200px) {
+  .contact__button {
+    position: relative;
+    top: -185px;
+    left: -205px;
+  }
 }
 .contact__button__dl {
   width: 155px;
@@ -1342,6 +1444,11 @@ svg:hover path {
   height: 100%;
   z-index: -1;
 }
+.work-page__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .work-page__block {
   width: auto;
   max-width: 500px;
@@ -1353,7 +1460,6 @@ svg:hover path {
   flex-direction: column;
   align-items: flex-start;
   border-radius: 1%;
-  margin: 20px !important;
   width: 50%;
   height: 50%;
   border: 5px solid #c6a98b;
@@ -1372,6 +1478,12 @@ svg:hover path {
   left: 0;
   width: 100%;
   height: 100%;
+}
+@media screen and (min-width: 1200px) {
+  .work-page__block {
+    margin: 100px 200px !important;
+    padding: 0 auto !important;
+  }
 }
 .work-page__block::after {
   content: "";
