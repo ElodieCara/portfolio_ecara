@@ -3,8 +3,13 @@
   padding: 20px !important;
   margin-left: auto;
   margin-right: auto;
+  @include tablet {
+    // @include section;
+    padding: 5rem !important;
+  }
   @include desktop {
     @include section;
+    padding: 5rem !important;
   }
 
   &::after {
@@ -39,6 +44,11 @@
       justify-content: space-between;
       padding: 3.5rem;
     }
+    @include tablet {
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      padding: 3.5rem;
+    }
   }
 
   &__photo {
@@ -58,6 +68,9 @@
     text-align: center;
     @include desktop {
       height: 90%;
+    }
+    @include tablet {
+      width: none;
     }
 
     & img {
@@ -99,6 +112,9 @@
   &__data {
     padding: 3rem;
     @include desktop {
+      flex-basis: 70%;
+    }
+    @include tablet {
       flex-basis: 70%;
     }
 

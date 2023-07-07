@@ -5,18 +5,20 @@ import Header from "../layouts/Header/Header";
 import Skills from "../layouts/Skills/Skills";
 import Works from "../layouts/Works/Works";
 import ScrollToTopButton from "../components/ScrollBack/ScrollBack";
+import NavSocial from "../components/NavBar/NavSocial";
 
 export default function Home() {
   return (
     <>
-      <header className="header" id="header">
+      <header>
         <Navbar />
-        <Header />
+        <Header className="header" id="header" />
+        <NavSocial />
       </header>
       <main>
-        <Skills />
-        <Works />
-        <Contact />
+        <Skills id="skills" />
+        <Works id="works" />
+        <Contact id="contact" />
         <ScrollToTopButton />
       </main>
       <footer>

@@ -19,7 +19,7 @@ import KasaSite from "@/assets/works/KasaSite.png";
 import KasaLogo from "@/assets/works/logos/Kasa.png";
 import Panthere from "@/assets/works/panthere.jpg";
 import PanthereSite from "@/assets/works/PanthereSite.png";
-import PanthereLogo from "@/assets/works/logos/panthere.png";
+import PanthereLogo from "@/assets/works/logos/panthere.svg";
 import ChezCharlie from "@/assets/works/ChezCharlie.png";
 import Portfolio from "@/assets/works/portfolio.png";
 
@@ -31,12 +31,12 @@ export const dataSkills = [
     description:
       "J'ai commencé en autodidacte, puis j'ai ensuite suivi une formation à distance pour renforcer mes compétences.",
     logos: [
-      { url: "../images/logos/css-3.png" },
-      { url: "../images/logos/html-5.png" },
-      { url: "../images/logos/sass.png" },
-      { url: "../images/logos/js.png" },
-      { url: "../images/logos/react.png" },
-      { url: "../images/logos/vite.svg" },
+      { url: "/images/logos/css-3.png" },
+      { url: "/images/logos/html-5.png" },
+      { url: "/images/logos/sass.png" },
+      { url: "/images/logos/js.png" },
+      { url: "/images/logos/react.png" },
+      { url: "/images/logos/vite.svg" },
     ],
   },
   {
@@ -46,10 +46,10 @@ export const dataSkills = [
     description:
       "Avec une base solide en HTML, CSS et JavaScript, j'ai développé des projets personnels, renforçant mes compétences et ma compréhension des bonnes pratiques de développement, et je suis toujours ouverte à apprendre de nouvelles technologies pour rester à jour.",
     logos: [
-      { url: "../../images/logos/express.png" },
-      { url: "../../images/logos/mongodb-icon.png" },
-      { url: "../../images/logos/node-js.png" },
-      { url: "../../images/logos/nodemon.svg" },
+      { url: "/images/logos/express.png" },
+      { url: "/images/logos/mongodb-icon.png" },
+      { url: "/images/logos/node-js.png" },
+      { url: "/images/logos/nodemon.svg" },
     ],
   },
   {
@@ -59,10 +59,10 @@ export const dataSkills = [
     description:
       "Mon objectif est de créer des solutions numériques performantes, esthétiques et conviviales qui répondent aux besoins des utilisateurs, en apportant autonomie, créativité et persévérance dans des projets passionnants.",
     logos: [
-      { url: "../images/logos/github.svg" },
-      { url: "../images/logos/figma.png" },
-      { url: "../images/logos/seo.svg" },
-      { url: "../images/logos/postman-icon.svg" },
+      { url: "/images/logos/github.svg" },
+      { url: "/images/logos/figma.png" },
+      { url: "/images/logos/seo.svg" },
+      { url: "/images/logos/postman-icon.svg" },
     ],
   },
   {
@@ -71,7 +71,7 @@ export const dataSkills = [
     title: "Psychologie",
     description:
       "Passionné par la psychologie cognitive et l'ergonomie de conception, motivé à créer des interfaces conviviales et intuitives pour améliorer l'expérience utilisateur, notamment dans les domaines de la pédagogie et des interactions homme-machine.",
-    logos: [{ url: "../images/logos/brain.png" }],
+    logos: [{ url: "/images/logos/brain.png" }],
   },
 ];
 
@@ -82,7 +82,7 @@ export const dataWorks = [
     title: "Booki",
     logo: BookiLogo,
     description:
-      "Le premier projet consiste à intégrer une page web en HTML et CSS pour une plateforme de réservation de vacances.",
+      "Intégration d'une page web en HTML et CSS pour une plateforme de réservation de vacances.",
     libellé: "Transformer une maquette en site web avec HTML & CSS",
     date: "23/05/22",
     capture: BookiSite,
@@ -115,7 +115,7 @@ export const dataWorks = [
     title: "Ohmyfood",
     logo: OhmyfoodLogo,
     description:
-      "L'objectif est de mettre en œuvre la version mobile d'un site de foodtech en utilisant des animations CSS. Le site est conçu de manière responsive en suivant l'approche mobile first.",
+      "La version mobile d'un site de foodtech en utilisant des animations CSS. Le site est conçu de manière responsive en suivant l'approche mobile first.",
     libellé: "Dynamiser une page web avec des animations CSS",
     date: "10/07/22",
     capture: OhmyfoodSite,
@@ -148,7 +148,7 @@ export const dataWorks = [
     title: "La Panthere",
     logo: PanthereLogo,
     description:
-      "L'objectif est d'améliorer le classement d'un site web dans les résultats de recherche de Google en mettant en œuvre les bonnes pratiques de référencement (SEO).",
+      "L'objectif est d'améliorer le classement d'un site web dans les résultats de recherche de Google.",
     libellé: "Optimiser un site web existant",
     date: "09/08/22",
     capture: PanthereSite,
@@ -172,7 +172,7 @@ export const dataWorks = [
     title: "Piquante",
     logo: PiquanteLogo,
     description:
-      "Il s'agit de créer le backend et l'API d'une application d'avis gastronomiques de sauces piquantes. De construire la base de données NoSQL, puis de sécuriser les données grâce aux normes de l'OWASP.",
+      "Création du backend de l'API d'une application d'avis gastronomiques de sauces piquantes.",
     libellé:
       "Construire une API sécurisée pour une application d'avis gastronomiques",
     date: "25/10/22",
@@ -201,7 +201,7 @@ export const dataWorks = [
     title: "Kanap",
     logo: KanapLogo,
     description:
-      "L'objectif est d'intégrer de manière dynamique les maquettes du site de Kanap avec JavaScript. J'utilise l'API pour récupérer les produits et leurs détails, et je m'occupe également de la gestion l'ajout des produits au panier.",
+      "Lintégrer de manière dynamique les maquettes du site de Kanap avec JavaScript.",
     libellé: "Construire un site e-commerce en JavaScript",
     date: "03/10/22",
     capture: KanapSite,
@@ -225,7 +225,7 @@ export const dataWorks = [
     title: "Kasa",
     logo: KasaLogo,
     description:
-      "J'ai réalisé la mise en œuvre du front-end de Kasa, une application de location de logements, en utilisant React. J'ai développé différents composants pour construire l'interface utilisateur de l'application, et j'ai également configuré les routes de navigation à l'aide de React Router. ",
+      "Mise en œuvre du front-end de Kasa, application de location de logements, en utilisant React.",
     libellé: "Créer une application web de location immobilière avec React",
     date: "17/11/22",
     capture: KasaSite,

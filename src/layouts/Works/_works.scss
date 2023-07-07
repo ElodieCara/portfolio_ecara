@@ -66,10 +66,10 @@
     margin-right: auto;
     width: 23em;
     @include desktop {
-      width: 100%;
+      width: 95%;
     }
     @include tablet {
-      width: 100%;
+      width: 80%;
     }
   }
 }

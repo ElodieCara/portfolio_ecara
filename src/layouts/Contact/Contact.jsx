@@ -17,6 +17,16 @@ const ContactForm = () => {
       message: message.value,
     };
     console.log(conFom);
+    // Ajoutez ici votre logique supplémentaire après la soumission du formulaire
+
+    // Réinitialiser les champs du formulaire
+    e.target.reset();
+
+    // Afficher un message de succès ou effectuer d'autres actions
+    // ...
+
+    // Mettre à jour l'état du formulaire
+    setFormStatus("Send");
   };
 
   // useEffect(() => {});

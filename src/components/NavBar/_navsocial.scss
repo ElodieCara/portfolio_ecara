@@ -1,0 +1,80 @@
+// === Nav Social-Icon ===
+
+.nav--social {
+  display: none;
+}
+
+@include desktop {
+  .nav--social {
+    display: flex;
+    width: 100%;
+    // height: 100vh;
+    top: 10%;
+    left: 0%;
+    position: absolute;
+    z-index: 10;
+
+    &__link {
+      display: flex;
+      flex-direction: column;
+      gap: 0.1rem;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+
+      &::after {
+        width: 1px;
+        height: 50%;
+        background: linear-gradient(
+          360deg,
+          $primary-color 0%,
+          $secondary-color 50%,
+          $tertiary-color 100%
+        );
+        content: "";
+        left: 100px;
+        bottom: 200px;
+        position: absolute;
+        transition: all 0.5s;
+      }
+
+      &::before {
+        width: 1px;
+        height: 50%;
+        background: linear-gradient(
+          180deg,
+          $primary-color 0%,
+          $secondary-color 50%,
+          $tertiary-color 100%
+        );
+        content: "";
+        left: 100px;
+        top: 200px;
+        position: absolute;
+        transition: all 0.5s;
+      }
+
+      &__icon {
+        width: 160px;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 20px;
+        cursor: pointer;
+        padding-left: 1rem;
+        padding-right: 1rem;
+
+        // &:hover {
+        //   // margin-left: -10px;
+        // }
+
+        &--logo {
+          // position: relative;
+          // top: 555px;
+          align-items: center;
+        }
+      }
+    }
+  }
+}

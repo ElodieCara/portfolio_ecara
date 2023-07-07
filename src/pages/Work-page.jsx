@@ -7,7 +7,7 @@ import Lien from "../../public/images/logos/link.svg";
 import Navbar from "../components/NavBar/Navbar";
 import Footer from "../components/Footer/Footer";
 import ScrollToTopButton from "../components/ScrollBack/ScrollBack";
-import { Branche, Feuille } from "../components/Icon/Icon";
+// import { Branche, Feuille } from "../components/Icon/Icon";
 
 function WorkPage() {
   const { id } = useParams(); // Récupère l'ID du travail depuis l'URL
@@ -35,15 +35,7 @@ function WorkPage() {
 
   return (
     <div className="work-page">
-      <div
-        className="work-page__background"
-        style={{
-          backgroundImage: `linear-gradient(to top, #1a1614, rgba(25, 245, 255, 0)), url(${work.image})`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          backgroundRepeat: "no-repeat",
-        }}
-      ></div>
+      <div className="work-page__background"></div>
       <header>
         <Navbar />
         <div className="work-page__container">
@@ -67,11 +59,33 @@ function WorkPage() {
               ))}
             </div>
 
-            <div className="work-page__block-content">
-              <div className="work-page__block-content__image">
-                <img src={work.logo} alt={work.title} />
+            <div
+              className="work-page__block-content"
+              style={{
+                backgroundImage: `radial-gradient(
+        farthest-side at 0 0,
+        rgba(49, 42, 43, 0.3),
+        rgba(255, 26, 198, 0)
+      ),
+      radial-gradient(
+        farthest-side at  100% 100%,
+        rgba(198, 169, 139),
+        rgba(60, 221, 221, 0)
+      ),
+      radial-gradient(
+        farthest-side at 50% 50%,
+        rgba(82, 224, 196, 0),
+        rgb(26, 22, 20)
+      ), url(${work.image})`,
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+                backgroundRepeat: "no-repeat",
+              }}
+            >
+              <div className="work-page__block-content__title">
+                {work.title}
               </div>
-              <p>{work.libellé}</p>
+              {/* <p>{work.libellé}</p> */}
             </div>
           </div>
         </div>
@@ -129,7 +143,11 @@ function WorkPage() {
       <main>
         <div className="work-page__description">
           <div className="work-page__description__content">
-            <h3 className="work-page__description__title">{work.title}</h3>
+            <h3 className="work-page__description__title">
+              <div className="work-page__block-content__image">
+                <img src={work.logo} alt={work.title} />
+              </div>
+            </h3>
 
             <hr className="border-title" />
             <div className="work-page__description__techno">
@@ -137,13 +155,12 @@ function WorkPage() {
                 <img src={techno.url} key={id} alt={techno.alt} />
               ))}
             </div>
-
+            <div className="work-page__description__img">
+              <img src={work.capture} alt="" />
+            </div>
             <article className="work-page__description__texte">
               {work.description}
             </article>
-            <div className="work-page__description__img">
-              <img src={work.capture} alt="" width={200} />
-            </div>
           </div>
           <ScrollToTopButton />
         </div>

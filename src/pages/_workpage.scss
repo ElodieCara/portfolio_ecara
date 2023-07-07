@@ -4,6 +4,10 @@
   height: 100vh;
   //   background: linear-gradient(to top, #1a1614, rgba(25, 245, 255, 0));
   position: relative;
+  @include desktop {
+    display: flex;
+    flex-direction: row;
+  }
 
   &__background {
     position: absolute;
@@ -21,46 +25,71 @@
   }
 
   &__block {
-    width: auto;
-    max-width: 500px;
-    min-width: 300px;
-    height: 300px;
-    display: flex;
-    justify-content: space-around;
-    padding: 20px;
-    flex-direction: column;
-    align-items: flex-start;
-    border-radius: 1%;
-    @include img;
-    margin-top: 50px !important;
-    margin-right: 90px !important;
-    z-index: 100;
-    position: relative;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.6);
-    background-color: rgba(255, 255, 255, 0.1);
-    @include desktop {
-      margin: 100px 200px !important;
-      padding: 0 auto !important;
-    }
+    // display: flex;
+    // flex-direction: row;
+    // flex-wrap: wrap;
+    // justify-content: space-around;
+    width: 100%;
+    height: 100%;
+    // position: relative;
+    isolation: isolate;
+
+    // height: 500px;
+    // width: auto;
+    // max-width: 500px;
+    // min-width: 300px;
+    // height: 300px;
+    // display: flex;
+    // justify-content: space-around;
+    // padding: 20px;
+    // flex-direction: column;
+    // align-items: flex-start;
+    // border-radius: 1%;
+    // @include img;
+    // margin-top: 50px !important;
+    // margin-right: 90px !important;
+    // z-index: 100;
+    // position: relative;
+    // box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.6);
+    // background-color: rgba(255, 255, 255, 0.1);
+    // @include desktop {
+    //   margin: 100px 200px !important;
+    //   padding: 0 auto !important;
+    // }
 
     &::after {
       content: "";
       position: absolute;
-      width: 100%;
+      inset: 0;
+      // opacity: 0.25;
+      filter: grayscale(0);
+      opacity: 0.25;
+      width: 120%;
       height: 100%;
-      border: 4px solid $secondary-color;
+      // border: 3px solid $secondary-color;
       opacity: 0.4;
-      transform: rotate(-8deg);
+      // transform: rotate(-8deg);
+      background-image: radial-gradient(
+          farthest-side at 0 0,
+          rgba(49, 42, 43, 0.3),
+          rgba(255, 26, 198, 0)
+        ),
+        radial-gradient(
+          farthest-side at 100% 0,
+          rgb(198, 169, 139),
+          rgba(60, 221, 221, 0)
+        ),
+        radial-gradient(
+          farthest-side at 50% 0,
+          rgba(82, 224, 196, 0),
+          rgb(26, 22, 20)
+        );
       // top: -33px;
       left: 0px;
       background: url("@/assets/Logo.png") center/cover no-repeat;
       z-index: -10;
       backface-visibility: hidden;
       filter: drop-shadow(2px 4px 6px black);
-    }
-
-    &__branche {
-      position: relative;
     }
 
     & h1 {
@@ -72,15 +101,34 @@
     &-content {
       display: grid;
       justify-items: start;
+
       gap: 2rem;
       overflow: hidden;
-      max-width: 100%;
-      min-width: 400px;
-      min-height: 200px;
+      // width: 100%;
+      // max-width: 100%;
+      // min-width: 400px;
+      min-height: 400px;
+
+      @include desktop {
+        display: flex;
+      }
+
+      &__title {
+        font-size: 55px;
+        color: $tertiary-color;
+        margin: 2rem;
+      }
 
       &__image {
-        width: 100px;
-        height: 100px;
+        display: flex;
+        margin-top: 2rem;
+        justify-content: center;
+        align-items: center;
+        width: 200px;
+
+        @include desktop {
+          max-width: 20%;
+        }
       }
 
       & p {
@@ -94,7 +142,10 @@
     display: flex;
     flex-direction: column;
     position: absolute;
-    right: -40px;
+    right: 60px;
+    bottom: 600px;
+    @include desktop {
+    }
 
     button {
       cursor: pointer;
@@ -109,6 +160,7 @@
 
       & span {
         color: $tertiary-color;
+        font-size: 20px;
 
         &.active-number {
           background-image: linear-gradient(to top, #00c3ff, #77e190, #ffff1c);
@@ -117,17 +169,17 @@
           -webkit-text-fill-color: transparent;
           transition: transform 0.3s ease;
 
-          &::before {
-            width: 1px;
-            height: 100%;
-            background: linear-gradient(360deg, #00c3ff, #77e190, #ffff1c);
-            content: "";
-            left: 25px;
-            top: 0px;
-            transform: rotate(90deg);
-            position: absolute;
-            transition: width 0.7s ease, background-color 0.5s ease;
-          }
+          // &::before {
+          //   width: 1px;
+          //   height: 100%;
+          //   background: linear-gradient(360deg, #00c3ff, #77e190, #ffff1c);
+          //   content: "";
+          //   left: 35px;
+          //   top: 0px;
+          //   transform: rotate(90deg);
+          //   position: absolute;
+          //   transition: width 0.7s ease, background-color 0.5s ease;
+          // }
         }
       }
 
@@ -142,7 +194,9 @@
   }
 
   &__link {
-    padding-top: 4rem;
+    display: flex;
+    flex-direction: row;
+    // padding-top: 4rem;
     position: relative;
     // background: $primary-color;
 
@@ -174,6 +228,7 @@
           justify-content: center;
           align-items: center;
           margin-bottom: 15px;
+          // width: 10px;
         }
 
         &:hover {
@@ -216,16 +271,12 @@
     &__content {
       display: flex;
       flex-direction: column;
+      justify-content: center;
       gap: 1rem;
       @include shadow;
       //   border: 1px solid $secondary-color;
       //   box-shadow: 0 25px 45px rgba(0, 0, 0, 0);
       //   backdrop-filter: blur(5px);
-    }
-
-    &__title {
-      font-size: 25px;
-      color: $tertiary-color;
     }
 
     &__techno {
@@ -249,6 +300,10 @@
     &__img {
       margin: 2rem;
       text-align: center;
+      // width: 200px;
+      @include desktop {
+        width: 30%;
+      }
 
       // styles for image
     }
