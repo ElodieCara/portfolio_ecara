@@ -1,4 +1,4 @@
-import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 
 function NavSocial() {
@@ -9,7 +9,7 @@ function NavSocial() {
       <ul className="nav--social__link">
         <li className="nav--social__link__icon">
           <a
-            href="mailto:caradeuc.elodie@gmail.com"
+            href="https://www.linkedin.com/in/e-cara"
             target="_blank"
             rel="noreferrer"
           >
@@ -39,7 +39,7 @@ function NavSocial() {
                     height: "100%",
                   }}
                 >
-                  <FaLinkedin
+                  <FaLinkedinIn
                     size={30}
                     className="nav--social__link__icon--logo"
                   />
@@ -50,7 +50,7 @@ function NavSocial() {
         </li>
         <li className="nav--social__link__icon">
           <a
-            href="mailto:caradeuc.elodie@gmail.com"
+            href="https://github.com/ElodieCara"
             target="_blank"
             rel="noreferrer"
           >

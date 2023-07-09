@@ -18,10 +18,8 @@
   width: 200px !important;
   height: 200px;
   border: 4px solid $secondary-color;
-  // position: relative;
   margin-top: 30px !important;
   margin-left: 70px !important;
-  // gap: 2rem;
   @include shadow;
   @include desktop {
     margin: 30px !important;
@@ -115,12 +113,11 @@
     justify-content: flex-end;
     align-items: center;
     background: linear-gradient(
-      180deg,
-      hsla(0, 0%, 100%, 0),
-      rgba(0, 0, 0, 0.5)
+      360deg,
+      #efe0cb00 0%,
+      #c6a98b62 30%,
+      #1a1614 100%
     );
-    // position: absolute;
-    // align-items: flex-start;
     left: 0;
     gap: 1rem;
     height: 100%;
@@ -137,31 +134,19 @@
       background-repeat: no-repeat;
       margin: 30px;
 
-      // background-color: rgba(238, 228, 228, 0.1);
-      // backdrop-filter: blur(2px);
-      filter: brightness(0) invert(1);
+      @include tablet {
+        width: 50%;
+      }
     }
-    // &__title {
-    //   font-size: 15px;
-    //   color: white;
-    //   text-transform: uppercase;
-    //   text-shadow: -1px -1px 0 rgba(255, 255, 255, 0.5),
-    //     1px 1px 0 rgba(0, 0, 0, 0.25), 3px 3px 3px rgba(0, 0, 0, 0.25),
-    //     10px 10px 20px rgba(0, 0, 0, 0.5), 20px 40px 40px rgba(0, 0, 0, 0.5);
-    //   @include tablet {
-    //     font-size: 35px;
-    //   }
-    // }
 
     &__techno {
       display: flex;
-
       position: absolute;
       bottom: 165px;
       left: 5px;
       width: 100%;
       @include tablet {
-        bottom: 250px;
+        bottom: 157px;
       }
       @include desktop {
         bottom: 165px;
@@ -189,14 +174,6 @@
           height: 30px;
         }
       }
-
-      // & > * {
-      //   height: 50px;
-      //   margin: 1rem;
-      //   padding: 0.2rem;
-      //   background-color: rgba(255, 255, 255, 0.1);
-      //   border-radius: 5%;
-      // }
     }
 
     &__text {
@@ -212,11 +189,8 @@
     }
 
     &__link {
-      // padding-top: 4rem;
       position: relative;
       width: 100%;
-
-      // background: $primary-color;
 
       & ul {
         width: 100%;
@@ -228,7 +202,7 @@
         background-color: rgba(255, 255, 255, 0.1);
         @include shadow;
         @include tablet {
-          height: 80px;
+          height: 55px;
           padding-top: 25px;
         }
 
@@ -236,14 +210,17 @@
           height: 100%;
           flex: 50%;
           text-align: center;
-          // display: flex;
-          // justify-content: center;
-          // align-items: center;
 
           & > * {
             display: flex;
             flex-direction: column;
             justify-content: center;
+          }
+
+          & span {
+            @include tablet {
+              display: none;
+            }
           }
 
           .image-container {

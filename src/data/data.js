@@ -44,7 +44,7 @@ export const dataSkills = [
     image: Back,
     title: "Backend",
     description:
-      "Avec une base solide en HTML, CSS et JavaScript, j'ai développé des projets personnels, renforçant mes compétences et ma compréhension des bonnes pratiques de développement, et je suis toujours ouverte à apprendre de nouvelles technologies pour rester à jour.",
+      "Avec une base solide en HTML, CSS et JavaScript, j'ai développé des projets personnels",
     logos: [
       { url: "/images/logos/express.png" },
       { url: "/images/logos/mongodb-icon.png" },
@@ -57,7 +57,7 @@ export const dataSkills = [
     image: Design,
     title: "Design & Others",
     description:
-      "Mon objectif est de créer des solutions numériques performantes, esthétiques et conviviales qui répondent aux besoins des utilisateurs, en apportant autonomie, créativité et persévérance dans des projets passionnants.",
+      "Mon objectif est de renforçer mes compétences et ma compréhension des bonnes pratiques de développement, je suis toujours ouverte à apprendre de nouvelles technologies pour rester à jour.",
     logos: [
       { url: "/images/logos/github.svg" },
       { url: "/images/logos/figma.png" },
@@ -70,7 +70,7 @@ export const dataSkills = [
     image: Brain,
     title: "Psychologie",
     description:
-      "Passionné par la psychologie cognitive et l'ergonomie de conception, motivé à créer des interfaces conviviales et intuitives pour améliorer l'expérience utilisateur, notamment dans les domaines de la pédagogie et des interactions homme-machine.",
+      "Passionnée par la psychologie cognitive et l'ergonomie de conception, la pédagogie et des interactions homme-machine.",
     logos: [{ url: "/images/logos/brain.png" }],
   },
 ];
@@ -182,12 +182,12 @@ export const dataWorks = [
       { url: "../images/logos/node-js.png", alt: "NodeJS" },
       { url: "../images/logos/mongodb-icon.png", alt: "MongoDB" },
     ],
-    link: [
-      {
-        url: "none",
-        name: "none",
-      },
-    ],
+    // link: [
+    //   {
+    //     url: "none",
+    //     name: "none",
+    //   },
+    // ],
     github: [
       {
         url: "https://github.com/ElodieCara/P6-PIIQUANTE",

@@ -36,9 +36,11 @@
   stroke: #fff;
   stroke-width: 35;
   stroke-miterlimit: 5;
-  // background: rgba(255, 255, 255, 0.1);
-  // padding: 0.1rem;
-  // border-radius: 25%;
+
+  &:hover path {
+    animation: animation-FB 0.9s cubic-bezier(0.47, 0, 0.745, 0.715) forwards,
+      gradient-FB 0.8s 1s forwards;
+  }
 
   linearGradient {
     transform: rotate(135deg);
@@ -46,39 +48,30 @@
 
   path {
     stroke-dasharray: 3000;
-    // filter: drop-shadow(0 0 30px rgba(255, 255, 255, 0.7));
   }
-}
-
-svg:hover .icon-FB__path {
-  animation: animation-FB 0.9s cubic-bezier(0.47, 0, 0.745, 0.715) forwards,
-    gradient-FB 0.8s 1s forwards;
 }
 
 /*=== Icon Linkedin ===*/
 .icon-In {
   display: inline-block;
-  // height: 80%;
-  // max-height: 100%;
   width: auto;
   fill: none;
   stroke: #fff;
   stroke-width: 15;
   stroke-miterlimit: 5;
 
+  &:hover path {
+    animation: animation-FB 0.9s cubic-bezier(0.47, 0, 0.745, 0.715) forwards,
+      gradient-FB 0.8s 1s forwards;
+  }
+
   linearGradient {
     transform: rotate(135deg);
   }
 
   path {
     stroke-dasharray: 3000;
-    // filter: drop-shadow(0 0 30px rgba(255, 255, 255, 0.7));
   }
-}
-
-svg:hover path {
-  animation: animation-FB 0.9s cubic-bezier(0.47, 0, 0.745, 0.715) forwards,
-    gradient-FB 0.8s 1s forwards;
 }
 
 /* Gradient-svg */

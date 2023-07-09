@@ -5,29 +5,29 @@ import { Facebook, Linkedin } from "../../components/Icon/Icon";
 
 const ContactForm = () => {
   const title = "Contact";
-  const [formStatus, setFormStatus] = useState("Send");
+  // const [formStatus, setFormStatus] = useState("Send");
 
-  const onSubmit = (e) => {
-    e.preventDefault();
-    setFormStatus("Submitting...");
-    const { name, email, message } = e.target.elements;
-    let conFom = {
-      name: name.value,
-      email: email.value,
-      message: message.value,
-    };
-    console.log(conFom);
-    // Ajoutez ici votre logique supplémentaire après la soumission du formulaire
+  // const onSubmit = (e) => {
+  //   e.preventDefault();
+  //   setFormStatus("Submitting...");
+  //   const { name, email, message } = e.target.elements;
+  //   let conFom = {
+  //     name: name.value,
+  //     email: email.value,
+  //     message: message.value,
+  //   };
+  //   console.log(conFom);
+  //   // Ajoutez ici votre logique supplémentaire après la soumission du formulaire
 
-    // Réinitialiser les champs du formulaire
-    e.target.reset();
+  //   // Réinitialiser les champs du formulaire
+  //   e.target.reset();
 
-    // Afficher un message de succès ou effectuer d'autres actions
-    // ...
+  //   // Afficher un message de succès ou effectuer d'autres actions
+  //   // ...
 
-    // Mettre à jour l'état du formulaire
-    setFormStatus("Send");
-  };
+  //   // Mettre à jour l'état du formulaire
+  //   setFormStatus("Send");
+  // };
 
   // useEffect(() => {});
   return (
@@ -41,7 +41,7 @@ const ContactForm = () => {
       <div className="contact__contenu">
         <div className="contact__contenu__infos-contact">
           <div className="contact__contenu__title ">
-            <p>Laissez moi un message !</p>
+            <h3>Laissez moi un message !</h3>
           </div>
           <hr className="border-title" />
           <li>
@@ -56,10 +56,10 @@ const ContactForm = () => {
           <li>
             Social media
             <span>
-              <a href="">
+              <a href="https://www.facebook.com/elodie.caradeuc">
                 <Facebook />
               </a>
-              <a href="">
+              <a href="https://www.linkedin.com/in/e-cara">
                 <Linkedin />
               </a>
             </span>
@@ -68,7 +68,6 @@ const ContactForm = () => {
         <div className="contact__contenu__content">
           <form
             className="contact__contenu__content__form"
-            onSubmit={onSubmit}
             method="POST"
             action="https://getform.io/f/a923b466-7e11-4a57-be86-367f9d312768"
           >
@@ -80,7 +79,7 @@ const ContactForm = () => {
                 className="form-control"
                 type="text"
                 placeholder="Name"
-                id="name"
+                name="name"
                 required
                 autoComplete="off"
               />
@@ -90,7 +89,7 @@ const ContactForm = () => {
                 className="form-control"
                 type="email"
                 placeholder="Email"
-                id="email"
+                name="email"
                 required
                 autoComplete="off"
               />
@@ -99,7 +98,7 @@ const ContactForm = () => {
               <textarea
                 className="form-control"
                 placeholder="Message"
-                id="message"
+                name="message"
                 required
               />
             </div>
@@ -107,7 +106,7 @@ const ContactForm = () => {
               className="contact__contenu__content__form--button"
               type="submit"
             >
-              {formStatus}
+              Envoyer
               <img src={Arrow} alt="Flèche" />
             </button>
           </form>
@@ -115,7 +114,7 @@ const ContactForm = () => {
       </div>
       <div className="contact__button">
         <a
-          href="https://elodiecara.github.io/CV/"
+          href="https://elodiecara.github.io/cv-ecara/"
           className="contact__button__dl"
         >
           <span>Télécharger mon CV</span>

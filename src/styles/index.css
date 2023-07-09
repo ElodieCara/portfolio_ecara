@@ -21,6 +21,7 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:400, 400italic, 600, 600italic, 700, 700italic");
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500&family=Lora:wght@400;500;600&family=Montserrat:wght@200;300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,500;0,700;0,800;0,900;1,500;1,600;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inspiration&family=Josefin+Sans:wght@100;200;300;400;500&family=Lora:wght@400;500;600&family=Montserrat:wght@200;300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,500;0,700;0,800;0,900;1,500;1,600;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700;800&family=Inspiration&family=Josefin+Sans:wght@100;200;300;400;500&family=Lora:wght@400;500;600&family=Montserrat:wght@200;300;400;500;600;700;800&family=Playfair+Display:ital,wght@1,500;1,600;1,900&display=swap");
 /* Background Color */
 /* Colors texte */
 /*Font-size */
@@ -41,7 +42,7 @@ html {
 
 body {
   margin: 0 0 3 0;
-  font-family: "Roboto", sans-serif;
+  font-family: "Garamond", sans-serif;
   font-size: 1rem;
   background-color: #1a1614;
   color: #efe0cb;
@@ -69,6 +70,10 @@ ul {
 a {
   text-decoration: none;
   color: #c6a98b;
+}
+
+p {
+  font-family: "Garamond", sans-serif;
 }
 
 img {
@@ -141,15 +146,14 @@ img {
   stroke-width: 35;
   stroke-miterlimit: 5;
 }
+.icon-FB:hover path {
+  animation: animation-FB 0.9s cubic-bezier(0.47, 0, 0.745, 0.715) forwards, gradient-FB 0.8s 1s forwards;
+}
 .icon-FB linearGradient {
   transform: rotate(135deg);
 }
 .icon-FB path {
   stroke-dasharray: 3000;
-}
-
-svg:hover .icon-FB__path {
-  animation: animation-FB 0.9s cubic-bezier(0.47, 0, 0.745, 0.715) forwards, gradient-FB 0.8s 1s forwards;
 }
 
 /*=== Icon Linkedin ===*/
@@ -161,15 +165,14 @@ svg:hover .icon-FB__path {
   stroke-width: 15;
   stroke-miterlimit: 5;
 }
+.icon-In:hover path {
+  animation: animation-FB 0.9s cubic-bezier(0.47, 0, 0.745, 0.715) forwards, gradient-FB 0.8s 1s forwards;
+}
 .icon-In linearGradient {
   transform: rotate(135deg);
 }
 .icon-In path {
   stroke-dasharray: 3000;
-}
-
-svg:hover path {
-  animation: animation-FB 0.9s cubic-bezier(0.47, 0, 0.745, 0.715) forwards, gradient-FB 0.8s 1s forwards;
 }
 
 /* Gradient-svg */
@@ -408,13 +411,20 @@ svg:hover path {
   text-align: center;
   vertical-align: middle;
   background-color: #1a1614;
-  font-size: 12px;
   width: 121%;
   height: 153%;
   left: -25px;
   /* === scrollbar === */
   scrollbar-width: thin;
   scrollbar-color: #1a1614;
+}
+.card-back__text p {
+  font-size: 0.75rem;
+}
+@media screen and (min-width: 990px) {
+  .card-back__text p {
+    font-size: 0.75rem;
+  }
 }
 
 .card-back__text::-webkit-scrollbar {
@@ -467,7 +477,7 @@ svg:hover path {
   content: "";
   position: absolute;
   border: 4px solid #c6a98b;
-  background: linear-gradient(90deg, #efe0cb 0%, #c6a98b 50%, #1a1614 100%);
+  background: linear-gradient(90deg, #1a1614 0%, #c6a98b 50%, #efe0cb 100%);
   mix-blend-mode: luminosity;
   opacity: 0.76;
   width: 200px;
@@ -540,7 +550,7 @@ svg:hover path {
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
-  background: linear-gradient(180deg, hsla(0, 0%, 100%, 0), rgba(0, 0, 0, 0.5));
+  background: linear-gradient(360deg, rgba(239, 224, 203, 0) 0%, rgba(198, 169, 139, 0.3843137255) 30%, #1a1614 100%);
   left: 0;
   gap: 1rem;
   height: 100%;
@@ -556,7 +566,11 @@ svg:hover path {
   background-position: center;
   background-repeat: no-repeat;
   margin: 30px;
-  filter: brightness(0) invert(1);
+}
+@media screen and (min-width: 768px) and (max-width: 990px) {
+  .works__card__body__logo {
+    width: 50%;
+  }
 }
 .works__card__body__techno {
   display: flex;
@@ -567,7 +581,7 @@ svg:hover path {
 }
 @media screen and (min-width: 768px) and (max-width: 990px) {
   .works__card__body__techno {
-    bottom: 250px;
+    bottom: 157px;
   }
 }
 @media screen and (min-width: 990px) {
@@ -623,7 +637,7 @@ svg:hover path {
 }
 @media screen and (min-width: 768px) and (max-width: 990px) {
   .works__card__body__link ul {
-    height: 80px;
+    height: 55px;
     padding-top: 25px;
   }
 }
@@ -636,6 +650,11 @@ svg:hover path {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+@media screen and (min-width: 768px) and (max-width: 990px) {
+  .works__card__body__link ul li span {
+    display: none;
+  }
 }
 .works__card__body__link ul li .image-container {
   display: flex;
@@ -775,7 +794,7 @@ svg:hover path {
   display: flex;
   background: transparent;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  background-color: rgba(30, 26, 23, 0.59);
+  background-color: #312c26;
   justify-content: center;
   align-items: center;
   font-size: 1.2rem;
@@ -783,14 +802,20 @@ svg:hover path {
   top: 0;
   z-index: 20;
 }
+@media screen and (min-width: 990px) {
+  .navbar {
+    background-color: rgba(30, 26, 23, 0.59);
+  }
+}
 .navbar .nav {
   display: flex;
   width: 100%;
   height: 100%;
   justify-content: space-between;
-  width: 1400px;
+  max-width: 1000px;
   margin: 0 auto;
   padding: 0 auto;
+  font-size: 2rem;
 }
 .navbar .nav__logo {
   align-items: center;
@@ -801,6 +826,7 @@ svg:hover path {
 .navbar .nav--menu {
   display: flex;
   flex-direction: column;
+  background-color: #312c26;
   width: 100%;
   border-top: 1pxsolid #fff;
   position: absolute;
@@ -808,23 +834,38 @@ svg:hover path {
   left: -110%;
   opacity: 1;
   transition: all 0.5s ease;
+  padding: 50px;
+  gap: 2rem;
 }
 @media screen and (min-width: 990px) {
   .navbar .nav--menu {
     display: flex;
     flex-direction: row;
+    background-color: rgba(30, 26, 23, 0.59);
+    background: transparent;
     width: auto;
     position: static;
     opacity: 1;
     transition: none;
+    padding: 10px;
+    gap: 0;
   }
 }
 .navbar .nav--menu.active {
-  background: #1a1614;
+  display: flex;
+  align-items: center;
   left: 0px;
   opacity: 1;
   transition: all 0.5s ease;
   z-index: 1;
+  height: 1000vh;
+}
+@media screen and (min-width: 990px) {
+  .navbar .nav--menu.active {
+    display: flex;
+    align-items: baseline;
+    margin-top: 15px;
+  }
 }
 .navbar .nav--menu__item {
   line-height: 40px;
@@ -840,7 +881,8 @@ svg:hover path {
 }
 .navbar .nav--menu__item:hover:after {
   width: 100%;
-  background: linear-gradient(90deg, #efe0cb 0%, #c6a98b 50%, #1a1614 100%);
+  height: 1px;
+  background: linear-gradient(90deg, #1a1614 0%, #c6a98b 50%, #efe0cb 100%);
 }
 .navbar .nav--menu__item .active {
   color: #c6a98b;
@@ -849,7 +891,7 @@ svg:hover path {
 @media screen and (min-width: 990px) {
   .navbar .nav--menu__item .active {
     color: #efe0cb;
-    border-bottom: 3px solid #efe0cb;
+    border-bottom: 2px solid #efe0cb;
   }
 }
 .navbar .nav--menu__item__links {
@@ -884,13 +926,17 @@ svg:hover path {
 .nav--social {
   display: none;
 }
+@media screen and (min-width: 768px) and (max-width: 990px) {
+  .nav--social {
+    display: none;
+  }
+}
 
 @media screen and (min-width: 990px) {
   .nav--social {
     display: flex;
-    width: 100%;
-    top: 10%;
-    left: 0%;
+    top: 33%;
+    left: -20%;
     position: absolute;
     z-index: 10;
   }
@@ -955,9 +1001,9 @@ svg:hover path {
   margin: 10px;
   width: 50px;
   height: 51px;
-  border-radius: 50%;
-  border: 2px dashed #1a1614;
+  background: transparent;
   color: white;
+  font-size: 40px;
 }
 .footer__content__links::before {
   width: 285px;
@@ -983,6 +1029,14 @@ svg:hover path {
   color: #1a1614;
   font-weight: 800;
 }
+.footer__content__credits {
+  color: #efe0cb;
+  font-size: 12px;
+  cursor: pointer;
+}
+.footer__content__credits a {
+  color: #1a1614;
+}
 
 .home {
   padding: 20px !important;
@@ -1003,11 +1057,11 @@ svg:hover path {
     padding: 5rem !important;
   }
   .home__title {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
   .home__subtitle {
     display: block;
-    font-size: 0.813ezm;
+    font-size: 1.15rem;
     margin-bottom: 3rem;
   }
 }
@@ -1066,7 +1120,6 @@ svg:hover path {
   transform-style: preserve-3d;
   transform: translatez(35px);
   transition: transform 200ms ease-out;
-  width: 175px;
   text-align: center;
 }
 @media screen and (min-width: 990px) {
@@ -1121,7 +1174,7 @@ svg:hover path {
   justify-content: space-between;
 }
 .home__data__presentation__title {
-  font-size: 1.5rem;
+  font-size: 2rem;
   color: #c6a98b;
 }
 .home__data__presentation__stars {
@@ -1129,11 +1182,16 @@ svg:hover path {
 }
 .home__data__subtitle {
   position: relative;
-  font-size: 16px;
   color: #c6a98b;
   font-weight: 500;
   margin-bottom: 0.75rem;
   padding-left: 30px;
+  font-size: 1.15rem;
+}
+@media screen and (min-width: 990px) {
+  .home__data__subtitle {
+    font-size: 1.5rem;
+  }
 }
 .home__data__subtitle::before {
   width: 1px;
@@ -1148,9 +1206,14 @@ svg:hover path {
 .home__data__description {
   margin-bottom: 2rem;
   color: #c6a98b;
-  text-align: justify;
-  text-align-last: justify;
-  font-size: 12px;
+  width: 100%;
+  max-width: 90%;
+  font-size: 1.15rem;
+}
+@media screen and (min-width: 990px) {
+  .home__data__description {
+    font-size: 16px;
+  }
 }
 .home__data__button {
   width: 155px;
@@ -1210,11 +1273,11 @@ svg:hover path {
     margin-right: auto;
   }
   .skills__title {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
   .skills__subtitle {
     display: block;
-    font-size: 0.813ezm;
+    font-size: 1.15rem;
     margin-bottom: 3rem;
   }
 }
@@ -1249,11 +1312,11 @@ svg:hover path {
     margin-right: auto;
   }
   .works__title {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
   .works__subtitle {
     display: block;
-    font-size: 0.813ezm;
+    font-size: 1.15rem;
     margin-bottom: 3rem;
   }
 }
@@ -1321,6 +1384,9 @@ svg:hover path {
   }
 }
 
+.contact {
+  margin-top: 55px;
+}
 @media screen and (min-width: 990px) {
   .contact {
     width: 1000px;
@@ -1329,11 +1395,11 @@ svg:hover path {
     margin-right: auto;
   }
   .contact__title {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
   .contact__subtitle {
     display: block;
-    font-size: 0.813ezm;
+    font-size: 1.15rem;
     margin-bottom: 3rem;
   }
 }
@@ -1351,6 +1417,13 @@ svg:hover path {
   color: #c6a98b;
   text-align: left;
 }
+@media screen and (min-width: 768px) and (max-width: 990px) {
+  .contact__contenu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+}
 @media screen and (min-width: 990px) {
   .contact__contenu {
     display: flex;
@@ -1367,13 +1440,12 @@ svg:hover path {
 .contact__contenu__title h3 {
   text-align: center;
   color: #c6a98b;
-  font-size: 20px;
+  font-size: 1.5rem;
   font-weight: 400;
   height: 35px;
-  border-bottom: 2px solid #c6a98b;
 }
 .contact__contenu__title p {
-  font-size: 18px;
+  font-size: 1.25rem;
 }
 .contact__contenu__infos-contact {
   font-size: 14px;
@@ -1391,6 +1463,7 @@ svg:hover path {
 }
 .contact__contenu__infos-contact li {
   display: grid;
+  font-size: 1.25rem;
 }
 .contact__contenu__infos-contact li span {
   display: inline;
@@ -1561,7 +1634,7 @@ svg:hover path {
   height: 100%;
 }
 .contact__button__dl span {
-  font-size: 12px;
+  font-size: 0.75rem;
   text-align: center;
 }
 

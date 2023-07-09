@@ -21,7 +21,6 @@ function NavBar() {
               <NavLink
                 exact="true"
                 to="/"
-                activeclassame="active"
                 className="nav--menu__item__links"
                 onClick={handleClick}
               >
@@ -29,37 +28,31 @@ function NavBar() {
               </NavLink>
             </li>
             <li className="nav--menu__item">
-              <NavLink
-                exact="true"
-                to="/skills"
-                activeclassname="active"
+              <a
+                href="#skills"
                 className="nav--menu__item__links"
                 onClick={handleClick}
               >
                 Compétences
-              </NavLink>
+              </a>
             </li>
             <li className="nav--menu__item">
-              <NavLink
-                exact="true"
-                to="/Portfolio"
-                activeclassname="active"
+              <a
+                href="#works"
                 className="nav--menu__item__links"
                 onClick={handleClick}
               >
                 Portfolio
-              </NavLink>
+              </a>
             </li>
             <li className="nav--menu__item">
-              <NavLink
-                exact="true"
-                to="/contact"
-                activeclassname="active"
+              <a
+                href="#contact"
                 className="nav--menu__item__links"
                 onClick={handleClick}
               >
                 Contact
-              </NavLink>
+              </a>
             </li>
           </ul>
           <div className="nav--menu__icon" onClick={handleClick}>

@@ -2,6 +2,7 @@ import { useEffect, useRef } from "react";
 import Photo from "../../assets/Photo1.png";
 import { Stars } from "../../components/Icon/Icon";
 import Scroll from "../../components/ScrollBtn/ScrollBtn";
+import NavSocial from "../../components/NavBar/NavSocial";
 
 const Header = () => {
   const cardsRef = useRef(null);
@@ -40,11 +41,12 @@ const Header = () => {
   }, []);
 
   const approachText =
-    "Enthousiaste et passionnée par le développement web, je viens tout juste de terminer ma formation de Développeuse Intégrateur Web chez OpenClassrooms. Je suis actuellement à la recherche d'un poste stimulant où je pourrai mettre en pratique mes compétences et continuer d'apprendre au sein d'une équipe dynamique.";
+    "Enthousiaste et passionnée par le développement web, je viens de terminer ma formation de Développeuse Intégrateur Web chez OpenClassrooms. Je suis actuellement à la recherche d'un poste stimulant où je pourrai mettre en pratique mes compétences et continuer d'apprendre au sein d'une équipe dynamique.";
 
   return (
     <section className="home" id="home">
       <div className="home__container">
+        <NavSocial />
         <div className="home__content cards" ref={cardsRef}>
           <div className="home__photo">
             <div

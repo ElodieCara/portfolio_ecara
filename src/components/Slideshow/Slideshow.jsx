@@ -133,8 +133,11 @@ const Slideshow = ({ dataWorks, activeSection }) => {
       </Slider>
     );
   } else if (activeSection === "personnels") {
+    // Calculer le nombre de cartes à afficher
+    const slidesToShow = Math.min(2, dataDesign.length);
+
     return (
-      <Slider {...settings}>
+      <Slider {...settings} slidesToShow={slidesToShow}>
         {dataDesign?.map((project, id) => (
           <div className="projects__card" key={id}>
             <div className="projects__card__img">

@@ -1,10 +1,8 @@
 .home {
-  // @include section;
   padding: 20px !important;
   margin-left: auto;
   margin-right: auto;
   @include tablet {
-    // @include section;
     padding: 5rem !important;
   }
   @include desktop {
@@ -55,7 +53,6 @@
     color: $tertiary-color;
     background: none;
     box-shadow: 5px 5px 20px -5px rgba(0, 0, 0, 0.6);
-    // cursor: pointer;
     display: inline-block;
     height: 250px;
     overflow: hidden;
@@ -64,7 +61,6 @@
     transform-style: preserve-3d;
     transform: translatez(35px);
     transition: transform 200ms ease-out;
-    width: 175px;
     text-align: center;
     @include desktop {
       height: 90%;
@@ -78,15 +74,6 @@
       width: 200px;
       height: 115%;
     }
-
-    // &::after {
-    //   content: "";
-    //   border: 4px solid #c6a98b;
-    //   background: #d9d9d9;
-    //   opacity: 0.4;
-    //   transform: rotate(-8deg);
-    //   z-index: 999;
-    // }
 
     &__bg {
       bottom: -50px;
@@ -135,11 +122,15 @@
 
     &__subtitle {
       position: relative;
-      font-size: 16px;
       color: $secondary-color;
       font-weight: $semibold;
       margin-bottom: $mb-0-75;
       padding-left: 30px;
+      font-size: $small-font-size;
+
+      @include desktop {
+        font-size: $h3-font-size;
+      }
 
       &::before {
         width: 1px;
@@ -161,9 +152,12 @@
     &__description {
       margin-bottom: $mb-2;
       color: $secondary-color;
-      text-align: justify;
-      text-align-last: justify;
-      font-size: 12px;
+      width: 100%;
+      max-width: 90%;
+      font-size: $small-font-size;
+      @include desktop {
+        font-size: 16px;
+      }
     }
 
     &__button {

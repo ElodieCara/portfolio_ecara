@@ -16,9 +16,9 @@
         margin: 10px;
         width: 50px;
         height: 51px;
-        border-radius: 50%;
-        border: 2px dashed $primary-color;
+        background: transparent;
         color: white;
+        font-size: 40px;
       }
 
       &::before {
@@ -47,6 +47,16 @@
     &__text {
       color: $primary-color;
       font-weight: 800;
+    }
+
+    &__credits {
+      color: $tertiary-color;
+      font-size: 12px;
+      cursor: pointer;
+
+      & a {
+        color: $primary-color;
+      }
     }
   }
 }

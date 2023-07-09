@@ -13,7 +13,6 @@ export default function Home() {
       <header>
         <Navbar />
         <Header className="header" id="header" />
-        <NavSocial />
       </header>
       <main>
         <Skills id="skills" />

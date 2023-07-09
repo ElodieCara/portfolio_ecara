@@ -2,15 +2,16 @@
 
 .nav--social {
   display: none;
+  @include tablet {
+    display: none;
+  }
 }
 
 @include desktop {
   .nav--social {
     display: flex;
-    width: 100%;
-    // height: 100vh;
-    top: 10%;
-    left: 0%;
+    top: 33%;
+    left: -20%;
     position: absolute;
     z-index: 10;
 
