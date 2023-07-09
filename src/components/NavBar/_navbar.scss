@@ -21,7 +21,7 @@
     max-width: 1000px;
     margin: 0 auto;
     padding: 0 auto;
-    font-size: $h1-font-size;
+    font-size: $small-font-size;
 
     &__logo {
       align-items: center;
@@ -35,7 +35,6 @@
       flex-direction: column;
       background-color: $primary-bg;
       width: 100%;
-      border-top: 1pxsolid #fff;
       position: absolute;
       top: 80px;
       left: -110%;
@@ -63,7 +62,7 @@
         opacity: 1;
         transition: all 0.5s ease;
         z-index: 1;
-        height: 1000vh;
+        height: 896vh;
         @include desktop {
           display: flex;
           align-items: baseline;
@@ -95,7 +94,6 @@
           border: none;
           @include desktop {
             color: $tertiary-color;
-            border-bottom: 2px solid $tertiary-color;
           }
         }
 

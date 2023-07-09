@@ -9,9 +9,9 @@ export default defineConfig({
       "@": path.resolve(__dirname, "./src"),
     },
   },
-  // server: {
-  //   headers: {
-  //     "Cache-Control": "max-age=31536000",
-  //   },
-  // },
+  server: {
+    headers: {
+      "Cache-Control": "max-age=31536000",
+    },
+  },
 });

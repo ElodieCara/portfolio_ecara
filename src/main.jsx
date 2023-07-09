@@ -7,7 +7,7 @@ import {
 } from "react-router-dom";
 import Home from "./pages/Home";
 import ErrorPage from "./pages/Error-page";
-import "./styles/index.scss";
+import "./styles/prefixed/index.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import WorkPage from "./pages/Work-page";

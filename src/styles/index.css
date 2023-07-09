@@ -815,7 +815,7 @@ img {
   max-width: 1000px;
   margin: 0 auto;
   padding: 0 auto;
-  font-size: 2rem;
+  font-size: 1.15rem;
 }
 .navbar .nav__logo {
   align-items: center;
@@ -828,7 +828,6 @@ img {
   flex-direction: column;
   background-color: #312c26;
   width: 100%;
-  border-top: 1pxsolid #fff;
   position: absolute;
   top: 80px;
   left: -110%;
@@ -858,7 +857,7 @@ img {
   opacity: 1;
   transition: all 0.5s ease;
   z-index: 1;
-  height: 1000vh;
+  height: 896vh;
 }
 @media screen and (min-width: 990px) {
   .navbar .nav--menu.active {
@@ -891,7 +890,6 @@ img {
 @media screen and (min-width: 990px) {
   .navbar .nav--menu__item .active {
     color: #efe0cb;
-    border-bottom: 2px solid #efe0cb;
   }
 }
 .navbar .nav--menu__item__links {
