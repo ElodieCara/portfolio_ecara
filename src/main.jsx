@@ -11,7 +11,7 @@ import ScrollToTop from "./components/ScrollToTop/scrolltotop";
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/portfolio_ecara/",
     element: (
       <>
         <ScrollToTop />
