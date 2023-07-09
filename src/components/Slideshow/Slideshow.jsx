@@ -1,4 +1,3 @@
-// import { useEffect, useState } from "react";
 import Slider from "react-slick";
 import { dataDesign } from "@/data/data.js";
 import Github from "/public/images/logos/github.svg";
@@ -6,32 +5,9 @@ import Figma from "/public/images/logos/figma.png";
 import Lien from "/public/images/logos/link.svg";
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
+import { dataWorks } from "@/data/data.js";
 
-const Slideshow = ({ dataWorks, activeSection }) => {
-  // const [isDesktop, setIsDesktop] = useState(false);
-  // const [isTablet, setIsTablet] = useState(false);
-
-  // useEffect(() => {
-  //   const resizeHandler = () => {
-  //     setIsDesktop(window.innerWidth > 1024);
-  //     setIsTablet(window.innerWidth <= 1024 && window.innerWidth > 770);
-  //   };
-
-  //   if (activeSection === "formation") {
-  //     resizeHandler();
-  //     window.addEventListener("resize", resizeHandler);
-  //   }
-
-  //   return () => {
-  //     if (activeSection === "formation") {
-  //       window.removeEventListener("resize", resizeHandler);
-  //     }
-  //   };
-  // }, [activeSection]);
-
-  // const slidesToShow =
-  //   isDesktop && activeSection === "formation" ? 3 : isTablet ? 2 : 1;
-
+const Slideshow = ({ activeSection }) => {
   const settings = {
     dots: true,
     infinite: true,
@@ -57,7 +33,7 @@ const Slideshow = ({ dataWorks, activeSection }) => {
   if (activeSection === "formation") {
     return (
       <Slider {...settings} className="Slider">
-        {dataWorks?.map((item, index) => (
+        {dataWorks.map((item, index) => (
           <div className="works__card" key={index}>
             <div className="works__card__date">{item.date}</div>
             <div className="works__card__img">
@@ -72,11 +48,13 @@ const Slideshow = ({ dataWorks, activeSection }) => {
                 className="works__card__body__logo"
                 style={{ backgroundImage: `url(${item.logo})` }}
               ></div>
-              <div className="works__card__body__techno">
-                {item.techno.map((techno, id) => (
-                  <img src={techno.url} key={id} alt={techno.alt} />
-                ))}
-              </div>
+              {item.techno && Array.isArray(item.techno) && (
+                <div className="works__card__body__techno">
+                  {item.techno.map((techno, id) => (
+                    <img src={techno.url} key={id} alt={techno.alt} />
+                  ))}
+                </div>
+              )}
               <div className="works__card__body__link">
                 <ul>
                   {item.link && (
@@ -185,7 +163,6 @@ const Slideshow = ({ dataWorks, activeSection }) => {
 };
 
 Slideshow.propTypes = {
-  workId: PropTypes.arrayOf(PropTypes.number).isRequired,
   dataWorks: PropTypes.array.isRequired,
   activeSection: PropTypes.string.isRequired,
 };

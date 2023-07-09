@@ -9,6 +9,9 @@ export default defineConfig({
       "@": path.resolve(__dirname, "./src"),
     },
   },
+  // build: {
+  //   outDir: "dist",
+  // },
   server: {
     headers: {
       "Cache-Control": "max-age=31536000",

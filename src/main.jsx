@@ -1,29 +1,13 @@
-import React, { useEffect, useRef } from "react";
+import React from "react";
 import { createRoot } from "react-dom/client";
-import {
-  createBrowserRouter,
-  RouterProvider,
-  useLocation,
-} from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./pages/Home";
 import ErrorPage from "./pages/Error-page";
 import "./styles/prefixed/index.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import WorkPage from "./pages/Work-page";
-
-const ScrollToTop = () => {
-  const location = useLocation();
-  const scrollRef = useRef(null);
-
-  useEffect(() => {
-    if (scrollRef.current) {
-      scrollRef.current.scrollIntoView({ behavior: "smooth", block: "start" });
-    }
-  }, [location]);
-
-  return <div ref={scrollRef} />;
-};
+import ScrollToTop from "./components/ScrollToTop/scrolltotop";
 
 const router = createBrowserRouter([
   {

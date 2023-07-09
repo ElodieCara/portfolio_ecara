@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { dataSkills } from "@/data/data.js";
 
-function FlipCard() {
+const FlipCard = () => {
   const [flippedCards, setFlippedCards] = useState([]);
 
   const handleCardFlip = (index) => {
@@ -47,6 +47,6 @@ function FlipCard() {
       ))}
     </div>
   );
-}
+};
 
 export default FlipCard;

@@ -2,7 +2,7 @@ import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import Logo from "../../assets/Logo1.png";
 
-function NavBar() {
+const NavBar = () => {
   const [click, setClick] = useState(false);
 
   const handleClick = () => setClick(!click);
@@ -62,6 +62,6 @@ function NavBar() {
       </nav>
     </>
   );
-}
+};
 
 export default NavBar;

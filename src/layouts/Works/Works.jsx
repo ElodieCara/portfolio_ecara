@@ -2,10 +2,10 @@ import { useState, useEffect } from "react";
 import Slideshow from "@/components/Slideshow/Slideshow";
 import { dataWorks } from "../../data/data";
 
-function Works() {
+const Works = () => {
   const title = "Portfolio";
 
-  const [works, setWorks] = useState([]);
+  const [, setWorks] = useState([]);
 
   useEffect(() => {
     setWorks(dataWorks);
@@ -57,14 +57,10 @@ function Works() {
       </div>
       {/* Contenu des sections en fonction de la section active */}
       <div className="works__content">
-        <Slideshow
-          workId={works.map((work) => work.id)}
-          dataWorks={works}
-          activeSection={activeSection}
-        />
+        <Slideshow dataWorks={dataWorks} activeSection={activeSection} />
       </div>
     </section>
   );
-}
+};
 
 export default Works;
