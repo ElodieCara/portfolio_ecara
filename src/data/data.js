@@ -36,7 +36,7 @@ export const dataSkills = [
       { url: "https://i.imgur.com/FpcX7G3.png", alt: "Sass" },
       { url: "https://i.imgur.com/IWDNGMz.png", alt: "JS" },
       { url: "https://i.imgur.com/Cpm2Ays.png", alt: "React" },
-      { url: "/images/logos/vite.svg" },
+      { url: "https://i.imgur.com/sjXaKpc.png", alt: "Vite" },
     ],
   },
   {
