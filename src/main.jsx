@@ -20,27 +20,27 @@ const router = createBrowserRouter([
     ),
     errorElement: <ErrorPage />,
   },
-  {
-    path: "/works",
-    element: (
-      <>
-        <ScrollToTop />
-        {/* <WorkPage /> */}
-      </>
-    ),
-    errorElement: <ErrorPage />,
-    children: [
-      {
-        path: ":id",
-        element: (
-          <>
-            <ScrollToTop />
-            {/* <WorkPage /> */}
-          </>
-        ),
-      },
-    ],
-  },
+  // {
+  //   path: "/works",
+  //   element: (
+  //     <>
+  //       <ScrollToTop />
+  //       {/* <WorkPage /> */}
+  //     </>
+  //   ),
+  //   errorElement: <ErrorPage />,
+  //   children: [
+  //     {
+  //       path: ":id",
+  //       element: (
+  //         <>
+  //           <ScrollToTop />
+  //           {/* <WorkPage /> */}
+  //         </>
+  //       ),
+  //     },
+  //   ],
+  // },
 ]);
 
 createRoot(document.getElementById("root")).render(
