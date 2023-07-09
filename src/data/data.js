@@ -31,12 +31,12 @@ export const dataSkills = [
     description:
       "J'ai commencé en autodidacte, puis j'ai ensuite suivi une formation à distance pour renforcer mes compétences.",
     logos: [
-      { url: "../assets/logos/css-3.png" },
-      { url: "../assets/logos/html-5.png" },
-      { url: "../assets/logos/sass.png" },
-      { url: "../assets/logos/js.png" },
-      { url: "../assets/logos/react.png" },
-      { url: "../assets/logos/vite.svg" },
+      { url: "/images/logos/css-3.png" },
+      { url: "/images/logos/html-5.png" },
+      { url: "/images/logos/sass.png" },
+      { url: "/images/logos/js.png" },
+      { url: "/images/logos/react.png" },
+      { url: "/images/logos/vite.svg" },
     ],
   },
   {
@@ -46,10 +46,10 @@ export const dataSkills = [
     description:
       "Avec une base solide en HTML, CSS et JavaScript, j'ai développé des projets personnels",
     logos: [
-      { url: "../assets/logos/express.png" },
-      { url: "../assets/logos/mongodb-icon.png" },
-      { url: "../assets/logos/node-js.png" },
-      { url: "../assets/logos/nodemon.svg" },
+      { url: "/images/logos/express.png" },
+      { url: "/images/logos/mongodb-icon.png" },
+      { url: "/images/logos/node-js.png" },
+      { url: "/images/logos/nodemon.svg" },
     ],
   },
   {
@@ -59,10 +59,10 @@ export const dataSkills = [
     description:
       "Mon objectif est de renforçer mes compétences et ma compréhension des bonnes pratiques de développement, je suis toujours ouverte à apprendre de nouvelles technologies pour rester à jour.",
     logos: [
-      { url: "../assets/logos/github.svg" },
-      { url: "../assets/logos/figma.png" },
-      { url: "../assets/logos/seo.svg" },
-      { url: "../assets/logos/postman-icon.svg" },
+      { url: "/images/logos/github.svg" },
+      { url: "/images/logos/figma.png" },
+      { url: "/images/logos/seo.svg" },
+      { url: "/images/logos/postman-icon.svg" },
     ],
   },
   {
@@ -71,7 +71,7 @@ export const dataSkills = [
     title: "Psychologie",
     description:
       "Passionnée par la psychologie cognitive et l'ergonomie de conception, la pédagogie et des interactions homme-machine.",
-    logos: [{ url: "../assets/logos/brain.png" }],
+    logos: [{ url: "/images/logos/brain.png" }],
   },
 ];
 
@@ -87,8 +87,8 @@ export const dataWorks = [
     date: "23/05/22",
     capture: BookiSite,
     techno: [
-      { url: "../assets/logos/html-5.png", alt: "Html" },
-      { url: "../assets/logos/css-3.png", alt: "CSS" },
+      { url: "../images/logos/html-5.png", alt: "Html" },
+      { url: "../images/logos/css-3.png", alt: "CSS" },
     ],
     link: [
       {
@@ -120,8 +120,8 @@ export const dataWorks = [
     date: "10/07/22",
     capture: OhmyfoodSite,
     techno: [
-      { url: "../assets/logos/html-5.png", alt: "Html" },
-      { url: "../assets/logos/sass.png", alt: "Sass" },
+      { url: "../images/logos/html-5.png", alt: "Html" },
+      { url: "../images/logos/sass.png", alt: "Sass" },
     ],
     link: [
       {
@@ -152,7 +152,7 @@ export const dataWorks = [
     libellé: "Optimiser un site web existant",
     date: "09/08/22",
     capture: PanthereSite,
-    techno: [{ url: "../assets/logos/seo.svg", alt: "Seo" }],
+    techno: [{ url: "../images/logos/seo.svg", alt: "Seo" }],
     link: [
       {
         url: "https://elodiecara.github.io/P4-La_Panthere/",
@@ -178,9 +178,9 @@ export const dataWorks = [
     date: "25/10/22",
     capture: PiquanteSite,
     techno: [
-      { url: "../assets/logos/express.svg", alt: "Express" },
-      { url: "../assets/logos/node-js.png", alt: "NodeJS" },
-      { url: "../assets/logos/mongodb-icon.png", alt: "MongoDB" },
+      { url: "../images/logos/express.svg", alt: "Express" },
+      { url: "../images/logos/node-js.png", alt: "NodeJS" },
+      { url: "../images/logos/mongodb-icon.png", alt: "MongoDB" },
     ],
     // link: [
     //   {
@@ -205,7 +205,7 @@ export const dataWorks = [
     libellé: "Construire un site e-commerce en JavaScript",
     date: "03/10/22",
     capture: KanapSite,
-    techno: [{ url: "../assets/logos/js.png", alt: "JS" }],
+    techno: [{ url: "../images/logos/js.png", alt: "JS" }],
     // link: [
     //   {
     //     url: "none",
@@ -230,9 +230,9 @@ export const dataWorks = [
     date: "17/11/22",
     capture: KasaSite,
     techno: [
-      { url: "../assets/logos/react.png", alt: "React" },
+      { url: "../images/logos/react.png", alt: "React" },
 
-      { url: "../assets/logos/sass.png", alt: "Sass" },
+      { url: "../images/logos/sass.png", alt: "Sass" },
     ],
     link: [
       {
@@ -264,23 +264,19 @@ export const dataDesign = [
       "Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua.",
     date: "01/01/22",
     techno: [
-      { url: "../assets/logos/react.png", alt: "React" },
+      { url: "../images/logos/react.png", alt: "React" },
 
-      { url: "../assets/logos/sass.png", alt: "Sass" },
+      { url: "../images/logos/sass.png", alt: "Sass" },
     ],
     link: [
+      { icon: "../images/logos/link.svg", url: "", name: "Lien Chez Charlie" },
       {
-        icon: "../assets/logos/link.svg",
-        url: "",
-        name: "Lien Chez Charlie",
-      },
-      {
-        icon: "../assets/logos/github.svg",
+        icon: "../images/logos/github.svg",
         url: "https://github.com/ElodieCara/chez-charlie",
         name: "Code Chez Charlie",
       },
       {
-        icon: "../assets/logos/figma.png",
+        icon: "../images/logos/figma.png",
         url: "https://www.figma.com/proto/e8oFLY0WbN62cjh2UBH0gr/Chez-Charlie?type=design&scaling=scale-down&page-id=0%3A1&node-id=1-4",
         name: "Prototype Chez Charlie",
       },
@@ -294,23 +290,23 @@ export const dataDesign = [
       "Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua.",
     date: "01/01/22",
     techno: [
-      { url: "../assets/logos/react.png", alt: "React" },
-      { url: "../assets/logos/vite.svg", alt: "Vite" },
-      { url: "../assets/logos/sass.png", alt: "Sass" },
+      { url: "../images/logos/react.png", alt: "React" },
+      { url: "../images/logos/vite.svg", alt: "Vite" },
+      { url: "../images/logos/sass.png", alt: "Sass" },
     ],
     link: [
       {
-        icon: "../assets/logos/link.svg",
+        icon: "../images/logos/link.svg",
         url: "none",
         name: "Lien vers le portfolio",
       },
       {
-        icon: "../assets/logos/github.svg",
+        icon: "../images/logos/github.svg",
         url: "https://github.com/ElodieCara/portfolio_ecara",
         name: "Code du portfolio",
       },
       {
-        icon: "../assets/logos/figma.png",
+        icon: "../images/logos/figma.png",
         url: "https://www.figma.com/proto/zpOh34P302zPQ9Ao4AyLRp/MYPORTFOLIO?type=design&node-id=20-2&scaling=min-zoom&page-id=0%3A1",
         name: "Prototype du portfolio",
       },
