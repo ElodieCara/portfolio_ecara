@@ -6,7 +6,7 @@ import ErrorPage from "./pages/Error-page";
 import "./styles/prefixed/index.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import WorkPage from "./pages/Work-page";
+// import WorkPage from "./pages/Work-page";
 import ScrollToTop from "./components/ScrollToTop/scrolltotop";
 
 const router = createBrowserRouter([
@@ -25,7 +25,7 @@ const router = createBrowserRouter([
     element: (
       <>
         <ScrollToTop />
-        <WorkPage />
+        {/* <WorkPage /> */}
       </>
     ),
     errorElement: <ErrorPage />,
@@ -35,7 +35,7 @@ const router = createBrowserRouter([
         element: (
           <>
             <ScrollToTop />
-            <WorkPage />
+            {/* <WorkPage /> */}
           </>
         ),
       },

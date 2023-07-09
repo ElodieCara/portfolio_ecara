@@ -1,8 +1,8 @@
 import Slider from "react-slick";
 import { dataDesign } from "@/data/data.js";
-import Github from "/public/images/logos/github.svg";
-import Figma from "/public/images/logos/figma.png";
-import Lien from "/public/images/logos/link.svg";
+import Github from "@/assets/logos/github.svg";
+import Figma from "@/assets/logos/figma.png";
+import Lien from "@/assets/logos/link.svg";
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 import { dataWorks } from "@/data/data.js";
