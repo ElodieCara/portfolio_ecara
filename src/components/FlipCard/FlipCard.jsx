@@ -24,7 +24,7 @@ const FlipCard = () => {
               <img src={item.image} alt="" height={80} width={30} />
             </div>
             <div className="card-front__body">
-              <h3 className="card-front__body__title">{item.title}</h3>
+              <h2 className="card-front__body__title">{item.title}</h2>
               <div className="card-front__body__logos">
                 {item.logos.map((logo, index) => (
                   <img

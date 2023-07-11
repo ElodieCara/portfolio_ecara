@@ -12,6 +12,7 @@ function NavSocial() {
             href="https://www.linkedin.com/in/e-cara"
             target="_blank"
             rel="noreferrer"
+            aria-label="LinkedIn"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -53,6 +54,7 @@ function NavSocial() {
             href="https://github.com/ElodieCara"
             target="_blank"
             rel="noreferrer"
+            aria-label="GitHub"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -94,6 +96,7 @@ function NavSocial() {
             href="mailto:caradeuc.elodie@gmail.com"
             target="_blank"
             rel="noreferrer"
+            aria-label="Email"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"

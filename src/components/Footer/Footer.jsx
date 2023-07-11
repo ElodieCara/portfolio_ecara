@@ -9,6 +9,7 @@ const Footer = () => {
             href="https://www.linkedin.com/in/e-cara"
             target="_blank"
             rel="noreferrer"
+            aria-label="Linkedin"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -50,6 +51,7 @@ const Footer = () => {
             href="https://github.com/ElodieCara"
             target="_blank"
             rel="noreferrer"
+            aria-label="Github"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -90,6 +92,7 @@ const Footer = () => {
             href="mailto:caradeuc.elodie@gmail.com"
             target="_blank"
             rel="noreferrer"
+            aria-label="Email"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -130,11 +133,16 @@ const Footer = () => {
           <p>© 2023 E Cara | Tous droits réservés</p>
         </div>
         <div className="footer__content__credits">
-          <a href="https://firefly.adobe.com/" target="_blank" rel="noreferrer">
+          <a
+            href="https://firefly.adobe.com/"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="Adobe Firefly"
+          >
             Images générées avec Adobe Firefly
           </a>
           <br />
-          <a href="https://www.canva.com/fr_fr/creer/logos/">
+          <a href="https://www.canva.com/fr_fr/creer/logos/" aria-label="Canva">
             Logo créé avec Canva
           </a>
         </div>

@@ -89,6 +89,18 @@ img {
   background: linear-gradient(90deg, #1a1614 0%, #c6a98b 50%, #efe0cb 100%);
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
 .scroll-to-top-button {
   visibility: hidden;
 }
@@ -112,16 +124,11 @@ img {
   }
 }
 .icon {
-  position: absolute;
-  top: -45px;
-  left: -71px;
   will-change: transform;
   transform: translateX(0.1px) translateY(5px);
 }
 .icon__stars {
   width: 40px;
-  margin: 30px;
-  position: relative;
 }
 .icon__stars__path {
   stroke-dasharray: 1560;
@@ -453,7 +460,7 @@ img {
   transform: rotate(180deg);
   writing-mode: vertical-rl;
   direction: rtl;
-  font-size: 10px;
+  font-size: 12px;
 }
 .works__card__date::before {
   width: 1px;
@@ -1076,7 +1083,7 @@ img {
 }
 @media screen and (min-width: 768px) and (max-width: 990px) {
   .home__photo {
-    width: none;
+    width: auto;
   }
 }
 .home__photo img {
@@ -1385,7 +1392,7 @@ img {
   justify-content: center;
   padding-top: 15px;
 }
-.contact__contenu__title h3 {
+.contact__contenu__title h2 {
   text-align: center;
   color: #c6a98b;
   font-size: 1.5rem;
@@ -1442,7 +1449,7 @@ img {
   border: 1px solid #c6a98b;
   box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
   position: relative;
-  background-color: rgb(54, 75, 74);
+  background-color: #232f2e;
   min-width: 280px;
   min-height: 365px;
 }

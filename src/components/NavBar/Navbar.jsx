@@ -12,7 +12,11 @@ const NavBar = () => {
       <nav className="navbar">
         <div className="nav">
           <NavLink exact="true" to="/" className="nav__logo">
-            <img src={Logo} alt="Logo" style={{ width: "80px" }} />
+            <img
+              src={Logo}
+              alt="Logo Portfolio ECara"
+              style={{ width: "80px" }}
+            />
           </NavLink>
 
           {/*=== Menu ===*/}

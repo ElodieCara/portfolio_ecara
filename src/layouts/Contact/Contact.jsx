@@ -16,12 +16,12 @@ const ContactForm = () => {
       <div className="contact__contenu">
         <div className="contact__contenu__infos-contact">
           <div className="contact__contenu__title ">
-            <h3>Laissez-moi un message !</h3>
+            <h2>Laissez-moi un message !</h2>
           </div>
           <hr className="border-title" />
           <li>
             Email
-            <a href="">contact.ecara@gmail.com</a>
+            <a href="mailto:contact.ecara@gmail.com">contact.ecara@gmail.com</a>
           </li>
           <hr className="border-title" />
           <li>
@@ -33,9 +33,11 @@ const ContactForm = () => {
             <span>
               <a href="https://www.facebook.com/elodie.caradeuc">
                 <Facebook />
+                <span className="sr-only">Facebook</span>
               </a>
               <a href="https://www.linkedin.com/in/e-cara">
                 <Linkedin />
+                <span className="sr-only">LinkedIn</span>
               </a>
             </span>
           </li>
@@ -47,32 +49,44 @@ const ContactForm = () => {
             action="https://getform.io/f/a923b466-7e11-4a57-be86-367f9d312768"
           >
             <div className="contact__contenu__content__form--icon">
-              <img src={Logo} width={55} alt="Logo" />
+              <img src={Logo} width={55} alt="Logo Portfolio ECara" />
             </div>
             <div className="contact__contenu__content__form--control">
+              <label htmlFor="name" className="visually-hidden">
+                Nom
+              </label>
               <input
                 className="form-control"
                 type="text"
-                placeholder="Name"
+                placeholder="Nom"
+                id="name"
                 name="name"
                 required
                 autoComplete="off"
               />
             </div>
             <div className="contact__contenu__content__form--control">
+              <label htmlFor="email" className="visually-hidden">
+                Email
+              </label>
               <input
                 className="form-control"
                 type="email"
                 placeholder="Email"
+                id="email"
                 name="email"
                 required
                 autoComplete="off"
               />
             </div>
             <div className="contact__contenu__content__form--control">
+              <label htmlFor="message" className="visually-hidden">
+                Message
+              </label>
               <textarea
                 className="form-control"
                 placeholder="Message"
+                id="message"
                 name="message"
                 required
               />
@@ -82,7 +96,7 @@ const ContactForm = () => {
               type="submit"
             >
               Envoyer
-              <img src={Arrow} alt="Flèche" />
+              <img src={Arrow} alt="Flèche Envoie du Message" />
             </button>
           </form>
         </div>

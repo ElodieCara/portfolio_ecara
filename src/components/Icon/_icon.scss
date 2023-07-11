@@ -1,14 +1,9 @@
 .icon {
-  position: absolute;
-  top: -45px;
-  left: -71px;
   will-change: transform;
   transform: translateX(0.1px) translateY(5px);
 
   &__stars {
     width: 40px;
-    margin: 30px;
-    position: relative;
 
     &__path {
       stroke-dasharray: 1560;

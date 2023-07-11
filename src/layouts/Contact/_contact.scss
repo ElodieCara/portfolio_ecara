@@ -35,7 +35,7 @@
       justify-content: center;
       padding-top: 15px;
 
-      & h3 {
+      & h2 {
         text-align: center;
         color: $secondary-color;
         font-size: $h3-font-size;
@@ -97,7 +97,8 @@
         border: 1px solid $secondary-color;
         box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
         position: relative;
-        background-color: rgb(54, 75, 74);
+        // background-color: rgb(54, 75, 74);
+        background-color: #232f2e;
         min-width: 280px;
         min-height: 365px;
 

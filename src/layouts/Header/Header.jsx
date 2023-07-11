@@ -51,13 +51,12 @@ const Header = () => {
           <div className="home__photo">
             <div
               className="home__photo__bg"
-              // style={{ backgroundImage: "url(@/assets/card-bg.png)" }}
               ref={(el) => (backgroundsRef.current[0] = el)}
             ></div>
             <img
               className="home__photo__img"
               src={Photo}
-              alt="Photo"
+              alt="Photo Profil ECara"
               ref={(el) => (imagesRef.current[0] = el)}
             />
           </div>
@@ -67,11 +66,10 @@ const Header = () => {
               <h1 className="home__data__presentation__title">
                 Elodie Caradeuc
               </h1>
-              <span className="home__data__presentation__stars">
-                <Stars />
-              </span>
+              <Stars />
+              <span className="home__data__presentation__stars"></span>
             </div>
-            <h3 className="home__data__subtitle">Développeur Web Junior</h3>
+            <h2 className="home__data__subtitle">Développeur Web Junior</h2>
             <p className="home__data__description">{approachText}</p>
             <a href="#contact" className="home__data__button">
               <span>Contactez-moi</span>

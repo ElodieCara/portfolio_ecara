@@ -66,7 +66,7 @@
       height: auto;
     }
     @include tablet {
-      width: none;
+      width: auto;
     }
 
     & img {
