@@ -8,7 +8,6 @@
   &__stars {
     width: 40px;
     margin: 30px;
-    // opacity: 1;
     position: relative;
 
     &__path {
@@ -124,55 +123,5 @@
   }
   to {
     stroke-dashoffset: 0;
-  }
-}
-
-/*=== Feuilles ===*/
-.feuille path {
-  stroke-dasharray: 1560;
-  stroke-dashoffset: 0;
-}
-.feuille:hover path {
-  animation: animate-feuille 2s linear forwards;
-}
-@keyframes animate-feuille {
-  0% {
-    stroke-dashoffset: 0;
-  }
-  40% {
-    stroke-dashoffset: 1560;
-  }
-  80% {
-    stroke-dashoffset: 3120;
-    fill: transparent;
-  }
-  100% {
-    stroke-dashoffset: 3120;
-    fill: #31e8ff;
-  }
-}
-
-/*=== BRANCHE ===*/
-.branche path {
-  stroke-dasharray: 1560;
-  stroke-dashoffset: 0;
-}
-.branche:hover path {
-  animation: animate-branche 2s linear forwards;
-}
-@keyframes animate-branche {
-  0% {
-    stroke-dashoffset: 0;
-  }
-  40% {
-    stroke-dashoffset: 1560;
-  }
-  80% {
-    stroke-dashoffset: 3120;
-    fill: transparent;
-  }
-  100% {
-    stroke-dashoffset: 3120;
-    fill: $tertiary-color;
   }
 }

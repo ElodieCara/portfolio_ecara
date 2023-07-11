@@ -71,12 +71,13 @@
   pointer-events: auto;
   cursor: pointer;
   border: none;
-  padding: 1rem 2rem;
   margin: 0;
   font-family: inherit;
   font-size: inherit;
   position: relative;
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   &::before,
   &::after {

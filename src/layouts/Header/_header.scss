@@ -63,7 +63,7 @@
     transition: transform 200ms ease-out;
     text-align: center;
     @include desktop {
-      height: 90%;
+      height: auto;
     }
     @include tablet {
       width: none;
@@ -90,7 +90,7 @@
 
     &__img {
       position: relative;
-      top: 14px;
+      top: 26px;
       right: 10px;
       height: 110%;
     }

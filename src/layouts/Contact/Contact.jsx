@@ -1,35 +1,10 @@
-import { useState } from "react";
 import Logo from "@/assets/Logo1.png";
 import Arrow from "@/assets/Arrow 5.png";
 import { Facebook, Linkedin } from "../../components/Icon/Icon";
 
 const ContactForm = () => {
   const title = "Contact";
-  // const [formStatus, setFormStatus] = useState("Send");
 
-  // const onSubmit = (e) => {
-  //   e.preventDefault();
-  //   setFormStatus("Submitting...");
-  //   const { name, email, message } = e.target.elements;
-  //   let conFom = {
-  //     name: name.value,
-  //     email: email.value,
-  //     message: message.value,
-  //   };
-  //   console.log(conFom);
-  //   // Ajoutez ici votre logique supplémentaire après la soumission du formulaire
-
-  //   // Réinitialiser les champs du formulaire
-  //   e.target.reset();
-
-  //   // Afficher un message de succès ou effectuer d'autres actions
-  //   // ...
-
-  //   // Mettre à jour l'état du formulaire
-  //   setFormStatus("Send");
-  // };
-
-  // useEffect(() => {});
   return (
     <section className="contact" id="contact">
       <div className="contact__container">
@@ -41,7 +16,7 @@ const ContactForm = () => {
       <div className="contact__contenu">
         <div className="contact__contenu__infos-contact">
           <div className="contact__contenu__title ">
-            <h3>Laissez moi un message !</h3>
+            <h3>Laissez-moi un message !</h3>
           </div>
           <hr className="border-title" />
           <li>

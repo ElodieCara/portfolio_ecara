@@ -182,12 +182,6 @@ export const dataWorks = [
       { url: "https://i.imgur.com/hdQ0ixn.png", alt: "NodeJS" },
       { url: "https://i.imgur.com/FYlTosm.png", alt: "MongoDB" },
     ],
-    // link: [
-    //   {
-    //     url: "none",
-    //     name: "none",
-    //   },
-    // ],
     github: [
       {
         url: "https://github.com/ElodieCara/P6-PIIQUANTE",
@@ -206,12 +200,6 @@ export const dataWorks = [
     date: "03/10/22",
     capture: KanapSite,
     techno: [{ url: "https://i.imgur.com/IWDNGMz.png", alt: "JS" }],
-    // link: [
-    //   {
-    //     url: "none",
-    //     name: "none",
-    //   },
-    // ],
     github: [
       {
         url: "https://github.com/ElodieCara/P5-Kanap",

@@ -20,7 +20,7 @@ const NavBar = () => {
             <li className="nav--menu__item">
               <NavLink
                 exact="true"
-                to="/"
+                to="#header"
                 className="nav--menu__item__links"
                 onClick={handleClick}
               >

@@ -74,7 +74,7 @@ const Header = () => {
             <h3 className="home__data__subtitle">Développeur Web Junior</h3>
             <p className="home__data__description">{approachText}</p>
             <a href="#contact" className="home__data__button">
-              <span>Contact Me</span>
+              <span>Contactez-moi</span>
             </a>
           </div>
           <Scroll />

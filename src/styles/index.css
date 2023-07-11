@@ -211,58 +211,6 @@ img {
     stroke-dashoffset: 0;
   }
 }
-/*=== Feuilles ===*/
-.feuille path {
-  stroke-dasharray: 1560;
-  stroke-dashoffset: 0;
-}
-
-.feuille:hover path {
-  animation: animate-feuille 2s linear forwards;
-}
-
-@keyframes animate-feuille {
-  0% {
-    stroke-dashoffset: 0;
-  }
-  40% {
-    stroke-dashoffset: 1560;
-  }
-  80% {
-    stroke-dashoffset: 3120;
-    fill: transparent;
-  }
-  100% {
-    stroke-dashoffset: 3120;
-    fill: #31e8ff;
-  }
-}
-/*=== BRANCHE ===*/
-.branche path {
-  stroke-dasharray: 1560;
-  stroke-dashoffset: 0;
-}
-
-.branche:hover path {
-  animation: animate-branche 2s linear forwards;
-}
-
-@keyframes animate-branche {
-  0% {
-    stroke-dashoffset: 0;
-  }
-  40% {
-    stroke-dashoffset: 1560;
-  }
-  80% {
-    stroke-dashoffset: 3120;
-    fill: transparent;
-  }
-  100% {
-    stroke-dashoffset: 3120;
-    fill: #efe0cb;
-  }
-}
 .scroll {
   display: none;
 }
@@ -541,8 +489,8 @@ img {
   transition: transform 0.1s;
 }
 .works__card__img img:hover img {
-  -ms-transform: scale(1.5); /* IE 9 */
-  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  -ms-transform: scale(1.5);
+  -webkit-transform: scale(1.5);
   transform: scale(1.5);
 }
 .works__card__body {
@@ -864,6 +812,7 @@ img {
     display: flex;
     align-items: baseline;
     margin-top: 15px;
+    height: 0;
   }
 }
 .navbar .nav--menu__item {
@@ -1122,7 +1071,7 @@ img {
 }
 @media screen and (min-width: 990px) {
   .home__photo {
-    height: 90%;
+    height: auto;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 990px) {
@@ -1149,7 +1098,7 @@ img {
 }
 .home__photo__img {
   position: relative;
-  top: 14px;
+  top: 26px;
   right: 10px;
   height: 110%;
 }
@@ -1221,12 +1170,13 @@ img {
   pointer-events: auto;
   cursor: pointer;
   border: none;
-  padding: 1rem 2rem;
   margin: 0;
   font-family: inherit;
   font-size: inherit;
   position: relative;
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .home__data__button::before {
   content: "";
@@ -1589,12 +1539,13 @@ img {
   pointer-events: auto;
   cursor: pointer;
   border: none;
-  padding: 1rem 2rem;
   margin: 0;
   font-family: inherit;
   font-size: inherit;
   position: relative;
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
 }
 .contact__button__dl::before {
