@@ -8,6 +8,20 @@
   color: $tertiary-color !important;
 }
 
+.slick-track {
+  @include desktop {
+    margin-left: 30px;
+  }
+}
+
+.slick-prev {
+  left: 5px !important;
+}
+
+.slick-next {
+  right: 5px !important;
+}
+
 .Slider {
   padding-bottom: 30px;
 }
@@ -87,6 +101,7 @@
 
   &__img {
     width: auto;
+    height: auto;
     overflow: hidden;
 
     & img {

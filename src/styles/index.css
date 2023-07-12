@@ -41,7 +41,7 @@ html {
 }
 
 body {
-  margin: 0 0 3 0;
+  margin: 0;
   font-family: "Garamond", sans-serif;
   font-size: 1rem;
   background-color: #1a1614;
@@ -50,6 +50,8 @@ body {
 
 #root {
   background-color: rgba(30, 26, 23, 0.59);
+  width: 100%;
+  overflow-x: hidden;
   margin: 0 auto;
   padding: 0;
   position: relative;
@@ -402,6 +404,20 @@ img {
   color: #efe0cb !important;
 }
 
+@media screen and (min-width: 990px) {
+  .slick-track {
+    margin-left: 30px;
+  }
+}
+
+.slick-prev {
+  left: 5px !important;
+}
+
+.slick-next {
+  right: 5px !important;
+}
+
 .Slider {
   padding-bottom: 30px;
 }
@@ -484,6 +500,7 @@ img {
 }
 .works__card__img {
   width: auto;
+  height: auto;
   overflow: hidden;
 }
 .works__card__img img {
@@ -1397,7 +1414,6 @@ img {
   color: #c6a98b;
   font-size: 1.5rem;
   font-weight: 400;
-  height: 35px;
 }
 .contact__contenu__title p {
   font-size: 1.25rem;
