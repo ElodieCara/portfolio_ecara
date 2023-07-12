@@ -413,9 +413,29 @@ img {
 .slick-prev {
   left: 5px !important;
 }
+@media screen and (min-width: 990px) {
+  .slick-prev {
+    left: -25px !important;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 990px) {
+  .slick-prev {
+    left: -25px !important;
+  }
+}
 
 .slick-next {
   right: 5px !important;
+}
+@media screen and (min-width: 990px) {
+  .slick-next {
+    right: -25px !important;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 990px) {
+  .slick-next {
+    right: -25px !important;
+  }
 }
 
 .Slider {
@@ -434,6 +454,7 @@ img {
 @media screen and (min-width: 990px) {
   .works__card {
     margin: 30px !important;
+    margin-top: 65px !important;
     width: 200px !important;
     height: 200px !important;
   }
@@ -442,6 +463,7 @@ img {
   .works__card {
     width: 200px !important;
     height: 200px !important;
+    margin-left: 50px !important;
   }
 }
 .works__card::after {

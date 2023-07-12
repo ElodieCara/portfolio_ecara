@@ -16,10 +16,22 @@
 
 .slick-prev {
   left: 5px !important;
+  @include desktop {
+    left: -25px !important;
+  }
+  @include tablet {
+    left: -25px !important;
+  }
 }
 
 .slick-next {
   right: 5px !important;
+  @include desktop {
+    right: -25px !important;
+  }
+  @include tablet {
+    right: -25px !important;
+  }
 }
 
 .Slider {
@@ -37,12 +49,14 @@
   @include shadow;
   @include desktop {
     margin: 30px !important;
+    margin-top: 65px !important;
     width: 200px !important;
     height: 200px !important;
   }
   @include tablet {
     width: 200px !important;
     height: 200px !important;
+    margin-left: 50px !important;
   }
 
   &::after {
