@@ -11,7 +11,7 @@ const NavBar = () => {
     <>
       <nav className="navbar">
         <div className="nav">
-          <NavLink exact="true" to="/" className="nav__logo">
+          <NavLink exact="true" className="nav__logo">
             <img
               src={Logo}
               alt="Logo Portfolio ECara"
