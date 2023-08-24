@@ -19,9 +19,7 @@
     &__links {
       margin: 0 2rem;
       display: flex;
-      justify-content: flex-end;
       height: 50px;
-      width: 212px;
 
       &__btn {
         list-style: none;
@@ -32,6 +30,7 @@
         button {
           all: unset;
           position: relative;
+          font-size: $normal-font-size;
 
           &:after {
             content: "";
@@ -65,6 +64,7 @@
     margin-left: auto;
     margin-right: auto;
     width: 23em;
+    margin-top: 2rem;
     @include desktop {
       width: 95%;
     }

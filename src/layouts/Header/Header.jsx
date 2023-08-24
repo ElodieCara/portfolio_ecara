@@ -14,30 +14,33 @@ const Header = () => {
   const calcValue = (a, b) => ((a / b) * range - range / 2).toFixed(1);
 
   useEffect(() => {
-    const handleMouseMove = (event) => {
-      const { x, y } = event;
+    const isMobile = window.innerWidth <= 768; // Seuil pour mobiles
+    if (!isMobile) {
+      const handleMouseMove = (event) => {
+        const { x, y } = event;
 
-      const yValue = calcValue(y, window.innerHeight);
-      const xValue = calcValue(x, window.innerWidth);
+        const yValue = calcValue(y, window.innerHeight);
+        const xValue = calcValue(x, window.innerWidth);
 
-      cardsRef.current.style.transform = `rotateX(${yValue}deg) rotateY(${xValue}deg)`;
+        cardsRef.current.style.transform = `rotateX(${yValue}deg) rotateY(${xValue}deg)`;
 
-      imagesRef.current.forEach((image) => {
-        image.style.transform = `translateX(${-xValue}px) translateY(${yValue}px)`;
-      });
+        imagesRef.current.forEach((image) => {
+          image.style.transform = `translateX(${-xValue}px) translateY(${yValue}px)`;
+        });
 
-      backgroundsRef.current.forEach((background) => {
-        background.style.backgroundPosition = `${xValue * 0.45}px ${
-          -yValue * 0.45
-        }px`;
-      });
-    };
+        backgroundsRef.current.forEach((background) => {
+          background.style.backgroundPosition = `${xValue * 0.45}px ${
+            -yValue * 0.45
+          }px`;
+        });
+      };
 
-    window.addEventListener("mousemove", handleMouseMove);
+      window.addEventListener("mousemove", handleMouseMove);
 
-    return () => {
-      window.removeEventListener("mousemove", handleMouseMove);
-    };
+      return () => {
+        window.removeEventListener("mousemove", handleMouseMove);
+      };
+    }
   }, []);
 
   const approachText =

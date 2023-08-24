@@ -34,6 +34,9 @@
   }
 }
 
+.slick-prev {
+  z-index: 99;
+}
 .Slider {
   padding-bottom: 30px;
 }
@@ -223,7 +226,7 @@
         justify-content: space-around;
         border-bottom: 1px solid $secondary-color;
         padding-top: 15px;
-        background-color: rgba(255, 255, 255, 0.1);
+        background-color: rgba(255, 255, 255, 0.4);
         @include shadow;
         @include tablet {
           height: 55px;
@@ -231,7 +234,6 @@
         }
 
         & li {
-          height: 100%;
           flex: 50%;
           text-align: center;
 

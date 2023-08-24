@@ -113,6 +113,7 @@
       &__title {
         font-size: $h1-font-size;
         color: $secondary-color;
+        margin-bottom: 12px;
       }
 
       &__stars {
@@ -126,7 +127,7 @@
       font-weight: $semibold;
       margin-bottom: $mb-0-75;
       padding-left: 30px;
-      font-size: $small-font-size;
+      font-size: $normal-font-size;
 
       @include desktop {
         font-size: $h3-font-size;
@@ -153,8 +154,9 @@
       margin-bottom: $mb-2;
       color: $secondary-color;
       width: 100%;
-      max-width: 90%;
+      max-width: 100%;
       font-size: $small-font-size;
+      text-align: center;
       @include desktop {
         font-size: 16px;
       }

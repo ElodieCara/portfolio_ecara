@@ -62,9 +62,9 @@ const Slideshow = ({ activeSection }) => {
                       {item.link.map((link, li) => (
                         <Link to={link.url} target="_blank" key={li}>
                           <div className="image-container">
-                            <img src={Lien} alt="" width={10} />
+                            <img src={Lien} alt="Site" width={10} />
                           </div>
-                          <span>Site</span>
+                          {/* <span>Site</span> */}
                         </Link>
                       ))}
                     </li>
@@ -79,9 +79,9 @@ const Slideshow = ({ activeSection }) => {
                           alt={github.name}
                         >
                           <div className="image-container">
-                            <img src={Github} alt="" width={20} />
+                            <img src={Github} alt="Code Source" width={20} />
                           </div>
-                          <span>Code Source</span>
+                          {/* <span>Code Source</span> */}
                         </Link>
                       ))}
                     </li>
@@ -96,9 +96,9 @@ const Slideshow = ({ activeSection }) => {
                           key={ma}
                         >
                           <div className="image-container">
-                            <img src={Figma} alt="" width={20} />
+                            <img src={Figma} alt="Maquette" width={20} />
                           </div>
-                          <span>Maquette</span>
+                          {/* <span>Maquette</span> */}
                         </Link>
                       ))}
                     </li>
@@ -119,7 +119,7 @@ const Slideshow = ({ activeSection }) => {
         {dataDesign?.map((project, id) => (
           <div className="projects__card" key={id}>
             <div className="projects__card__img">
-              <img src={project.image} alt="" />
+              <img src={project.image} alt="projets" />
             </div>
             <div className="projects__card__body">
               <h3 className="projects__card__body__title">{project.title}</h3>

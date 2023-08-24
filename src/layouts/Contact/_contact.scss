@@ -38,7 +38,7 @@
       & h2 {
         text-align: center;
         color: $secondary-color;
-        font-size: $h3-font-size;
+        font-size: $h2-font-size;
         font-weight: 400;
       }
 
@@ -217,7 +217,7 @@
       text-align: center;
 
       & span {
-        font-size: $smaller-font-size;
+        font-size: $small-font-size;
         text-align: center;
       }
     }
