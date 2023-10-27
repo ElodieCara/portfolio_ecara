@@ -29,7 +29,7 @@ export const dataSkills = [
     image: Brackets,
     title: "Frontend",
     description:
-      "J'ai commencé en autodidacte, puis j'ai ensuite suivi une formation à distance pour renforcer mes compétences.",
+      "J'ai commencé en autodidacte, puis j'ai suivi une formation à distance pour renforcer mes compétences...",
     logos: [
       { url: "https://i.imgur.com/k2nbB4r.png", alt: "css" },
       { url: "https://i.imgur.com/eeo0swQ.png", alt: "html" },
@@ -44,7 +44,7 @@ export const dataSkills = [
     image: Back,
     title: "Backend",
     description:
-      "Avec une base solide en HTML, CSS et JavaScript, j'ai développé des projets personnels",
+      "Avec une base solide en HTML, CSS et JavaScript, j'ai développé des projets personnels...",
     logos: [
       { url: "https://i.imgur.com/MiVJaU7.png", alt: "express" },
       { url: "https://i.imgur.com/hdQ0ixn.png", alt: "NodeJS" },
@@ -54,24 +54,31 @@ export const dataSkills = [
   },
   {
     id: 3,
-    image: Design,
-    title: "Design & Others",
+    image: Brain,
+    title: "Design UI/UX",
     description:
-      "Mon objectif est de renforçer mes compétences et ma compréhension des bonnes pratiques de développement, je suis toujours ouverte à apprendre de nouvelles technologies pour rester à jour.",
+      "Mon objectif est de renforcer mes compétences et ma compréhension des bonnes pratiques en développement Front-end...",
     logos: [
-      { url: "https://i.imgur.com/gCpZUZ7.png", alt: "Github" },
+      { url: "https://i.imgur.com/WxwLREE.png", alt: "brain" },
       { url: "https://i.imgur.com/vrVEaDW.png", alt: "Figma" },
-      { url: "https://i.imgur.com/rUOLgyE.png", alt: "SEO" },
-      { url: "https://i.imgur.com/FYFZUZ8.png", alt: "Postman" },
+      { url: "https://i.imgur.com/px7xZbs.png", alt: "Adobe ID" },
+      { url: "https://i.imgur.com/UL3lS5n.png", alt: "Adobe PS" },
+      { url: "https://i.imgur.com/j2Vm5es.png", alt: "Adobe Xd" },
+      { url: "https://i.imgur.com/ibBqUme.png", alt: "Adobe Ai" },
     ],
   },
   {
     id: 4,
-    image: Brain,
-    title: "Psychologie",
+    image: Design,
+    title: "Others",
     description:
-      "Passionnée par la psychologie cognitive et l'ergonomie de conception, la pédagogie et des interactions homme-machine.",
-    logos: [{ url: "https://i.imgur.com/WxwLREE.png", alt: "brain" }],
+      "Etant pssionnée par la psychologie cognitive et l'ergonomie de conception, je poursuis mon apprentissage dans le Design UI/UX.",
+    logos: [
+      { url: "https://i.imgur.com/gCpZUZ7.png", alt: "Github" },
+
+      { url: "https://i.imgur.com/rUOLgyE.png", alt: "SEO" },
+      { url: "https://i.imgur.com/FYFZUZ8.png", alt: "Postman" },
+    ],
   },
 ];
 

@@ -44,7 +44,7 @@ const Header = () => {
   }, []);
 
   const approachText =
-    "Enthousiaste et passionnée par le développement web, je viens de terminer ma formation de Développeuse Intégrateur Web chez OpenClassrooms. Je suis actuellement à la recherche d'un poste stimulant où je pourrai mettre en pratique mes compétences et continuer d'apprendre au sein d'une équipe dynamique.";
+    "Enthousiaste et passionnée par le développement web, je viens de terminer ma formation de Développeuse Intégrateur Web chez OpenClassrooms. Mon parcours m'a permis de développer des compétences solides en matière de développement web, mais je nourris également une passion grandissante pour le design d'interfaces utilisateur (UI) et l'expérience utilisateur (UX). Mon objectif pour l'avenir est de me spécialiser dans ce domaine.";
 
   return (
     <section className="home" id="home">
@@ -72,7 +72,7 @@ const Header = () => {
               <Stars />
               <span className="home__data__presentation__stars"></span>
             </div>
-            <h2 className="home__data__subtitle">Développeur Web Junior</h2>
+            <h2 className="home__data__subtitle">Développeuse Front-end</h2>
             <p className="home__data__description">{approachText}</p>
             <a href="#contact" className="home__data__button">
               <span>Contactez-moi</span>

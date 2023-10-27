@@ -225,17 +225,26 @@
         display: flex;
         justify-content: space-around;
         border-bottom: 1px solid $secondary-color;
-        padding-top: 15px;
         background-color: rgba(255, 255, 255, 0.4);
         @include shadow;
         @include tablet {
           height: 55px;
-          padding-top: 25px;
+        }
+
+        &:hover {
+          box-shadow: 0 0 20px $secondary-color;
         }
 
         & li {
           flex: 50%;
-          text-align: center;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          // border-right: 2px solid rgba(0, 0, 0, 0);
+          box-shadow: 0 0 1px $tertiary-color;
+          border-bottom: 2px solid transparent; /* Bordure inférieure transparente par défaut */
+          transition: border-bottom 0.3s;
 
           & > * {
             display: flex;
@@ -253,7 +262,6 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            margin-bottom: 15px;
 
             & img {
               width: 20px;
@@ -272,8 +280,6 @@
           }
 
           &:hover {
-            content: "";
-            display: block;
             border-bottom: 2px solid $tertiary-color;
 
             & a {

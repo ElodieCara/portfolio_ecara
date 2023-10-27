@@ -380,7 +380,7 @@ img {
 }
 @media screen and (min-width: 990px) {
   .card-back__text p {
-    font-size: 0.75rem;
+    font-size: 1.1rem;
   }
 }
 
@@ -629,19 +629,26 @@ img {
   display: flex;
   justify-content: space-around;
   border-bottom: 1px solid #c6a98b;
-  padding-top: 15px;
   background-color: rgba(255, 255, 255, 0.4);
   filter: drop-shadow(2px 4px 6px black);
 }
 @media screen and (min-width: 768px) and (max-width: 990px) {
   .works__card__body__link ul {
     height: 55px;
-    padding-top: 25px;
   }
+}
+.works__card__body__link ul:hover {
+  box-shadow: 0 0 20px #c6a98b;
 }
 .works__card__body__link ul li {
   flex: 50%;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 1px #efe0cb;
+  border-bottom: 2px solid transparent; /* Bordure inférieure transparente par défaut */
+  transition: border-bottom 0.3s;
 }
 .works__card__body__link ul li > * {
   display: flex;
@@ -657,7 +664,6 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 15px;
 }
 .works__card__body__link ul li .image-container img {
   width: 20px;
@@ -677,8 +683,6 @@ img {
   }
 }
 .works__card__body__link ul li:hover {
-  content: "";
-  display: block;
   border-bottom: 2px solid #efe0cb;
 }
 .works__card__body__link ul li:hover a {
@@ -1210,7 +1214,7 @@ img {
 }
 @media screen and (min-width: 990px) {
   .home__data__description {
-    font-size: 16px;
+    font-size: 1.1rem;
   }
 }
 .home__data__button {
@@ -1635,7 +1639,7 @@ img {
   height: 100%;
 }
 .contact__button__dl span {
-  font-size: 1.15rem;
+  font-size: 1rem;
   text-align: center;
 }
 

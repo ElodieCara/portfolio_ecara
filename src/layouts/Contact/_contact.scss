@@ -48,16 +48,16 @@
     }
 
     &__infos-contact {
+      font-size: 14px;
+      padding-left: 55px;
+      padding-right: 55px;
+      margin: 25px;
       @include desktop {
         display: flex;
         flex-direction: column;
         padding-left: 0;
         margin-left: 0;
       }
-      font-size: 14px;
-      padding-left: 55px;
-      padding-right: 55px;
-      margin: 25px;
 
       & li {
         display: grid;
@@ -106,9 +106,7 @@
           position: absolute;
           min-width: 280px;
           min-height: 375px;
-
           background: rgba(255, 255, 255, 0.1);
-
           border: 1px solid $secondary-color;
           box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
           bottom: 5px;
@@ -217,7 +215,7 @@
       text-align: center;
 
       & span {
-        font-size: $small-font-size;
+        font-size: 1rem;
         text-align: center;
       }
     }

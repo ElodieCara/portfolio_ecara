@@ -145,6 +145,13 @@ const Footer = () => {
           <a href="https://www.canva.com/fr_fr/creer/logos/" aria-label="Canva">
             Logo créé avec Canva
           </a>
+          <br />
+          <a
+            href="https://www.flaticon.com/fr/icones-gratuites/"
+            title="icônes"
+          >
+            Icon made by Pixel perfect from www.flaticon.com
+          </a>
         </div>
       </div>
     </section>
