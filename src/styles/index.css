@@ -1030,8 +1030,9 @@ img {
   font-weight: 800;
 }
 .footer__content__credits {
+  text-align: center;
   color: #efe0cb;
-  font-size: 12px;
+  font-size: 18px;
   cursor: pointer;
 }
 .footer__content__credits a {
