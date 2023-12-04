@@ -22,6 +22,7 @@ import PanthereSite from "@/assets/works/PanthereSite.png";
 import PanthereLogo from "@/assets/works/logos/panthere.svg";
 import ChezCharlie from "@/assets/works/ChezCharlie.png";
 import Portfolio from "@/assets/works/portfolio.png";
+import Alifey from "@/assets/works/portfolio__nuages.png";
 
 export const dataSkills = [
   {
@@ -72,7 +73,7 @@ export const dataSkills = [
     image: Design,
     title: "Others",
     description:
-      "Etant pssionnée par la psychologie cognitive et l'ergonomie de conception, je poursuis mon apprentissage dans le Design UI/UX.",
+      "Etant passionnée par la psychologie cognitive et l'ergonomie de conception, je poursuis mon apprentissage dans le Design UI/UX.",
     logos: [
       { url: "https://i.imgur.com/gCpZUZ7.png", alt: "Github" },
 
@@ -253,31 +254,31 @@ export const dataWorks = [
 export const dataDesign = [
   {
     id: 20,
-    image: ChezCharlie,
-    title: "Chez Charlie",
+    image: Alifey,
+    title: "Alifey-Nuages",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua.",
-    date: "01/01/22",
+    date: "28/11/2023",
     techno: [
       { url: "https://i.imgur.com/Cpm2Ays.png", alt: "React" },
-
       { url: "https://i.imgur.com/FpcX7G3.png", alt: "Sass" },
+      { url: "https://i.imgur.com/sjXaKpc.png", alt: "Vite" },
     ],
     link: [
       {
         icon: "/images/logos/link.svg",
-        url: "Lien",
-        name: "Lien Chez Charlie",
+        url: "https://elodiecara.github.io/projet-pink/",
+        name: "Lien Alifey",
       },
       {
         icon: "/images/logos/github.svg",
-        url: "https://github.com/ElodieCara/chez-charlie",
-        name: "Code Chez Charlie",
+        url: "https://github.com/ElodieCara/projet-pink",
+        name: "Code Alifey",
       },
       {
         icon: "/images/logos/figma.png",
         url: "https://www.figma.com/proto/e8oFLY0WbN62cjh2UBH0gr/Chez-Charlie?type=design&scaling=scale-down&page-id=0%3A1&node-id=1-4",
-        name: "Prototype Chez Charlie",
+        name: "Prototype Alifey",
       },
     ],
   },
@@ -308,6 +309,36 @@ export const dataDesign = [
         icon: "/images/logos/figma.png",
         url: "https://www.figma.com/proto/zpOh34P302zPQ9Ao4AyLRp/MYPORTFOLIO?type=design&node-id=20-2&scaling=min-zoom&page-id=0%3A1",
         name: "Prototype du portfolio",
+      },
+    ],
+  },
+  {
+    id: 22,
+    image: ChezCharlie,
+    title: "Chez Charlie",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua.",
+    date: "01/01/22",
+    techno: [
+      { url: "https://i.imgur.com/Cpm2Ays.png", alt: "React" },
+
+      { url: "https://i.imgur.com/FpcX7G3.png", alt: "Sass" },
+    ],
+    link: [
+      {
+        icon: "/images/logos/link.svg",
+        url: "Lien",
+        name: "Lien Chez Charlie",
+      },
+      {
+        icon: "/images/logos/github.svg",
+        url: "https://github.com/ElodieCara/chez-charlie",
+        name: "Code Chez Charlie",
+      },
+      {
+        icon: "/images/logos/figma.png",
+        url: "https://www.figma.com/proto/e8oFLY0WbN62cjh2UBH0gr/Chez-Charlie?type=design&scaling=scale-down&page-id=0%3A1&node-id=1-4",
+        name: "Prototype Chez Charlie",
       },
     ],
   },

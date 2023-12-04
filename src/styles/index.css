@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /*  -- Font -- */
-@import url("https://fonts.googleapis.com/css?family=Roboto:400, 400italic, 600, 600italic, 700, 700italic");
-@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500&family=Lora:wght@400;500;600&family=Montserrat:wght@200;300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,500;0,700;0,800;0,900;1,500;1,600;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,400italic,600,600italic,700,700italic");
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans:wght@100;200;300;400;500&family=Lora:wght@400;500;600&family=Montserrat:wght@200;300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,500;0,700;0,800;0,900;1,500;1,600;1,900&display=swap");
 /* Background */
 /* Colors texte */
 /* Stars-color */
@@ -42,7 +42,6 @@ html {
 
 body {
   margin: 0;
-  font-family: "Garamond", sans-serif;
   font-size: 1rem;
   background-color: #1a1614;
   color: #efe0cb;
@@ -257,9 +256,8 @@ img {
 }
 @media screen and (min-width: 990px) {
   .flip-card-container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     gap: 4rem;
   }
 }
@@ -276,8 +274,8 @@ img {
 .card {
   padding: 1.5rem;
   margin-bottom: 4rem;
-  width: 290px;
-  height: 150px;
+  width: 350px;
+  height: 200px;
   transform-style: preserve-3d;
   position: relative;
   border: 4px solid #c6a98b;
@@ -301,8 +299,6 @@ img {
   display: flex;
   flex-direction: row;
   align-items: center;
-  /* Content Styling */
-  font-family: "Courier New", Courier, monospace;
   font-weight: 800;
   font-size: 16px;
   color: white;
@@ -311,8 +307,8 @@ img {
 .card-front::after, .card-back::after {
   content: "";
   position: absolute;
-  width: 300px;
-  height: 150px;
+  width: 350px;
+  height: 200px;
   border: 4px solid #c6a98b;
   opacity: 0.4;
   transform: rotate(-8deg);
@@ -325,9 +321,9 @@ img {
 .card-front__img, .card-back__img {
   background-color: #c6a98b;
   border-radius: 50%;
-  padding: 16px;
+  padding: 20px;
   margin-top: 0;
-  height: 62%;
+  height: 50%;
   display: flex;
   align-items: center;
 }
@@ -338,8 +334,8 @@ img {
   flex-direction: column;
 }
 .card-front__body__title, .card-back__body__title {
-  margin-bottom: 10px;
-  font-size: 1rem;
+  margin-bottom: 20px;
+  font-size: 18px;
   color: #efe0cb;
 }
 .card-front__body__logos, .card-back__body__logos {
@@ -353,7 +349,7 @@ img {
   transform: rotateX(180deg);
 }
 .card-back::after {
-  top: 63px;
+  top: 116px;
   left: -33px;
   z-index: -100;
 }
@@ -361,26 +357,26 @@ img {
   position: fixed;
   display: flex;
   align-items: center;
-  top: 69px;
+  top: 120px;
   color: #c6a98b;
   padding: 1rem;
   overflow: auto;
   text-align: center;
   vertical-align: middle;
   background-color: #1a1614;
-  width: 121%;
-  height: 153%;
-  left: -25px;
+  width: 116%;
+  height: 134%;
+  left: -23px;
   /* === scrollbar === */
   scrollbar-width: thin;
   scrollbar-color: #1a1614;
 }
 .card-back__text p {
-  font-size: 1.15rem;
+  font-size: 15px;
 }
 @media screen and (min-width: 990px) {
   .card-back__text p {
-    font-size: 1.1rem;
+    font-size: 18px;
   }
 }
 
@@ -402,12 +398,6 @@ img {
 
 .slick-dots li.slick-active button:before {
   color: #efe0cb !important;
-}
-
-@media screen and (min-width: 990px) {
-  .slick-track {
-    margin-left: 30px;
-  }
 }
 
 .slick-prev {
@@ -457,7 +447,7 @@ img {
 }
 @media screen and (min-width: 990px) {
   .works__card {
-    margin: 30px !important;
+    margin: 50px !important;
     margin-top: 65px !important;
     width: 200px !important;
     height: 200px !important;
@@ -691,9 +681,9 @@ img {
 
 .projects__card {
   position: relative;
-  width: 300px !important;
-  height: 200px;
-  margin-left: 30px !important;
+  width: 350px !important;
+  height: 250px;
+  margin-left: 75px !important;
   filter: drop-shadow(2px 4px 6px black);
 }
 .projects__card::before {
@@ -798,7 +788,6 @@ img {
   background-color: #312c26;
   justify-content: center;
   align-items: center;
-  font-size: 1.2rem;
   position: sticky;
   top: 0;
   z-index: 20;
@@ -813,10 +802,9 @@ img {
   width: 100%;
   height: 100%;
   justify-content: space-between;
-  max-width: 1000px;
+  max-width: 1240px;
   margin: 0 auto;
-  padding: 0 auto;
-  font-size: 1.15rem;
+  font-size: 25px;
 }
 .navbar .nav__logo {
   align-items: center;
@@ -841,6 +829,7 @@ img {
   .navbar .nav--menu {
     display: flex;
     flex-direction: row;
+    align-items: center;
     background-color: rgba(30, 26, 23, 0.59);
     background: transparent;
     width: auto;
@@ -943,7 +932,7 @@ img {
   .nav--social__link {
     display: flex;
     flex-direction: column;
-    gap: 0.1rem;
+    gap: 1.1rem;
     list-style: none;
     margin: 0;
     padding: 0;
@@ -954,7 +943,7 @@ img {
     background: linear-gradient(360deg, #1a1614 0%, #c6a98b 50%, #efe0cb 100%);
     content: "";
     left: 100px;
-    bottom: 200px;
+    bottom: 250px;
     position: absolute;
     transition: all 0.5s;
   }
@@ -964,7 +953,7 @@ img {
     background: linear-gradient(180deg, #1a1614 0%, #c6a98b 50%, #efe0cb 100%);
     content: "";
     left: 100px;
-    top: 200px;
+    top: 250px;
     position: absolute;
     transition: all 0.5s;
   }
@@ -1051,7 +1040,7 @@ img {
 }
 @media screen and (min-width: 990px) {
   .home {
-    width: 1000px;
+    width: 1240px;
     padding: 3.5rem;
     margin-left: auto;
     margin-right: auto;
@@ -1192,7 +1181,7 @@ img {
 }
 @media screen and (min-width: 990px) {
   .home__data__subtitle {
-    font-size: 1.5rem;
+    font-size: 1.75rem;
   }
 }
 .home__data__subtitle::before {
@@ -1206,16 +1195,16 @@ img {
   position: absolute;
 }
 .home__data__description {
-  margin-bottom: 2rem;
+  margin: 3rem;
   color: #c6a98b;
   width: 100%;
   max-width: 100%;
-  font-size: 1.15rem;
+  font-size: 25px;
   text-align: center;
 }
 @media screen and (min-width: 990px) {
   .home__data__description {
-    font-size: 1.1rem;
+    font-size: 25px;
   }
 }
 .home__data__button {
@@ -1272,7 +1261,7 @@ img {
 
 @media screen and (min-width: 990px) {
   .skills {
-    width: 1000px;
+    width: 1240px;
     padding: 3.5rem;
     margin-left: auto;
     margin-right: auto;
@@ -1311,7 +1300,7 @@ img {
 
 @media screen and (min-width: 990px) {
   .works {
-    width: 1000px;
+    width: 1240px;
     padding: 3.5rem;
     margin-left: auto;
     margin-right: auto;
@@ -1362,9 +1351,9 @@ img {
   width: 0;
   background: transparent;
   transition: width 0.7s ease, background-color 0.5s ease;
-  position: absolute;
   bottom: -2px;
   left: 0;
+  margin-top: 4px;
 }
 .works__container__links__btn button.active:after {
   width: 100%;
@@ -1394,7 +1383,7 @@ img {
 }
 @media screen and (min-width: 990px) {
   .contact {
-    width: 1000px;
+    width: 1240px;
     padding: 3.5rem;
     margin-left: auto;
     margin-right: auto;

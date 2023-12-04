@@ -16,7 +16,7 @@ function NavSocial() {
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="50"
+              width="100"
               height="70"
               viewBox="0 0 100 100"
             >
@@ -58,7 +58,7 @@ function NavSocial() {
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="50"
+              width="100"
               height="70"
               viewBox="0 0 100 100"
             >
@@ -100,7 +100,7 @@ function NavSocial() {
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="50"
+              width="100"
               height="70"
               viewBox="0 0 100 100"
             >

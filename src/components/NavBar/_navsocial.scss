@@ -18,7 +18,7 @@
     &__link {
       display: flex;
       flex-direction: column;
-      gap: 0.1rem;
+      gap: 1.1rem;
       list-style: none;
       margin: 0;
       padding: 0;
@@ -34,7 +34,7 @@
         );
         content: "";
         left: 100px;
-        bottom: 200px;
+        bottom: 250px;
         position: absolute;
         transition: all 0.5s;
       }
@@ -50,7 +50,7 @@
         );
         content: "";
         left: 100px;
-        top: 200px;
+        top: 250px;
         position: absolute;
         transition: all 0.5s;
       }

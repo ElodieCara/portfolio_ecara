@@ -10,7 +10,7 @@
 
 .slick-track {
   @include desktop {
-    margin-left: 30px;
+    // margin-left: -30px !important;
   }
 }
 
@@ -37,6 +37,7 @@
 .slick-prev {
   z-index: 99;
 }
+
 .Slider {
   padding-bottom: 30px;
 }
@@ -51,7 +52,7 @@
   margin-left: 70px !important;
   @include shadow;
   @include desktop {
-    margin: 30px !important;
+    margin: 50px !important;
     margin-top: 65px !important;
     width: 200px !important;
     height: 200px !important;
@@ -295,9 +296,9 @@
 // ============== Projets Personnels =================
 .projects__card {
   position: relative;
-  width: 300px !important;
-  height: 200px;
-  margin-left: 30px !important;
+  width: 350px !important;
+  height: 250px;
+  margin-left: 75px !important;
   @include shadow;
 
   &::before {

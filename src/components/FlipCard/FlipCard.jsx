@@ -31,8 +31,8 @@ const FlipCard = () => {
                     src={logo.url}
                     key={index}
                     alt=""
-                    height={20}
-                    width={20}
+                    height={25}
+                    width={25}
                   />
                 ))}
               </div>

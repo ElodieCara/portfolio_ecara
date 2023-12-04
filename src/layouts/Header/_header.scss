@@ -127,7 +127,7 @@
       font-weight: $semibold;
       margin-bottom: $mb-0-75;
       padding-left: 30px;
-      font-size: $normal-font-size;
+      font-size: $h2-font-size;
 
       @include desktop {
         font-size: $h3-font-size;
@@ -151,14 +151,14 @@
     }
 
     &__description {
-      margin-bottom: $mb-2;
+      margin: $mb-3;
       color: $secondary-color;
       width: 100%;
       max-width: 100%;
-      font-size: $small-font-size;
+      font-size: 25px;
       text-align: center;
       @include desktop {
-        font-size: 1.1rem;
+        font-size: 25px;
       }
     }
 
