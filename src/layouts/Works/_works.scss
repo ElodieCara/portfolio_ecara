@@ -67,10 +67,13 @@
     width: 23em;
     margin-top: 2rem;
     @include desktop {
-      width: 95%;
+      width: 100%;
+      max-width: 85%;
     }
+
     @include tablet {
       width: 80%;
+      padding: 30px;
     }
   }
 }

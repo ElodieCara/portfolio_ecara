@@ -14,6 +14,8 @@ const Slideshow = ({ activeSection }) => {
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
+    centerMode: true,
+    centerPadding: 0,
     responsive: [
       {
         breakpoint: 1024,
@@ -32,7 +34,7 @@ const Slideshow = ({ activeSection }) => {
 
   if (activeSection === "formation") {
     return (
-      <Slider {...settings} className="Slider">
+      <Slider {...settings} className="slider">
         {dataWorks.map((item, index) => (
           <div className="works__card" key={index}>
             <div className="works__card__date">{item.date}</div>
@@ -115,7 +117,7 @@ const Slideshow = ({ activeSection }) => {
     const slidesToShow = Math.min(2, dataDesign.length);
 
     return (
-      <Slider {...settings} slidesToShow={slidesToShow}>
+      <Slider {...settings} slidesToShow={slidesToShow} className="slider">
         {dataDesign?.map((project, id) => (
           <div className="projects__card" key={id}>
             <div className="projects__card__img">
