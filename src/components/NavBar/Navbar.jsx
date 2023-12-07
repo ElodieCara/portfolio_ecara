@@ -24,7 +24,7 @@ const NavBar = () => {
             <li className="nav--menu__item">
               <NavLink
                 exact="true"
-                to="#header"
+                to="/portfolio_ecara/"
                 className="nav--menu__item__links"
                 onClick={handleClick}
               >

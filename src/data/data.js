@@ -21,8 +21,11 @@ import Panthere from "@/assets/works/panthere.jpg";
 import PanthereSite from "@/assets/works/PanthereSite.png";
 import PanthereLogo from "@/assets/works/logos/panthere.svg";
 import ChezCharlie from "@/assets/works/ChezCharlie.png";
+import CharlieLogo from "@/assets/works/logos/Charlie.png";
 import Portfolio from "@/assets/works/portfolio.png";
+import PortLogo from "@/assets/works/logos/PortLogo.png";
 import Alifey from "@/assets/works/portfolio__nuages.png";
+import AlifeyLogo from "@/assets/works/logos/Alifey.png";
 
 export const dataSkills = [
   {
@@ -256,6 +259,7 @@ export const dataDesign = [
     id: 20,
     image: Alifey,
     title: "Alifey-Nuages",
+    logo: AlifeyLogo,
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua.",
     date: "28/11/2023",
@@ -270,11 +274,15 @@ export const dataDesign = [
         url: "https://elodiecara.github.io/projet-pink/",
         name: "Lien Alifey",
       },
+    ],
+    github: [
       {
         icon: "/images/logos/github.svg",
         url: "https://github.com/ElodieCara/projet-pink",
         name: "Code Alifey",
       },
+    ],
+    maquette: [
       {
         icon: "/images/logos/figma.png",
         url: "https://www.figma.com/proto/e8oFLY0WbN62cjh2UBH0gr/Chez-Charlie?type=design&scaling=scale-down&page-id=0%3A1&node-id=1-4",
@@ -286,6 +294,7 @@ export const dataDesign = [
     id: 21,
     image: Portfolio,
     title: "Portfolio",
+    logo: PortLogo,
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua.",
     date: "01/01/22",
@@ -300,11 +309,15 @@ export const dataDesign = [
         url: "none",
         name: "Lien vers le portfolio",
       },
+    ],
+    github: [
       {
         icon: "/images/logos/github.svg",
         url: "https://github.com/ElodieCara/portfolio_ecara",
         name: "Code du portfolio",
       },
+    ],
+    maquette: [
       {
         icon: "/images/logos/figma.png",
         url: "https://www.figma.com/proto/zpOh34P302zPQ9Ao4AyLRp/MYPORTFOLIO?type=design&node-id=20-2&scaling=min-zoom&page-id=0%3A1",
@@ -316,6 +329,7 @@ export const dataDesign = [
     id: 22,
     image: ChezCharlie,
     title: "Chez Charlie",
+    logo: CharlieLogo,
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua.",
     date: "01/01/22",
@@ -330,11 +344,15 @@ export const dataDesign = [
         url: "Lien",
         name: "Lien Chez Charlie",
       },
+    ],
+    github: [
       {
         icon: "/images/logos/github.svg",
         url: "https://github.com/ElodieCara/chez-charlie",
         name: "Code Chez Charlie",
       },
+    ],
+    maquette: [
       {
         icon: "/images/logos/figma.png",
         url: "https://www.figma.com/proto/e8oFLY0WbN62cjh2UBH0gr/Chez-Charlie?type=design&scaling=scale-down&page-id=0%3A1&node-id=1-4",

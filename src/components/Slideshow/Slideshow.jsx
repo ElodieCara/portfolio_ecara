@@ -120,24 +120,28 @@ const Slideshow = ({ activeSection }) => {
       <Slider {...settings} slidesToShow={slidesToShow} className="slider">
         {dataDesign?.map((project, id) => (
           <div className="projects__card" key={id}>
-            <div className="projects__card__img">
-              <img src={project.image} alt="projets" />
-            </div>
-            <div className="projects__card__body">
-              <h3 className="projects__card__body__title">{project.title}</h3>
-              <div className="projects__card__body__techno">
-                {project.techno.map((techno, id) => (
-                  <img
-                    src={techno.url}
-                    key={id}
-                    alt=""
-                    height={20}
-                    width={20}
-                  />
-                ))}
+            <Link
+              className="projects__card__link"
+              to={`/portfolio_ecara/works/${project.id}`}
+            >
+              <div className="projects__card__img">
+                <img src={project.image} alt="projets" />
               </div>
-              {/* <div className="projects__card__body__link">
-                <h3>Liens</h3>
+              <div className="projects__card__body">
+                <h3 className="projects__card__body__title">{project.title}</h3>
+                <div className="projects__card__body__techno">
+                  {project.techno.map((techno, id) => (
+                    <img
+                      src={techno.url}
+                      key={id}
+                      alt=""
+                      height={20}
+                      width={20}
+                    />
+                  ))}
+                </div>
+
+                {/* <span className="projects__card__body__link">
                 {project.link.map((link, id) => (
                   <a
                     href={link.url}
@@ -145,16 +149,12 @@ const Slideshow = ({ activeSection }) => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <img
-                      src={link.icon}
-                      alt={link.name}
-                      height={20}
-                      width={20}
-                    />
+                    <img src={""} alt={""} height={20} width={20} />
                   </a>
                 ))}
-              </div> */}
-            </div>
+              </span> */}
+              </div>
+            </Link>
           </div>
         ))}
       </Slider>
