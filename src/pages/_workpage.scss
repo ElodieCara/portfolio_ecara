@@ -1,280 +1,265 @@
-.work-page {
-  width: 100%;
-  height: 470px;
-  height: 100vh;
-  position: relative;
+// .work-page {
+//   width: 100%;
+//   height: 470px;
+//   height: 100vh;
+//   position: relative;
 
-  @include desktop {
-    display: flex;
-    flex-direction: column;
-  }
+//   @include desktop {
+//     display: flex;
+//     flex-direction: column;
+//   }
 
-  &__background {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-  }
+//   &__background {
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     width: 100%;
+//     height: 100%;
+//     z-index: -1;
+//   }
 
-  &__container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+//   &__container {
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//   }
 
-  &__block {
-    width: 100%;
-    height: 100%;
-    isolation: isolate;
+//   &__block {
+//     width: 100%;
+//     height: 100%;
+//     isolation: isolate;
 
-    &::after {
-      content: "";
-      position: absolute;
-      inset: 0;
-      filter: grayscale(0);
-      opacity: 0.25;
-      width: 120%;
-      height: 100%;
-      opacity: 0.4;
-      background-image: radial-gradient(
-          farthest-side at 0 0,
-          rgba(49, 42, 43, 0.3),
-          rgba(255, 26, 198, 0)
-        ),
-        radial-gradient(
-          farthest-side at 100% 0,
-          rgb(198, 169, 139),
-          rgba(60, 221, 221, 0)
-        ),
-        radial-gradient(
-          farthest-side at 50% 0,
-          rgba(82, 224, 196, 0),
-          rgb(26, 22, 20)
-        );
-      left: 0px;
-      z-index: -10;
-      backface-visibility: hidden;
-      filter: drop-shadow(2px 4px 6px black);
-    }
+//     &::after {
+//       content: "";
+//       position: absolute;
+//       inset: 0;
+//       filter: grayscale(0);
+//       opacity: 0.25;
+//       width: 120%;
+//       height: 100%;
+//       opacity: 0.4;
+//       background-image: radial-gradient(
+//           farthest-side at 0 0,
+//           rgba(49, 42, 43, 0.3),
+//           rgba(255, 26, 198, 0)
+//         ),
+//         radial-gradient(
+//           farthest-side at 100% 0,
+//           rgb(198, 169, 139),
+//           rgba(60, 221, 221, 0)
+//         ),
+//         radial-gradient(
+//           farthest-side at 50% 0,
+//           rgba(82, 224, 196, 0),
+//           rgb(26, 22, 20)
+//         );
+//       left: 0px;
+//       z-index: -10;
+//       backface-visibility: hidden;
+//       filter: drop-shadow(2px 4px 6px black);
+//     }
 
-    & h1 {
-      font-size: 45px;
-      color: $primary-color;
-      margin-bottom: 15px;
-    }
+//     & h1 {
+//       font-size: 45px;
+//       color: $primary-color;
+//       margin-bottom: 15px;
+//     }
 
-    &-content {
-      display: grid;
-      justify-items: start;
-      align-items: center;
-      @include section;
-      gap: 2rem;
-      overflow: hidden;
-      min-height: 30rem;
+//     &-content {
+//       display: grid;
+//       justify-items: start;
+//       align-items: center;
+//       @include section;
+//       gap: 2rem;
+//       overflow: hidden;
+//       min-height: 30rem;
 
-      @include desktop {
-        display: flex;
-        flex-direction: row-reverse;
-        justify-content: center;
-      }
+//       @include desktop {
+//         display: flex;
+//         flex-direction: row-reverse;
+//         justify-content: center;
+//       }
 
-      &__title {
-        font-size: 55px;
-        color: $tertiary-color;
-        margin: 2rem;
-      }
+//       &__title {
+//         font-size: 55px;
+//         color: $tertiary-color;
+//         margin: 2rem;
+//       }
 
-      &__image {
-        border: 2px solid $secondary-color;
-        display: flex;
-        margin-top: 2rem;
-        justify-content: center;
-        align-items: center;
-        width: 400px;
+//       &__image {
+//         border: 2px solid $secondary-color;
+//         display: flex;
+//         margin-top: 2rem;
+//         justify-content: center;
+//         align-items: center;
+//         width: 400px;
 
-        &::after {
-          content: "";
-          position: absolute;
-          width: 400px;
-          height: 270px;
-          border: 4px solid #c6a98b;
-          opacity: 0.4;
-          -webkit-transform: rotate(-8deg);
-          -ms-transform: rotate(-8deg);
-          transform: rotate(-8deg);
-          background: url(/portfolio_ecara/src/assets/Logo.png) center/cover
-            no-repeat;
-          z-index: -10;
-          -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
-          -webkit-filter: drop-shadow(2px 4px 6px black);
-          filter: drop-shadow(2px 4px 6px black);
-        }
+//         &::after {
+//           content: "";
+//           position: absolute;
+//           width: 400px;
+//           height: 270px;
+//           border: 4px solid #c6a98b;
+//           opacity: 0.4;
+//           -webkit-transform: rotate(-8deg);
+//           -ms-transform: rotate(-8deg);
+//           transform: rotate(-8deg);
+//           background: url(/portfolio_ecara/src/assets/Logo.png) center/cover
+//             no-repeat;
+//           z-index: -10;
+//           -webkit-backface-visibility: hidden;
+//           backface-visibility: hidden;
+//           -webkit-filter: drop-shadow(2px 4px 6px black);
+//           filter: drop-shadow(2px 4px 6px black);
+//         }
 
-        // @include desktop {
-        //   max-width: 20%;
-        // }
-      }
+//         // @include desktop {
+//         //   max-width: 20%;
+//         // }
+//       }
 
-      & p {
-        width: 50%;
-        font-size: 14px;
-      }
-    }
-  }
+//       & p {
+//         width: 50%;
+//         font-size: 14px;
+//       }
+//     }
+//   }
 
-  &__menu {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    right: 60px;
-    bottom: 600px;
-    @include desktop {
-    }
+//   &__menu {
+//     display: flex;
+//     flex-direction: column;
+//     position: absolute;
+//     right: 60px;
+//     bottom: 600px;
+//     @include desktop {
+//     }
 
-    button {
-      cursor: pointer;
-      appearance: none;
-      border: none;
-      background: transparent;
-      transition: transform 0.3s;
+//     button {
+//       cursor: pointer;
+//       appearance: none;
+//       border: none;
+//       background: transparent;
+//       transition: transform 0.3s;
 
-      &.active {
-        transform: scaleX(2);
-      }
+//       &.active {
+//         transform: scaleX(2);
+//       }
 
-      & span {
-        color: $tertiary-color;
-        font-size: 20px;
+//       & span {
+//         color: $tertiary-color;
+//         font-size: 20px;
 
-        &.active-number {
-          // background-image: linear-gradient(to top, #00c3ff, #77e190, #ffff1c);
-          background-clip: text;
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
-          transition: transform 0.3s ease;
-        }
-      }
+//         &.active-number {
+//           // background-image: linear-gradient(to top, #00c3ff, #77e190, #ffff1c);
+//           background-clip: text;
+//           -webkit-background-clip: text;
+//           -webkit-text-fill-color: transparent;
+//           transition: transform 0.3s ease;
+//         }
+//       }
 
-      &:hover {
-        transform: scaleX(2);
+//       &:hover {
+//         transform: scaleX(2);
 
-        &::before {
-          transform: scaleX(1);
-        }
-      }
-    }
-  }
+//         &::before {
+//           transform: scaleX(1);
+//         }
+//       }
+//     }
+//   }
 
-  &__link {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    position: relative;
+//   &__link {
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     position: relative;
 
-    & ul {
-      height: 80px;
-      display: flex;
-      justify-content: space-around;
-      border-bottom: 1px solid $secondary-color;
-      padding-top: 15px;
-      background-color: rgba(255, 255, 255, 0.1);
-      @include shadow;
+//     & ul {
+//       height: 80px;
+//       display: flex;
+//       justify-content: space-around;
+//       border-bottom: 1px solid $secondary-color;
+//       padding-top: 15px;
+//       background-color: rgba(255, 255, 255, 0.1);
+//       @include shadow;
 
-      & li {
-        height: 100%;
-        flex: 50%;
-        text-align: center;
+//       & li {
+//         height: 100%;
+//         flex: 50%;
+//         text-align: center;
 
-        & > * {
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-        }
+//         & > * {
+//           display: flex;
+//           flex-direction: column;
+//           justify-content: center;
+//         }
 
-        .image-container {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          margin-bottom: 15px;
-        }
+//         .image-container {
+//           display: flex;
+//           justify-content: center;
+//           align-items: center;
+//           margin-bottom: 15px;
+//         }
 
-        &:hover {
-          content: "";
-          display: block;
-          border-bottom: 2px solid $tertiary-color;
+//         &:hover {
+//           content: "";
+//           display: block;
+//           border-bottom: 2px solid $tertiary-color;
 
-          & a {
-            color: $tertiary-color;
-          }
-        }
-      }
-    }
-  }
+//           & a {
+//             color: $tertiary-color;
+//           }
+//         }
+//       }
+//     }
+//   }
 
-  &__description {
-    padding: 5rem;
-    // background-image: radial-gradient(
-    //     farthest-side at 0 0,
-    //     rgba(49, 42, 43, 0.3),
-    //     rgba(255, 26, 198, 0)
-    //   ),
-    //   radial-gradient(
-    //     farthest-side at 100% 0,
-    //     rgba(198, 169, 139),
-    //     rgba(60, 221, 221, 0)
-    //   ),
-    //   radial-gradient(
-    //     farthest-side at 50% 0,
-    //     rgba(82, 224, 196, 0),
-    //     rgb(26, 22, 20)
-    //   );
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center top;
-    overflow: hidden;
-    position: relative;
-    z-index: 0;
+//   &__description {
+//     padding: 5rem;
+//     background-repeat: no-repeat;
+//     background-size: cover;
+//     background-position: center top;
+//     overflow: hidden;
+//     position: relative;
+//     z-index: 0;
 
-    &__content {
-      display: flex;
-      flex-direction: row;
-      justify-content: flex-start;
-      align-items: center;
-      gap: 1rem;
-      @include shadow;
+//     &__content {
+//       display: flex;
+//       flex-direction: row;
+//       justify-content: flex-start;
+//       align-items: center;
+//       gap: 1rem;
+//       @include shadow;
 
-      &__logo {
-        width: 135px;
-      }
-    }
+//       &__logo {
+//         width: 135px;
+//       }
+//     }
 
-    &__techno {
-      display: flex;
-      justify-content: center;
+//     &__techno {
+//       display: flex;
+//       justify-content: center;
 
-      & > * {
-        height: 50px;
-        margin: 1rem;
-        padding: 0.2rem;
-        background-color: rgba(255, 255, 255, 0.1);
-        border-radius: 5%;
-      }
-    }
+//       & > * {
+//         height: 50px;
+//         margin: 1rem;
+//         padding: 0.2rem;
+//         background-color: rgba(255, 255, 255, 0.1);
+//         border-radius: 5%;
+//       }
+//     }
 
-    &__texte {
-      text-align: center;
-      align-items: center;
-    }
+//     &__texte {
+//       text-align: center;
+//       align-items: center;
+//     }
 
-    &__gallery {
-      column-count: 3;
-      margin: 2rem;
-      text-align: center;
-      @include desktop {
-      }
-    }
-  }
-}
+//     &__gallery {
+//       column-count: 3;
+//       margin: 2rem;
+//       text-align: center;
+//       @include desktop {
+//       }
+//     }
+//   }
+// }
