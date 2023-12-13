@@ -442,52 +442,35 @@ img {
 
 /*============== Projets Formation ===============*/
 .works__card {
-  width: 200px !important;
-  height: 200px;
-  border: 4px solid #c6a98b;
+  margin: 35px !important;
+  width: 235px !important;
+  height: 235px;
+  border: 2px solid #c6a98b;
   filter: drop-shadow(2px 4px 6px black);
-}
-@media screen and (min-width: 990px) {
-  .works__card {
-    margin: 35px !important;
-    width: 235px !important;
-    height: 235px !important;
-  }
-}
-@media screen and (min-width: 769px) and (max-width: 990px) {
-  .works__card {
-    width: 200px !important;
-    height: 200px !important;
-  }
 }
 .works__card::after {
   content: "";
   position: absolute;
-  border: 4px solid #c6a98b;
+  border: 2px solid #c6a98b;
   background: linear-gradient(90deg, #1a1614 0%, #c6a98b 50%, #efe0cb 100%);
   mix-blend-mode: luminosity;
   opacity: 0.76;
-  width: 200px;
-  height: 200px;
+  width: 235px;
+  height: 235px;
   bottom: 20px;
   left: 30px;
   z-index: -100;
+  transition: transform 0.5s, opacity 0.5s;
 }
-@media screen and (min-width: 769px) and (max-width: 990px) {
-  .works__card::after {
-    width: 200px !important;
-    height: 200px !important;
-  }
-}
-@media screen and (min-width: 990px) {
-  .works__card::after {
-    width: 235px !important;
-    height: 235px !important;
-  }
+.works__card:hover::after {
+  background-color: black;
+  transform: translateY(22px) translateX(-32px);
+  opacity: 1;
+  mix-blend-mode: unset;
 }
 .works__card__date {
   position: absolute;
-  top: 70px;
+  top: 95px;
   left: -25px;
   transform: rotate(180deg);
   writing-mode: vertical-rl;
@@ -555,27 +538,12 @@ img {
   background-repeat: no-repeat;
   margin: 30px;
 }
-@media screen and (min-width: 769px) and (max-width: 990px) {
-  .works__card__body__logo {
-    width: 50%;
-  }
-}
 .works__card__body__techno {
   display: flex;
   position: absolute;
-  bottom: 165px;
+  bottom: 200px;
   left: 5px;
   width: 100%;
-}
-@media screen and (min-width: 769px) and (max-width: 990px) {
-  .works__card__body__techno {
-    bottom: 157px;
-  }
-}
-@media screen and (min-width: 990px) {
-  .works__card__body__techno {
-    bottom: 200px;
-  }
 }
 .works__card__body__techno > * {
   height: 50px;
@@ -591,12 +559,6 @@ img {
   width: 20px;
   height: 20px;
   margin-right: 0.5rem;
-}
-@media screen and (min-width: 769px) and (max-width: 990px) {
-  .works__card__body__techno img {
-    width: 30px;
-    height: 30px;
-  }
 }
 .works__card__body__text {
   font-size: 12px;
@@ -627,9 +589,6 @@ img {
     height: 55px;
   }
 }
-.works__card__body__link ul:hover {
-  box-shadow: 0 0 20px #c6a98b;
-}
 .works__card__body__link ul li {
   flex: 50%;
   display: flex;
@@ -640,10 +599,15 @@ img {
   border-bottom: 2px solid transparent; /* Bordure inférieure transparente par défaut */
   transition: border-bottom 0.3s;
 }
+.works__card__body__link ul li:hover {
+  box-shadow: 0 0 20px #232f2e;
+}
 .works__card__body__link ul li > * {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  width: 100%;
+  height: 100%;
 }
 @media screen and (min-width: 769px) and (max-width: 990px) {
   .works__card__body__link ul li span {
@@ -683,6 +647,7 @@ img {
   position: relative;
   width: 300px !important;
   height: 250px;
+  border: 1px solid rgb(29, 21, 13);
   filter: drop-shadow(2px 4px 6px black);
 }
 @media screen and (min-width: 769px) and (max-width: 990px) {
@@ -692,7 +657,8 @@ img {
 }
 @media screen and (min-width: 990px) {
   .projects__card {
-    width: 350px !important;
+    width: 430px !important;
+    height: 280px;
   }
 }
 .projects__card::before {
@@ -750,6 +716,7 @@ img {
   top: -45px;
   right: 12px;
   margin-top: 10px;
+  height: 0;
 }
 .projects__card__body__title {
   display: none;
@@ -788,6 +755,7 @@ img {
   }
 }
 
+/* ===== Navbar Accueil ===== */
 .navbar {
   height: 80px;
   width: 100%;
@@ -873,7 +841,6 @@ img {
 .navbar .nav--menu__item:after {
   content: "";
   display: block;
-  height: 3px;
   width: 0;
   background: transparent;
   transition: width 0.7s ease, background-color 0.5s ease;
@@ -919,6 +886,14 @@ img {
     display: none;
     color: #c6a98b;
   }
+}
+
+/* ===== Navbar Other Pages ==== */
+.navbar.works-page .nav--menu__item--display {
+  display: block;
+}
+.navbar.works-page .nav--menu__item--hidden {
+  display: none;
 }
 
 .nav--social {
@@ -1137,6 +1112,16 @@ img {
   width: 200px;
   height: 115%;
 }
+@media screen and (min-width: 769px) and (max-width: 990px) {
+  .home__photo img {
+    width: 200px;
+  }
+}
+@media screen and (min-width: 990px) {
+  .home__photo img {
+    width: 275px;
+  }
+}
 .home__photo__bg {
   bottom: -50px;
   left: -50px;
@@ -1205,12 +1190,16 @@ img {
   position: absolute;
 }
 .home__data__description {
-  margin: 3rem;
+  margin: 3rem 0;
   color: #c6a98b;
   width: 100%;
   max-width: 100%;
   font-size: 25px;
-  text-align: center;
+}
+@media screen and (min-width: 769px) and (max-width: 990px) {
+  .home__data__description {
+    font-size: 20px;
+  }
 }
 @media screen and (min-width: 990px) {
   .home__data__description {
@@ -1401,6 +1390,7 @@ img {
     padding: 3.5rem;
     margin-left: auto;
     margin-right: auto;
+    margin: 0 auto;
   }
   .contact__title {
     font-size: 3rem;
@@ -1700,13 +1690,29 @@ img {
 .work-page__block-content {
   display: grid;
   justify-items: start;
+  align-items: center;
+  width: 100%;
+  max-width: 1240px;
+  padding: 3.5rem;
+  margin-left: auto;
+  margin-right: auto;
   gap: 2rem;
   overflow: hidden;
-  min-height: 400px;
+  min-height: 30rem;
+}
+.work-page__block-content__title {
+  font-size: 3rem;
+}
+.work-page__block-content__subtitle {
+  display: block;
+  font-size: 1.15rem;
+  margin-bottom: 3rem;
 }
 @media screen and (min-width: 990px) {
   .work-page__block-content {
     display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
   }
 }
 .work-page__block-content__title {
@@ -1715,16 +1721,29 @@ img {
   margin: 2rem;
 }
 .work-page__block-content__image {
+  border: 2px solid #c6a98b;
   display: flex;
   margin-top: 2rem;
   justify-content: center;
   align-items: center;
-  width: 200px;
+  width: 400px;
 }
-@media screen and (min-width: 990px) {
-  .work-page__block-content__image {
-    max-width: 20%;
-  }
+.work-page__block-content__image::after {
+  content: "";
+  position: absolute;
+  width: 400px;
+  height: 270px;
+  border: 4px solid #c6a98b;
+  opacity: 0.4;
+  -webkit-transform: rotate(-8deg);
+  -ms-transform: rotate(-8deg);
+  transform: rotate(-8deg);
+  background: url(/portfolio_ecara/src/assets/Logo.png) center/cover no-repeat;
+  z-index: -10;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-filter: drop-shadow(2px 4px 6px black);
+  filter: drop-shadow(2px 4px 6px black);
 }
 .work-page__block-content p {
   width: 50%;
@@ -1752,7 +1771,6 @@ img {
   font-size: 20px;
 }
 .work-page__menu button span.active-number {
-  background-image: linear-gradient(to top, #00c3ff, #77e190, #ffff1c);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -1805,7 +1823,6 @@ img {
 }
 .work-page__description {
   padding: 5rem;
-  background-image: radial-gradient(farthest-side at 0 0, rgba(49, 42, 43, 0.3), rgba(255, 26, 198, 0)), radial-gradient(farthest-side at 100% 0, rgb(198, 169, 139), rgba(60, 221, 221, 0)), radial-gradient(farthest-side at 50% 0, rgba(82, 224, 196, 0), rgb(26, 22, 20));
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center top;
@@ -1815,10 +1832,14 @@ img {
 }
 .work-page__description__content {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
   gap: 1rem;
   filter: drop-shadow(2px 4px 6px black);
+}
+.work-page__description__content__logo {
+  width: 135px;
 }
 .work-page__description__techno {
   display: flex;
@@ -1835,12 +1856,8 @@ img {
   text-align: center;
   align-items: center;
 }
-.work-page__description__img {
+.work-page__description__gallery {
+  column-count: 3;
   margin: 2rem;
   text-align: center;
-}
-@media screen and (min-width: 990px) {
-  .work-page__description__img {
-    width: 30%;
-  }
 }/*# sourceMappingURL=index.css.map */

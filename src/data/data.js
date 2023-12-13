@@ -20,12 +20,15 @@ import KasaLogo from "@/assets/works/logos/Kasa.png";
 import Panthere from "@/assets/works/panthere.jpg";
 import PanthereSite from "@/assets/works/PanthereSite.png";
 import PanthereLogo from "@/assets/works/logos/panthere.svg";
-import ChezCharlie from "@/assets/works/ChezCharlie.png";
-import CharlieLogo from "@/assets/works/logos/Charlie.png";
+// import ChezCharlie from "@/assets/works/ChezCharlie.png";
+// import CharlieLogo from "@/assets/works/logos/Charlie.png";
 import Portfolio from "@/assets/works/portfolio.png";
 import PortLogo from "@/assets/works/logos/PortLogo.png";
+import PortBG from "@/assets/works/TreeBackCont.jpg";
 import Alifey from "@/assets/works/portfolio__nuages.png";
+import AlifeyBG from "@/assets/AlifeyBG.webp";
 import AlifeyLogo from "@/assets/works/logos/Alifey.png";
+import AlifeySite from "@/assets/works/Alifey_Site.png";
 
 export const dataSkills = [
   {
@@ -258,8 +261,11 @@ export const dataDesign = [
   {
     id: 20,
     image: Alifey,
-    title: "Alifey-Nuages",
+    title: "Alifey",
+    color: "linear-gradient(to top, #7e4793, #c7ecff, #d07fbf)",
+    bg: AlifeyBG,
     logo: AlifeyLogo,
+    capture: AlifeySite,
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua.",
     date: "28/11/2023",
@@ -294,7 +300,9 @@ export const dataDesign = [
     id: 21,
     image: Portfolio,
     title: "Portfolio",
+    color: "linear-gradient(to top, #00c3ff, #77e190, #ffff1c)",
     logo: PortLogo,
+    bg: PortBG,
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua.",
     date: "01/01/22",
@@ -306,7 +314,7 @@ export const dataDesign = [
     link: [
       {
         icon: "/images/logos/link.svg",
-        url: "none",
+        url: "https://elodiecara.github.io/portfolio_ecara/",
         name: "Lien vers le portfolio",
       },
     ],
@@ -325,39 +333,39 @@ export const dataDesign = [
       },
     ],
   },
-  {
-    id: 22,
-    image: ChezCharlie,
-    title: "Chez Charlie",
-    logo: CharlieLogo,
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua.",
-    date: "01/01/22",
-    techno: [
-      { url: "https://i.imgur.com/Cpm2Ays.png", alt: "React" },
+  // {
+  //   id: 22,
+  //   image: ChezCharlie,
+  //   title: "Chez Charlie",
+  //   logo: CharlieLogo,
+  //   description:
+  //     "Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua.",
+  //   date: "01/01/22",
+  //   techno: [
+  //     { url: "https://i.imgur.com/Cpm2Ays.png", alt: "React" },
 
-      { url: "https://i.imgur.com/FpcX7G3.png", alt: "Sass" },
-    ],
-    link: [
-      {
-        icon: "/images/logos/link.svg",
-        url: "Lien",
-        name: "Lien Chez Charlie",
-      },
-    ],
-    github: [
-      {
-        icon: "/images/logos/github.svg",
-        url: "https://github.com/ElodieCara/chez-charlie",
-        name: "Code Chez Charlie",
-      },
-    ],
-    maquette: [
-      {
-        icon: "/images/logos/figma.png",
-        url: "https://www.figma.com/proto/e8oFLY0WbN62cjh2UBH0gr/Chez-Charlie?type=design&scaling=scale-down&page-id=0%3A1&node-id=1-4",
-        name: "Prototype Chez Charlie",
-      },
-    ],
-  },
+  //     { url: "https://i.imgur.com/FpcX7G3.png", alt: "Sass" },
+  //   ],
+  //   link: [
+  //     {
+  //       icon: "/images/logos/link.svg",
+  //       url: "Lien",
+  //       name: "Lien Chez Charlie",
+  //     },
+  //   ],
+  //   github: [
+  //     {
+  //       icon: "/images/logos/github.svg",
+  //       url: "https://github.com/ElodieCara/chez-charlie",
+  //       name: "Code Chez Charlie",
+  //     },
+  //   ],
+  //   maquette: [
+  //     {
+  //       icon: "/images/logos/figma.png",
+  //       url: "https://www.figma.com/proto/e8oFLY0WbN62cjh2UBH0gr/Chez-Charlie?type=design&scaling=scale-down&page-id=0%3A1&node-id=1-4",
+  //       name: "Prototype Chez Charlie",
+  //     },
+  //   ],
+  // },
 ];

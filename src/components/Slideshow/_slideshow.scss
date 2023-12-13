@@ -38,10 +38,6 @@
   z-index: 99;
 }
 
-// .slider .slick-list {
-//   border: 1px solid red;
-// }
-
 .slider {
   margin: 0 auto !important;
 }
@@ -53,49 +49,38 @@
 /*============== Projets Formation ===============*/
 
 .works__card {
-  width: 200px !important;
-  height: 200px;
-  border: 4px solid $secondary-color;
-  // margin-top: 30px !important;
-  // margin-left: 70px !important;
+  margin: 35px !important;
+  width: 235px !important;
+  height: 235px;
+  border: 2px solid $secondary-color;
   @include shadow;
-  @include desktop {
-    margin: 35px !important;
-    // margin-top: 65px !important;
-    width: 235px !important;
-    height: 235px !important;
-  }
-  @include tablet {
-    width: 200px !important;
-    height: 200px !important;
-    // margin-left: 50px !important;
-  }
 
   &::after {
     content: "";
     position: absolute;
-    border: 4px solid $secondary-color;
+    border: 2px solid $secondary-color;
     background: $fond-color;
     mix-blend-mode: luminosity;
     opacity: 0.76;
-    width: 200px;
-    height: 200px;
+    width: 235px;
+    height: 235px;
     bottom: 20px;
     left: 30px;
     z-index: -100;
-    @include tablet {
-      width: 200px !important;
-      height: 200px !important;
-    }
-    @include desktop {
-      width: 235px !important;
-      height: 235px !important;
-    }
+    transition: transform 0.5s, opacity 0.5s;
+  }
+
+  &:hover::after {
+    // z-index: 1;
+    background-color: black; // Ajoutez une couleur de fond noire
+    transform: translateY(22px) translateX(-32px);
+    opacity: 1;
+    mix-blend-mode: unset;
   }
 
   &__date {
     position: absolute;
-    top: 70px;
+    top: 95px;
     left: -25px;
     transform: rotate(180deg);
     writing-mode: vertical-rl;
@@ -173,24 +158,14 @@
       background-position: center;
       background-repeat: no-repeat;
       margin: 30px;
-
-      @include tablet {
-        width: 50%;
-      }
     }
 
     &__techno {
       display: flex;
       position: absolute;
-      bottom: 165px;
+      bottom: 200px;
       left: 5px;
       width: 100%;
-      @include tablet {
-        bottom: 157px;
-      }
-      @include desktop {
-        bottom: 200px;
-      }
 
       & > * {
         height: 50px;
@@ -205,10 +180,6 @@
         width: 20px;
         height: 20px;
         margin-right: 0.5rem;
-        @include tablet {
-          width: 30px;
-          height: 30px;
-        }
       }
     }
 
@@ -240,10 +211,6 @@
           height: 55px;
         }
 
-        &:hover {
-          box-shadow: 0 0 20px $secondary-color;
-        }
-
         & li {
           flex: 50%;
           display: flex;
@@ -255,10 +222,16 @@
           border-bottom: 2px solid transparent; /* Bordure inférieure transparente par défaut */
           transition: border-bottom 0.3s;
 
+          &:hover {
+            box-shadow: 0 0 20px #232f2e;
+          }
+
           & > * {
             display: flex;
             flex-direction: column;
             justify-content: center;
+            width: 100%;
+            height: 100%;
           }
 
           & span {
@@ -306,6 +279,7 @@
   position: relative;
   width: 300px !important;
   height: 250px;
+  border: 1px solid rgb(29, 21, 13);
   @include shadow;
 
   @include tablet {
@@ -313,7 +287,8 @@
   }
 
   @include desktop {
-    width: 350px !important;
+    width: 430px !important;
+    height: 280px;
   }
 
   &::before {
@@ -378,6 +353,7 @@
     top: -45px;
     right: 12px;
     margin-top: 10px;
+    height: 0;
 
     &__title {
       display: none;

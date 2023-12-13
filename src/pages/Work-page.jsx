@@ -38,7 +38,30 @@ function WorkPage() {
       <div className="work-page__background"></div>
       <header>
         <Navbar />
-        <div className="work-page__container">
+        <div
+          className="work-page__container"
+          style={{
+            backgroundImage: `linear-gradient(to top, #1a1614, rgba(255, 255, 255, 0)), url(${work.bg})`,
+            //           backgroundImage: `radial-gradient(
+            //   farthest-side at 0 0,
+            //   rgba(49, 42, 43, 0.3),
+            //   rgba(255, 26, 198, 0)
+            // ),
+            // radial-gradient(
+            //   farthest-side at  100% 100%,
+            //   rgba(198, 169, 139),
+            //   rgba(60, 221, 221, 0)
+            // ),
+            // radial-gradient(
+            //   farthest-side at 50% 50%,
+            //   rgba(82, 224, 196, 0),
+            //   rgb(26, 22, 20)
+            // ), url(${work.image})`,
+            backgroundSize: "cover",
+            backgroundPosition: "top",
+            backgroundRepeat: "no-repeat",
+          }}
+        >
           <div className="work-page__block">
             <div className="work-page__menu">
               {dataDesign.map((work, index) => (
@@ -46,12 +69,23 @@ function WorkPage() {
                   key={index}
                   onClick={() => handleButtonClick(index)} // Appelle la fonction handleButtonClick avec l'index du bouton cliqué
                   className={`button ${index === active ? "active" : ""} `}
-                  // style={{ color: index === active ? "green" : "" }} // Applique la classe "active" si l'ID du travail correspond à l'ID de l'URL
+                  // Applique la classe "active" si l'ID du travail correspond à l'ID de l'URL
                 >
                   <span
                     className={`button-number ${
                       index === active ? "active-number" : "" // Applique la classe "active" si l'ID du travail correspond à l'ID de l'URL
                     }`}
+                    style={
+                      index === active
+                        ? {
+                            background: work.color,
+                            backgroundClip: "text",
+                            WebkitBackgroundClip: "text",
+                            WebkitTextFillColor: "transparent",
+                            transition: "transform 0.3s ease",
+                          }
+                        : {}
+                    }
                   >
                     {String(index + 1).padStart(2, "0")}
                   </span>
@@ -59,34 +93,13 @@ function WorkPage() {
               ))}
             </div>
 
-            <div
-              className="work-page__block-content"
-              style={{
-                backgroundImage: `radial-gradient(
-        farthest-side at 0 0,
-        rgba(49, 42, 43, 0.3),
-        rgba(255, 26, 198, 0)
-      ),
-      radial-gradient(
-        farthest-side at  100% 100%,
-        rgba(198, 169, 139),
-        rgba(60, 221, 221, 0)
-      ),
-      radial-gradient(
-        farthest-side at 50% 50%,
-        rgba(82, 224, 196, 0),
-        rgb(26, 22, 20)
-      ), `,
-                //   url(${work.image})
-                backgroundSize: "cover",
-                backgroundPosition: "center",
-                backgroundRepeat: "no-repeat",
-              }}
-            >
+            <div className="work-page__block-content">
               <div className="work-page__block-content__title">
                 {work.title}
               </div>
-              {/* <p>{work.libellé}</p> */}
+              <div className="work-page__block-content__image">
+                <img src={work.image} alt={work.title} />
+              </div>
             </div>
           </div>
         </div>
@@ -151,33 +164,40 @@ function WorkPage() {
       <main>
         <div className="work-page__description">
           <div className="work-page__description__content">
-            <h3 className="work-page__description__title">
-              <div className="work-page__block-content__image">
-                <img src={work.logo} alt={work.title} />{" "}
-              </div>
-              <article className="work-page__description__texte">
-                {work.description}
-              </article>
-            </h3>
-
-            <hr className="border-title" />
-            <div className="work-page__description__techno">
-              {work.techno.map((techno, id) => (
-                <img src={techno.url} key={id} alt={techno.alt} />
-              ))}
+            <div className="work-page__description__content__logo">
+              <img src={work.logo} alt={work.title} />{" "}
             </div>
-            <div className="work-page__description__img">
-              <img src={work.capture} alt="" />
-            </div>
+            <article className="work-page__description__content__texte">
+              {work.description}
+            </article>
           </div>
-          <ScrollToTopButton />
+          <hr className="border-title" />
+          <div className="work-page__description__techno">
+            {work.techno.map((techno, id) => (
+              <img src={techno.url} key={id} alt={techno.alt} />
+            ))}
+          </div>
+          <div className="work-page__description__gallery">
+            <div className="work-page__description--full-column">
+              <img
+                src={work.find((item) => item.size === "full").url}
+                alt="Full Image"
+              />
+            </div>
+
+            {/* Trois lignes de cartes */}
+            {work.slice(1).map((item) => (
+              <div key={item.id} className={`card ${item.size}`}>
+                <img src={item.url} alt={`Image ${item.id}`} />
+              </div>
+            ))}
+          </div>
         </div>
+        <ScrollToTopButton />
       </main>
       <footer>
         <Footer />
       </footer>
-
-      {/* Ajoutez ici les autres éléments de contenu pour le travail */}
     </div>
   );
 }

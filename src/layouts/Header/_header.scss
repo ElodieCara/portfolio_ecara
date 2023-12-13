@@ -73,6 +73,14 @@
       max-width: none;
       width: 200px;
       height: 115%;
+
+      @include tablet {
+        width: 200px;
+      }
+
+      @include desktop {
+        width: 275px;
+      }
     }
 
     &__bg {
@@ -151,12 +159,16 @@
     }
 
     &__description {
-      margin: $mb-3;
+      margin: $mb-3 0;
       color: $secondary-color;
       width: 100%;
       max-width: 100%;
       font-size: 25px;
-      text-align: center;
+
+      @include tablet {
+        font-size: 20px;
+      }
+
       @include desktop {
         font-size: 25px;
       }

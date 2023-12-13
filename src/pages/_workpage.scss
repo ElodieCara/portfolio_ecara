@@ -3,6 +3,7 @@
   height: 470px;
   height: 100vh;
   position: relative;
+
   @include desktop {
     display: flex;
     flex-direction: column;
@@ -53,7 +54,6 @@
           rgb(26, 22, 20)
         );
       left: 0px;
-      // background: url("@/assets/TreePageWork.jpg") center/cover no-repeat;
       z-index: -10;
       backface-visibility: hidden;
       filter: drop-shadow(2px 4px 6px black);
@@ -68,13 +68,16 @@
     &-content {
       display: grid;
       justify-items: start;
-
+      align-items: center;
+      @include section;
       gap: 2rem;
       overflow: hidden;
-      min-height: 400px;
+      min-height: 30rem;
 
       @include desktop {
         display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
       }
 
       &__title {
@@ -84,15 +87,35 @@
       }
 
       &__image {
+        border: 2px solid $secondary-color;
         display: flex;
         margin-top: 2rem;
         justify-content: center;
         align-items: center;
-        width: 200px;
+        width: 400px;
 
-        @include desktop {
-          max-width: 20%;
+        &::after {
+          content: "";
+          position: absolute;
+          width: 400px;
+          height: 270px;
+          border: 4px solid #c6a98b;
+          opacity: 0.4;
+          -webkit-transform: rotate(-8deg);
+          -ms-transform: rotate(-8deg);
+          transform: rotate(-8deg);
+          background: url(/portfolio_ecara/src/assets/Logo.png) center/cover
+            no-repeat;
+          z-index: -10;
+          -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+          -webkit-filter: drop-shadow(2px 4px 6px black);
+          filter: drop-shadow(2px 4px 6px black);
         }
+
+        // @include desktop {
+        //   max-width: 20%;
+        // }
       }
 
       & p {
@@ -127,7 +150,7 @@
         font-size: 20px;
 
         &.active-number {
-          background-image: linear-gradient(to top, #00c3ff, #77e190, #ffff1c);
+          // background-image: linear-gradient(to top, #00c3ff, #77e190, #ffff1c);
           background-clip: text;
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
@@ -193,21 +216,21 @@
 
   &__description {
     padding: 5rem;
-    background-image: radial-gradient(
-        farthest-side at 0 0,
-        rgba(49, 42, 43, 0.3),
-        rgba(255, 26, 198, 0)
-      ),
-      radial-gradient(
-        farthest-side at 100% 0,
-        rgba(198, 169, 139),
-        rgba(60, 221, 221, 0)
-      ),
-      radial-gradient(
-        farthest-side at 50% 0,
-        rgba(82, 224, 196, 0),
-        rgb(26, 22, 20)
-      );
+    // background-image: radial-gradient(
+    //     farthest-side at 0 0,
+    //     rgba(49, 42, 43, 0.3),
+    //     rgba(255, 26, 198, 0)
+    //   ),
+    //   radial-gradient(
+    //     farthest-side at 100% 0,
+    //     rgba(198, 169, 139),
+    //     rgba(60, 221, 221, 0)
+    //   ),
+    //   radial-gradient(
+    //     farthest-side at 50% 0,
+    //     rgba(82, 224, 196, 0),
+    //     rgb(26, 22, 20)
+    //   );
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center top;
@@ -217,10 +240,15 @@
 
     &__content {
       display: flex;
-      flex-direction: column;
-      justify-content: center;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
       gap: 1rem;
       @include shadow;
+
+      &__logo {
+        width: 135px;
+      }
     }
 
     &__techno {
@@ -241,11 +269,11 @@
       align-items: center;
     }
 
-    &__img {
+    &__gallery {
+      column-count: 3;
       margin: 2rem;
       text-align: center;
       @include desktop {
-        width: 30%;
       }
     }
   }
