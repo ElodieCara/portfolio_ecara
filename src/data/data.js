@@ -53,6 +53,7 @@ export const dataSkills = [
     description:
       "Avec une base solide en HTML, CSS et JavaScript, j'ai développé des projets personnels...",
     logos: [
+      { url: "https://i.imgur.com/epFnsm4.png", alt: "C#" },
       { url: "https://i.imgur.com/MiVJaU7.png", alt: "express" },
       { url: "https://i.imgur.com/hdQ0ixn.png", alt: "NodeJS" },
       { url: "https://i.imgur.com/FYlTosm.png", alt: "MongodB" },
@@ -62,15 +63,18 @@ export const dataSkills = [
   {
     id: 3,
     image: Brain,
-    title: "Design UI/UX",
+    title: "Design",
     description:
       "Mon objectif est de renforcer mes compétences et ma compréhension des bonnes pratiques en développement Front-end...",
     logos: [
-      { url: "https://i.imgur.com/WxwLREE.png", alt: "brain" },
+      {
+        url: "https://i.imgur.com/WxwLREE.png",
+        alt: "psychologie cognitive - ergonomie",
+      },
       { url: "https://i.imgur.com/vrVEaDW.png", alt: "Figma" },
-      { url: "https://i.imgur.com/px7xZbs.png", alt: "Adobe ID" },
-      { url: "https://i.imgur.com/UL3lS5n.png", alt: "Adobe PS" },
-      { url: "https://i.imgur.com/j2Vm5es.png", alt: "Adobe Xd" },
+      // { url: "https://i.imgur.com/px7xZbs.png", alt: "Adobe ID" },
+      // { url: "https://i.imgur.com/UL3lS5n.png", alt: "Adobe PS" },
+      // { url: "https://i.imgur.com/j2Vm5es.png", alt: "Adobe Xd" },
       { url: "https://i.imgur.com/ibBqUme.png", alt: "Adobe Ai" },
     ],
   },
@@ -79,10 +83,17 @@ export const dataSkills = [
     image: Design,
     title: "Others",
     description:
-      "Etant passionnée par la psychologie cognitive et l'ergonomie de conception, je poursuis mon apprentissage dans le Design UI/UX.",
+      "Je poursuis mon apprentissage en back-end C# à travers une formation OpenClassrooms, me focalisant sur les fondamentaux de la programmation, l'accès aux données et le développement sécurisé, avec pour objectif de devenir un développeur .NET compétent.",
     logos: [
       { url: "https://i.imgur.com/gCpZUZ7.png", alt: "Github" },
-
+      {
+        url: "https://i.imgur.com/1EdSMty.png",
+        alt: "visual studio",
+      },
+      {
+        url: "https://i.imgur.com/RgZg30r.png",
+        alt: "visual studio code",
+      },
       { url: "https://i.imgur.com/rUOLgyE.png", alt: "SEO" },
       { url: "https://i.imgur.com/FYFZUZ8.png", alt: "Postman" },
     ],
@@ -209,7 +220,7 @@ export const dataWorks = [
     title: "Kanap",
     logo: KanapLogo,
     description:
-      "Lintégrer de manière dynamique les maquettes du site de Kanap avec JavaScript.",
+      "Intégrer de manière dynamique les maquettes du site de Kanap avec JavaScript.",
     libellé: "Construire un site e-commerce en JavaScript",
     date: "03/10/22",
     capture: KanapSite,

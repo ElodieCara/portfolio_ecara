@@ -44,8 +44,7 @@ const Header = () => {
   }, []);
 
   const approachText =
-    "Enthousiaste et passionnée par le développement web, je viens de terminer ma formation de Développeuse Intégrateur Web chez OpenClassrooms. Mon parcours m'a permis de développer des compétences solides en matière de développement web, mais je nourris également une passion grandissante pour le design d'interfaces utilisateur (UI) et l'expérience utilisateur (UX). Mon objectif pour l'avenir est de me spécialiser dans ce domaine.";
-
+    "Bienvenue sur mon portfolio, où je partage mes compétences et expériences en développement Web. Après une formation de Développeuse Intégrateur Web chez OpenClassrooms, je continue à me spécialiser en développement back-end .NET. Découvrez mes projets et n'hésitez pas à me contacter pour toute opportunité professionnelle.";
   return (
     <section className="home" id="home">
       <div className="home__container">
