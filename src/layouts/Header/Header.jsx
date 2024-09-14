@@ -44,7 +44,7 @@ const Header = () => {
   }, []);
 
   const approachText =
-    "Bienvenue sur mon portfolio, où je partage mes compétences et expériences en développement Web. Après une formation de Développeuse Intégrateur Web chez OpenClassrooms, je continue à me spécialiser en développement back-end .NET. Découvrez mes projets et n'hésitez pas à me contacter pour toute opportunité professionnelle.";
+    "Bienvenue sur mon portfolio ! Je partage ici mes compétences et expériences en développement web. Formée chez OpenClassrooms en tant que Développeuse Intégrateur Web, je me spécialise désormais en développement back-end avec .NET. Découvrez mes projets et contactez-moi pour toute collaboration ou opportunité professionnelle.";
   return (
     <section className="home" id="home">
       <div className="home__container">

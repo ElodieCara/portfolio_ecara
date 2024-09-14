@@ -103,7 +103,7 @@ const ContactForm = () => {
       </div>
       <div className="contact__button">
         <a
-          href="https://cvdesignr.com/p/667d75f370dc6"
+          href="https://elodiecara.github.io/cv-ecara/"
           className="contact__button__dl"
         >
           <span>Mon CV</span>
