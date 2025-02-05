@@ -101,14 +101,14 @@ const ContactForm = () => {
           </form>
         </div>
       </div>
-      <div className="contact__button">
+      {/* <div className="contact__button">
         <a
           href="https://elodiecara.github.io/cv-ecara/"
           className="contact__button__dl"
         >
           <span>Mon CV</span>
         </a>
-      </div>
+      </div> */}
     </section>
   );
 };

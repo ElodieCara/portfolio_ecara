@@ -44,7 +44,7 @@ const Header = () => {
   }, []);
 
   const approachText =
-    "Bienvenue sur mon portfolio ! Je partage ici mes compétences et expériences en développement web. Formée chez OpenClassrooms en tant que Développeuse Intégrateur Web, je me spécialise désormais en développement back-end avec .NET. Découvrez mes projets et contactez-moi pour toute collaboration ou opportunité professionnelle.";
+    "Je conçois et développe des applications web performantes et évolutives en combinant .NET, React et Next.js. Mon expertise en architecture back-end (SQL Server, MongoDB) et en interfaces dynamiques me permet de créer des solutions à la fois robustes, intuitives et optimisées. Rigoureuse et autonome, je veille à produire un code structuré et maintenable, en accord avec les meilleures pratiques du développement web.";
   return (
     <section className="home" id="home">
       <div className="home__container">
@@ -71,7 +71,10 @@ const Header = () => {
               <Stars />
               <span className="home__data__presentation__stars"></span>
             </div>
-            <h2 className="home__data__subtitle">Développeuse Front-end</h2>
+            <h2 className="home__data__subtitle">
+              {" "}
+              Développeuse Full Stack | .NET & React{" "}
+            </h2>
             <p className="home__data__description">{approachText}</p>
             <a href="#contact" className="home__data__button">
               <span>Contactez-moi</span>
