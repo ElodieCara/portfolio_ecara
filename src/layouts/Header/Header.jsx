@@ -29,9 +29,8 @@ const Header = () => {
         });
 
         backgroundsRef.current.forEach((background) => {
-          background.style.backgroundPosition = `${xValue * 0.45}px ${
-            -yValue * 0.45
-          }px`;
+          background.style.backgroundPosition = `${xValue * 0.45}px ${-yValue * 0.45
+            }px`;
         });
       };
 
@@ -43,8 +42,16 @@ const Header = () => {
     }
   }, []);
 
-  const approachText =
-    "Je conçois et développe des applications web performantes et évolutives en combinant .NET, React et Next.js. Mon expertise en architecture back-end (SQL Server, MongoDB) et en interfaces dynamiques me permet de créer des solutions à la fois robustes, intuitives et optimisées. Rigoureuse et autonome, je veille à produire un code structuré et maintenable, en accord avec les meilleures pratiques du développement web.";
+  const approachText = `
+J’accompagne mes clients dans la création de sites et applications web modernes, performants et évolutifs.
+
+Mon expertise couvre :
+- .NET & SQL Server → pour des architectures robustes et scalables côté back-end.
+- React & Next.js (avec Prisma & MongoDB) → pour des interfaces dynamiques, rapides et intuitives.
+
+Mon objectif : transformer vos besoins en un site concret, élégant et fiable, en respectant les meilleures pratiques du développement web.
+`;
+
   return (
     <section className="home" id="home">
       <div className="home__container">
@@ -73,7 +80,7 @@ const Header = () => {
             </div>
             <h2 className="home__data__subtitle">
               {" "}
-              Développeuse Full Stack | .NET & React{" "}
+              Développeuse Web | .NET | Next.js{" "}
             </h2>
             <p className="home__data__description">{approachText}</p>
             <a href="#contact" className="home__data__button">

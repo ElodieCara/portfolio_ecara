@@ -12,7 +12,7 @@ const Works = () => {
   }, []);
 
   // État pour suivre la section active
-  const [activeSection, setActiveSection] = useState("formation");
+  const [activeSection, setActiveSection] = useState("personnels");
 
   // Fonction pour changer la section active
   const handleSectionChange = (section) => {
@@ -27,30 +27,28 @@ const Works = () => {
           <hr className="border-title" />
         </div>
         <div className="works__container__links">
-          {/* Bouton pour la section "Formation" */}
-          <li
-            className={`works__container__links__btn ${
-              activeSection === "formation" ? "active" : ""
-            }`}
-          >
-            <button
-              className={`${activeSection === "formation" ? "active" : ""}`} // Ajoute la classe "active" si c'est la section active
-              onClick={() => handleSectionChange("formation")} // Appelle la fonction pour changer la section active
-            >
-              Formation
-            </button>
-          </li>
           {/* Bouton pour la section "Personnels" */}
           <li
-            className={`works__container__links__btn ${
-              activeSection === "personnels" ? "active" : "" // Ajoute la classe "active" si c'est la section active
-            }`}
+            className={`works__container__links__btn ${activeSection === "personnels" ? "active" : "" // Ajoute la classe "active" si c'est la section active
+              }`}
           >
             <button
               className={`${activeSection === "personnels" ? "active" : ""}`} // Ajoute la classe "active" si c'est la section active
               onClick={() => handleSectionChange("personnels")} // Appelle la fonction pour changer la section active
             >
               Personnels
+            </button>
+          </li>
+          {/* Bouton pour la section "Formation" */}
+          <li
+            className={`works__container__links__btn ${activeSection === "formation" ? "active" : ""
+              }`}
+          >
+            <button
+              className={`${activeSection === "formation" ? "active" : ""}`} // Ajoute la classe "active" si c'est la section active
+              onClick={() => handleSectionChange("formation")} // Appelle la fonction pour changer la section active
+            >
+              Formation
             </button>
           </li>
         </div>

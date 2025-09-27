@@ -51,13 +51,10 @@ export const dataSkills = [
     image: Brackets,
     title: "Langages de programmation",
     description:
-      "Expertise en langages essentiels au développement d’applications modernes, garantissant performance et maintenabilité.",
+      "Développement en C# pour des back-ends robustes, et en JavaScript/TypeScript pour des front-ends modernes et dynamiques.",
     logos: [
       { url: "https://i.imgur.com/epFnsm4.png", alt: "C#" },
-      {
-        url: "https://i.imgur.com/IWDNGMz.png",
-        alt: "JavaScript (React, TypeScript)",
-      },
+      { url: "https://i.imgur.com/IWDNGMz.png", alt: "JavaScript" },
       { url: typescriptLogo, alt: "TypeScript" },
       { url: "https://i.imgur.com/eeo0swQ.png", alt: "HTML" },
       { url: "https://i.imgur.com/k2nbB4r.png", alt: "CSS" },
@@ -68,7 +65,7 @@ export const dataSkills = [
     image: Engrenages,
     title: "Frameworks & Environnements",
     description:
-      "Maîtrise des frameworks et environnements modernes pour le développement d’applications évolutives et performantes.",
+      "Spécialisation en .NET et React pour des applications performantes et évolutives, avec maîtrise de Next.js et SASS pour enrichir l’expérience utilisateur.",
     logos: [
       { url: netCore, alt: ".NET Core" },
       { url: "https://i.imgur.com/Cpm2Ays.png", alt: "React" },
@@ -81,7 +78,7 @@ export const dataSkills = [
     image: Back,
     title: "Bases de données & Stockage",
     description:
-      "Conception et optimisation de bases de données relationnelles et NoSQL pour assurer scalabilité et performance.",
+      "Conception et gestion de bases SQL Server pour des systèmes d’entreprise fiables, avec expertise complémentaire en MongoDB pour des projets flexibles et agiles.",
     logos: [
       { url: sqlServer, alt: "SQL Server" },
       { url: mongoDB, alt: "MongoDB" },
@@ -92,7 +89,7 @@ export const dataSkills = [
     image: Design,
     title: "Outils",
     description:
-      "Utilisation des outils indispensables pour le développement, la gestion de versions et l’intégration continue en environnement professionnel.",
+      "Maîtrise des outils clés pour le développement, le versioning et les tests d’API : GitHub, Visual Studio, Postman.",
     logos: [
       { url: "https://i.imgur.com/gCpZUZ7.png", alt: "GitHub" },
       { url: "https://i.imgur.com/1EdSMty.png", alt: "Visual Studio" },
@@ -100,6 +97,7 @@ export const dataSkills = [
     ],
   },
 ];
+
 
 export const dataWorks = [
   {
@@ -380,7 +378,7 @@ export const dataDesign = [
     logo: AlifeyLogo,
     capture: AlifeySite,
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua.",
+      "Site e-commerce fictif réalisé avec React, Vite et SASS. Conception du front-end, intégration des maquettes Figma et mise en place d’une navigation fluide. Projet axé sur l’expérience utilisateur et le design réactif.",
     date: "28/11/2023",
     techno: [
       { url: "https://i.imgur.com/Cpm2Ays.png", alt: "React" },
@@ -418,8 +416,8 @@ export const dataDesign = [
     logo: PortLogo,
     bg: PortBG,
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua.",
-    date: "01/01/22",
+      "Mon site portfolio personnel, développé avec React, Vite et SASS. Démonstration de mes compétences en intégration, design interactif et mise en valeur de mes projets en ligne.",
+    date: "01/01/2022",
     techno: [
       { url: "https://i.imgur.com/Cpm2Ays.png", alt: "React" },
       { url: "https://i.imgur.com/sjXaKpc.png", alt: "Vite" },
@@ -449,44 +447,6 @@ export const dataDesign = [
     status: "Terminé",
   },
   {
-    id: 32,
-    image: Tissatout,
-    title: "Tissatout",
-    color: "linear-gradient(to top, #ff8c00, #ffb700, #ffdc00)",
-    logo: PortLogo,
-    bg: PortBG,
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua.",
-    date: "01/01/22",
-    techno: [
-      { url: next, alt: "Next.js" },
-      { url: typescriptLogo, alt: "Typescript" },
-      { url: "https://i.imgur.com/FpcX7G3.png", alt: "Sass" },
-    ],
-    link: [
-      {
-        icon: "/images/logos/link.svg",
-        url: "https://github.com/ElodieCara/Tissatout-next",
-        name: "Lien vers le github",
-      },
-    ],
-    github: [
-      {
-        icon: "",
-        url: "https://github.com/ElodieCara/Tissatout-next",
-        name: "Lien Github",
-      },
-    ],
-    maquette: [
-      {
-        icon: "",
-        url: "",
-        name: "",
-      },
-    ],
-    status: "En cours",
-  },
-  {
     id: 33,
     image: Mmd,
     title: "Mmd",
@@ -494,11 +454,10 @@ export const dataDesign = [
     logo: PortLogo,
     bg: PortBG,
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua.",
-    date: "01/01/22",
+      "Application front-end développée avec React, Vite et SASS. Expérimentation autour d’interfaces utilisateurs rapides et modulaires. Projet encore en cours de conception.",
+    date: "01/01/2022",
     techno: [
       { url: "https://i.imgur.com/Cpm2Ays.png", alt: "React" },
-      // { url: next, alt: "Next.js" },
       { url: "https://i.imgur.com/sjXaKpc.png", alt: "Vite" },
       { url: "https://i.imgur.com/FpcX7G3.png", alt: "Sass" },
     ],
@@ -525,4 +484,45 @@ export const dataDesign = [
     ],
     status: "En cours",
   },
+  {
+    id: 32,
+    image: Tissatout,
+    title: "Tissatout",
+    color: "linear-gradient(to top, #ff8c00, #ffb700, #ffdc00)",
+    logo: PortLogo,
+    bg: PortBG,
+    description:
+      "Plateforme éducative pour enfants, développée en Next.js, TypeScript et Prisma. Fonctionnalités : espace admin, gestion de contenus (coloriages, activités), base MongoDB. Projet personnel en cours de développement.",
+    date: "01/01/2022",
+    techno: [
+      { url: next, alt: "Next.js" },
+      { url: typescriptLogo, alt: "Typescript" },
+      { url: "https://i.imgur.com/FpcX7G3.png", alt: "Sass" },
+    ],
+    link: [
+      {
+        icon: "/images/logos/link.svg",
+        url: "https://tissatout.fr",
+        name: "Lien vers Tissatout",
+      },
+    ],
+    github: [
+      {
+        icon: "",
+        url: "https://github.com/ElodieCara/Tissatout-next",
+        name: "Lien Github",
+      },
+    ],
+    maquette: [
+      {
+        icon: "",
+        url: "",
+        name: "",
+      },
+    ],
+    //status: "En cours",
+  },
 ];
+
+
+
