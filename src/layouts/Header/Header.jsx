@@ -73,7 +73,7 @@ Mon objectif : transformer vos besoins en un site concret, élégant et fiable, 
           <div className="home__data">
             <div className="home__data__presentation">
               <h1 className="home__data__presentation__title">
-                Elodie Caradeuc
+                E. Cara
               </h1>
               <Stars />
               <span className="home__data__presentation__stars"></span>

@@ -89,7 +89,7 @@ const Footer = () => {
           </a>
 
           <a
-            href="mailto:caradeuc.elodie@gmail.com"
+            href="mailto:contact.ecara@gmail.com"
             target="_blank"
             rel="noreferrer"
             aria-label="Email"

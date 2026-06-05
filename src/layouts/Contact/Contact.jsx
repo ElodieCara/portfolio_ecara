@@ -31,10 +31,10 @@ const ContactForm = () => {
           <li>
             Social media
             <span>
-              <a href="https://www.facebook.com/elodie.caradeuc">
+              {/* <a href="https://www.facebook.com/elodie.caradeuc">
                 <Facebook />
                 <span className="sr-only">Facebook</span>
-              </a>
+              </a> */}
               <a href="https://www.linkedin.com/in/e-cara">
                 <Linkedin />
                 <span className="sr-only">LinkedIn</span>

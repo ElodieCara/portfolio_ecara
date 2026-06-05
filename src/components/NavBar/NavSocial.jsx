@@ -93,7 +93,7 @@ function NavSocial() {
         </li>
         <li className="nav--social__link__icon">
           <a
-            href="mailto:caradeuc.elodie@gmail.com"
+            href="mailto:contact.ecara@gmail.com"
             target="_blank"
             rel="noreferrer"
             aria-label="Email"
